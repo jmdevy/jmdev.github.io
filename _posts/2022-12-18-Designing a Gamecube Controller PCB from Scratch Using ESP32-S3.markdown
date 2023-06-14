@@ -1,7 +1,7 @@
 ---
 layout: post
 title:  Designing a Gamecube Controller PCB from Scratch Using ESP32-S3
-date:   2022-12-18 00:10:00 -0500
+date:   2023-6-13 00:10:00 -0500
 categories: jekyll update
 ---
 
