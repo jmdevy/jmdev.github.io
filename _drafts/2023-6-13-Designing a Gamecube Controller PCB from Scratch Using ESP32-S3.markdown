@@ -243,12 +243,12 @@ Although this circuit could be implemented with discrete components, the cost an
 
 # Wires
 
-# Battery and charging
+## Battery and charging
 A very common rechargeable battery to see nowadays in consumer products are [these](https://www.epectec.com/batteries/prismatic-pouch-packs.html){:target="_blank"}{:rel="noopener noreferrer"} li-ion pouch batteries. Another example are [these](https://tinycircuits.com/collections/batteries){:target="_blank"}{:rel="noopener noreferrer"} that include built-in protection circuitry.
 
 The implementation used for charging teh li-ion battery in this circuit will be derived from [this](https://www.youtube.com/watch?v=wy516po6uVU){:target="_blank"}{:rel="noopener noreferrer"} video.
 
-## Battery requirements
+# Battery requirements
 As explained throughout the rest of the page, the battery should be able to provide a decent amount of current. For example, just the motor alone can draw 290mA. Also, the bigger capacity of the battery the better. Looking at the [datasheet](https://github.com/TinyCircuits/LaTex-Battery-Datasheets/raw/main/Datasheet_500mAh.pdf){:target="_blank"}{:rel="noopener noreferrer"} for [this](https://tinycircuits.com/products/lithium-ion-polymer-battery-3-7v-500mah){:target="_blank"}{:rel="noopener noreferrer"} battery shows the following:
 * Nominal 500 mAh capacity
 * Nominal 3.7V voltage
@@ -256,7 +256,7 @@ As explained throughout the rest of the page, the battery should be able to prov
 
 This works work well because a USB device can request 500mA from a charger too.
 
-## Battery Safety, NO Fires
+# Battery Safety, NO Fires
 Obviously, the controller shouldn't catch on fire, and unprotected lithium-ion cells definitely can. Luckily, the 500mAh cell mentioned earlier has protection circuitry for the following conditions (see pages 3 through 5 of the datasheet):
 * Charge cut-off voltage protection (do not want to overcharge if charging circuit fails): cuts off charging at 4.2V
 * Discharge cut-off voltage protection (do not want to discharge so slow that battery chemistry becomes unstable and shorts): cuts off output at 2.45V
@@ -267,10 +267,10 @@ Obviously, the controller shouldn't catch on fire, and unprotected lithium-ion c
 
 This seems pretty thorough and like a good candidate. Depending on the charge IC and potential voltage regulators, there could be options for a second layer of protection to help limit current. For example, a simple fuse could be put inline with the + terminal of the battery to disconnect it permanently if a short occurs. it should be good practice to try to stay well under the limits of even the battery protection circuitry.
 
-## Battery Charging
+# Battery Charging
 There are a bunch of ways to charge a li-ion cell. This [video](https://www.youtube.com/watch?v=wy516po6uVU){:target="_blank"}{:rel="noopener noreferrer"} outlines a couple different ways of handling battery charging, especially when connected and charging but power is still needed for the device.
 
-### How does battery charging work?
+# How does battery charging work?
 This [video](https://youtu.be/A6mKd5_-abk){:target="_blank"}{:rel="noopener noreferrer"} by EEVblog goes into the basics of Lithium Ion/Polymer (essentially the same thing) charging very well.
 
 This [part](https://youtu.be/A6mKd5_-abk?t=398){:target="_blank"}{:rel="noopener noreferrer"} of the video shows the way in which current and voltage are measured by a typical charging IC. As seen below, there are three main portions of the graph, **Precharge (PRE)**, **Constant Current (CC)**, and **Constant Voltage (CV)**:
@@ -294,15 +294,19 @@ $$
   (2,11) node [PRE] {PRE}                            % PRE region
   (7,11) node [CC] {CC}                              % Constant current region
   (13,11) node [CV] {CV}                             % Constant voltage region
-  \draw[color=green]
-  (0,1) to[out=30, in=190] (4,3)
-  (4,3) to[out=45, in=180] (10,10)
-  (10,10) to[short] (16,10)
-  \draw[color=cyan]
-  (0,2) to[short] (4,2)
-  (4,2) to[short] (4,10)
-  (4,10) to[short] (10,10)
-  (10,10) to[out=-85, in=180] (16,1)
+  \draw[color=green]                              % Draw the voltage/green plot
+  (0,1) to[out=30, in=190] (4,3)                    % Voltage during PRE section
+  (4,3) to[out=45, in=180] (10,10)                  % Voltage during CC section
+  (10,10) to[short] (16,10)                         % Voltage during CV section
+  \draw[color=cyan]                               % Draw the current/cyan plot
+  (0,2) to[short] (4,2)                             % Current during PRE section
+  (4,2) to[short] (4,10)                            % Current during CC section
+  (4,10) to[short] (10,10)                          % Current during CC section
+  (10,10) to[out=-85, in=180] (16,1)                % Current during CV section
+  \draw[color=white]                              % Draw voltage/current level labels on y-axis
+  (-1,3) node [color=green, V2.8] {2.8V}
+  (-2,10) node [color=green, V4.2] {4.2V}
+  (-1,10) node [color=cyan, I100] {100\%}
   
 \end{circuitikz}
 $$
