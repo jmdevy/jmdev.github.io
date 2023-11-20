@@ -5,6 +5,16 @@ date:   2023-6-13 00:10:00 -0500
 categories: jekyll update
 ---
 
+https://electronics.stackexchange.com/questions/113009/when-to-use-pull-down-vs-pull-up-resistors
+https://electronics.stackexchange.com/questions/666204/gate-resistors-on-the-mosfet
+https://electronics.stackexchange.com/questions/13075/is-it-safe-to-drive-a-mosfet-from-an-output-pin-of-a-microcontroller
+https://electronics.stackexchange.com/questions/443945/id-like-to-run-a-5v-fan-on-2-3-7v-batteries
+https://www.reddit.com/r/AskEngineers/comments/7rqq9q/tolerance_stack_up_analysis_where_to_start/
+https://electronics.stackexchange.com/questions/219222/is-draining-a-li-ion-to-2-5-v-harmful-to-a-li-ion-cell
+https://electronics.stackexchange.com/questions/642049/how-to-safely-use-lithium-ion-batteries-in-diy-projects
+https://www.ti.com/product/BQ24070#order-quality
+https://www.youtube.com/watch?v=A6mKd5_-abk&t=398s
+
 ## Introduction
 
 This post shows the design steps used to create a wired and wireless GameCube controller.
