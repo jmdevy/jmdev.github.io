@@ -25,17 +25,80 @@ There are only a _couple_ topics needed to fully explain this project
 
 
 ## User Interaction
-An obvious way to interact with the device is through buttons. Although intuitive and reliable, buttons are boring for a hobby project like this, because of that I decided to add a front-facing camera that will wait for specific hand gestures that allow the user to scroll between interfaces. To achieve this, I chose the ESP32-S3 as the microprocessor of this project since it comes with the AI Extension/Acceleration. Inspiration for PCB implementation was taken from the [ESP-EYE board](https://github.com/espressif/esp-who/blob/master/docs/en/get-started/ESP32-S3-EYE_Getting_Started_Guide.md#11-overview){:target="_blank"}{:rel="noopener noreferrer"}. This [article](https://blog.espressif.com/hand-gesture-recognition-on-esp32-s3-with-esp-deep-learning-176d7e13fd37){:target="_blank"}{:rel="noopener noreferrer"} has some decent information that helped me jump start this project.
+An obvious way to interact with the device is through buttons. Although intuitive and reliable, buttons are boring for a hobby project like this, because of that I decided to add a front-facing camera that will wait for specific hand gestures that allow the user to scroll between interfaces. To achieve this, I chose the ESP32-S3 as the microprocessor of this project since it comes with the AI Extension/Acceleration. Inspiration for PCB implementation was taken from the [ESP-EYE board](https://github.com/espressif/esp-who/blob/master/docs/en/get-started/ESP32-S3-EYE_Getting_Started_Guide.md#11-overview){:target="_blank"}{:rel="noopener noreferrer"}. This [article](https://blog.espressif.com/hand-gesture-recognition-on-esp32-s3-with-esp-deep-learning-176d7e13fd37){:target="_blank"}{:rel="noopener noreferrer"} has some decent information that helped me jump start this project. As for the software, an great starting point was the Espressif [esp-who](https://github.com/espressif/esp-who){:target="_blank"}{:rel="noopener noreferrer"} project that provides many examples.
 
-I said I wouldn't use any buttons, but there will be one button on the side for putting the board into bootloader mode.
+I said I wouldn't use any buttons, but there is one button on the side for putting the board into bootloader mode.
 
 
 ## Display
-Instead of using a OLED or LCD screen, the device will consist of individual single color LEDs in an enclosure with pockets to separate the individual lights. At the top of the pockets will be material to diffuse the light. Since the enclosure's size will mostly depend on how big the pixels are, the smallest surface mount (SMD) LED package should be used.
+Instead of using a OLED or LCD screen, the device consists of individual single color LEDs in an enclosure with pockets to separate the individual lights. At the top of the pockets is material to diffuse the light. As with everything the focus is to keep the project as cheap as possible, therefore, these [0.2W Samsung LM281BA+ LEDs](https://www.arrow.com/en/products/spmwh22286d7waqms3/samsung-electronics){:target="_blank"}{:rel="noopener noreferrer"} were picked because they were so cheap at the time of purchase ($0.002 when ordering 4000 = $8!). 
 
-There are two main ways to drive an arrow of LEDs, multiplexing and charlieplexing: https://electronics.stackexchange.com/questions/11046/how-can-i-control-many-leds-with-just-a-few-pins-on-my-micro
+Although there are a [couple ways](https://electronics.stackexchange.com/questions/11046/how-can-i-control-many-leds-with-just-a-few-pins-on-my-micro){:target="_blank"}{:rel="noopener noreferrer"} of driving many LEDs, I chose [multiplexing](http://lednique.com/display-technology/multiplexed-display/){:target="_blank"}{:rel="noopener noreferrer"} because it is very simple to implement.
 
-http://lednique.com/display-technology/multiplexed-display/
+
+<p class="center">
+$$
+\begin{circuitikz}
+    \ctikzset{sources/fill=alpha}
+    \draw[color=white]
+    % Voltage
+    (0,-5)  to[american voltage source, invert, l=$V_s_s$]  (0,6)
+            to[short]                                       (2,6)
+
+    (0,-5)  to[short]                                     ++(13,0)
+
+    % Row 1
+    (2,6)   to[normal open switch, l=$S_R_1$]               (5,6)
+  ++(-3,0)  to[short, *-]                                 ++(0,-3)
+            to[normal open switch, l=$S_R_2$, *-]         ++(3,0)
+  ++(-3,0)  to[short, *-]                                 ++(0,-3)
+            to[normal open switch, l=$S_R_3$, *-]         ++(3,0)
+
+    (5,6)   to[empty led, l=$L_R_1_C_1$, *-]              ++(0,-2)
+            to[short]                                     ++(2,0)
+            to[short, -*]                                 ++(0,-7)
+            to[normal open switch, l=$S_C_1$, -*]         ++(0,-2)
+  ++(-2,11) to[short]                                     ++(3,0)
+
+            to[empty led, l=$L_R_1_C_1$, *-]              ++(0,-2)
+            to[short]                                     ++(2,0)
+            to[short, -*]                                 ++(0,-7)
+            to[normal open switch, l=$S_C_2$, -*]         ++(0,-2)
+  ++(-2,11) to[short]                                     ++(3,0)
+
+            to[empty led, l=$L_R_1_C_3$, *-]              ++(0,-2)
+            to[short]                                     ++(2,0)
+            to[short, -*]                                 ++(0,-7)
+            to[normal open switch, l=$S_C_3$, -*]         ++(0,-2)
+
+    
+    (5,3)   to[empty led, l=$L_R_2_C_1$, *-]              ++(0,-2)
+            to[short, -*]                                 ++(2,0)
+  ++(-2,2)  to[short]                                     ++(3,0)
+
+            to[empty led, l=$L_R_2_C_2$, *-]              ++(0,-2)
+            to[short, -*]                                 ++(2,0)
+  ++(-2,2)  to[short]                                     ++(3,0)
+
+            to[empty led, l=$L_R_2_C_3$, *-]              ++(0,-2)
+            to[short, -*]                                 ++(2,0)
+    
+
+    (5,0)   to[empty led, l=$L_R_3_C_1$, *-]              ++(0,-2)
+            to[short, -*]                                 ++(2,0)
+  ++(-2,2)  to[short]                                     ++(3,0)
+
+            to[empty led, l=$L_R_3_C_2$, *-]              ++(0,-2)
+            to[short, -*]                                 ++(2,0)
+  ++(-2,2)  to[short]                                     ++(3,0)
+
+            to[empty led, l=$L_R_3_C_3$, *-]              ++(0,-2)
+            to[short, -*]                                 ++(2,0)
+\end{circuitikz}
+$$
+</p>
+<p class="center">Figure 2: Simple Example of Multiplexed LED Matrix</p>
+
 
 So the main options are shift registers and and I2C or SPI io expanders. IO expanders seem to be a lot more costly then these 16 output LED shift registers https://www.digikey.com/en/products/detail/texas-instruments/TLC59283DBQR/3458112
 
