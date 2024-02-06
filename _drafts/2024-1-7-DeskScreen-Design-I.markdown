@@ -119,11 +119,23 @@ Ok, let's go through each of these requirements and see if the shift register ca
 #### **#1. Each LED should be individually dimmable**
 Although LEDs work best with a constant current source (as far as flicker is concerned) that requires more complex and expensive circuitry. The way to dim LEDs cheaply is by sending varying width pulses to them depending on how dim they should be.
 
-Although using Pulse-Width-Modulation (PWM) is pretty typical for dimming LEDs, I want to go with a different more consistent method I came up with. First, the idea is to get data into the registers to toggle the LEDs at a rate that doesn't flicker when viewed by the human eye ([probably need > 300Hz](https://electronics.stackexchange.com/questions/79373/how-to-choose-right-pwm-frequency-for-led){:target="_blank"}{:rel="noopener noreferrer"}).
+Although using Pulse-Width-Modulation (PWM) is typical for dimming LEDs, I want to go with a different more consistent method I came up with where pulses are interleaved across all LEDs on the display very quickly.
 
-The method I came up with is to interleave short pulses to each LED in each row at different rates. Let me first define how these waveforms can be generated and what they will look like.
+Instead of strictly updating LEDs based on how much time has passed since the last time they were updated, it will be by pulsing them every other so many ticks. In software there will be two buffers:
+1. `PIXELS_MAX_TICKS`: Each pixel gets 16-bits that represent how many times the row the pixel lives in needs to be touched before that pixel gets updated. For example, if a pixel has a value set by the software of 33, then the pixel only gets pulsed every 34th time the row is looped over (after 33 ticks over the row occurred). This may need to be double buffered so that work can be done on the other core while the LEDs stay lit based on previous data.
+2. `PIXELS_TRACKED_TICKS`: The actual number of ticks that have occurred on each pixel in each row. For example, each time the row is looped through, each of these 16-bit values will be incremented, and once the value for a pixel reaches > than the value in `PIXELS_MAX_TICKS` the value for that pixel in this buffer is reset to `0` and the LED is pulsed.
 
+Going off the above descriptions, the brightest an LED will be able to be run at is when its value in `PIXELS_MAX_TICKS` is set to `0` meaning it gets a pulse every time its row is looped over. The dimmest it can be will be up to how the LEDs and circuitry behave, but it will probably be some tweaked value in the 16-bits. It will have to be determined how many ticks an LED can wait before it starts flashing instead of consistently staying dim. This special threshold value will be used to not pulse the LED when it's reached. For example, if the value in `PIXELS_MAX_TICKS` where LED start to flash is 1000, then when an LED is set to that we'll just never turn the LED on to make sure it never flashes and is off. That would be the 'off' value and the most dim an LED can be.
 
+Based on the above, I implemented the algorithm in Octave using some made up values for assumed delay that will occur between, during, and after updating LEDs in each row. I ran the update algorithm across all the rows multiple times using the `PIXELS_MAX_TICKS` values in the below table for a screen that is 4x3 pixels.
+
+| Index  |  0  |  1  |  2  |  3  |
+|:-:| :-: | :-: | :-: | :-: |
+| 0 |  0  |  2  |  4  |  6  |
+| 1 |  8  | 10  | 12  | 14  |
+| 2 | 16  | 18  | 20  | 22  |
+
+<p class="center"><i>Table 1: `PIXELS_MAX_TICKS` Values for Plotting Screen Update Algorithm</i></p>
 
 ---
 ---
