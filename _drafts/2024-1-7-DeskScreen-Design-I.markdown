@@ -105,7 +105,7 @@ What if we wanted to turn on LEDs L<sub>R2C1</sub> and L<sub>R2C3</sub>? We can 
 ### **Connecting Multiplexed LEDs to Microcontroller**
 According to the above diagram, 16 rows + 32 columns = 48 GPIO and pg. 17 table 2-3 of [ESP32-S3 datasheet](https://www.espressif.com/sites/default/files/documentation/esp32-s3_datasheet_en.pdf){:target="_blank"}{:rel="noopener noreferrer"} shows exactly that many, but we'll likely need some of those for other peripherals. To get around the GPIO limit we'll need IO expanders. Options are SPI/I2C expanders or shift registers, the former turns out to be more expensive. Shift registers are much cheaper and these [TLC59283](https://www.digikey.com/en/products/detail/texas-instruments/TLC59283DBQR/3458112){:target="_blank"}{:rel="noopener noreferrer"} are designed for running LEDs anyway.
 
-Because of the size of the screen, 3 shift registers will be needed since each has 16 outputs (16-bit registers). One will be used to control the rows and two to control the columns.
+Because of the size of the screen and the fact that the shift registers sink current, 2 shift registers will be needed since each has 16 outputs (16-bit registers). Two to control the columns and transistors to control the rows.
 
 
 ### **Evaluating the TLC59283 Shift Register**
@@ -122,20 +122,70 @@ Although LEDs work best with a constant current source (as far as flicker is con
 Although using Pulse-Width-Modulation (PWM) is typical for dimming LEDs, I want to go with a different more consistent method I came up with where pulses are interleaved across all LEDs on the display very quickly.
 
 Instead of strictly updating LEDs based on how much time has passed since the last time they were updated, it will be by pulsing them every other so many ticks. In software there will be two buffers:
-1. `PIXELS_MAX_TICKS`: Each pixel gets 16-bits that represent how many times the row the pixel lives in needs to be touched before that pixel gets updated. For example, if a pixel has a value set by the software of 33, then the pixel only gets pulsed every 34th time the row is looped over (after 33 ticks over the row occurred). This may need to be double buffered so that work can be done on the other core while the LEDs stay lit based on previous data.
-2. `PIXELS_TRACKED_TICKS`: The actual number of ticks that have occurred on each pixel in each row. For example, each time the row is looped through, each of these 16-bit values will be incremented, and once the value for a pixel reaches > than the value in `PIXELS_MAX_TICKS` the value for that pixel in this buffer is reset to `0` and the LED is pulsed.
+1. `pixels_max_ticks`: Each pixel gets 16-bits that represent how many times the row the pixel lives in needs to be touched before that pixel gets updated. For example, if a pixel has a value set by the software of 33, then the pixel only gets pulsed every 34th time the row is looped over (after 33 ticks over the row occurred). This may need to be double buffered so that work can be done on the other core while the LEDs stay lit based on previous data.
+2. `pixels_tracked_ticks`: The actual number of ticks that have occurred on each pixel in each row. For example, each time the row is looped through, each of these 16-bit values will be incremented, and once the value for a pixel reaches > than the value in `pixels_max_ticks` the value for that pixel in this buffer is reset to `0` and the LED is pulsed.
 
-Going off the above descriptions, the brightest an LED will be able to be run at is when its value in `PIXELS_MAX_TICKS` is set to `0` meaning it gets a pulse every time its row is looped over. The dimmest it can be will be up to how the LEDs and circuitry behave, but it will probably be some tweaked value in the 16-bits. It will have to be determined how many ticks an LED can wait before it starts flashing instead of consistently staying dim. This special threshold value will be used to not pulse the LED when it's reached. For example, if the value in `PIXELS_MAX_TICKS` where LED start to flash is 1000, then when an LED is set to that we'll just never turn the LED on to make sure it never flashes and is off. That would be the 'off' value and the most dim an LED can be.
+Going off the above descriptions, the brightest an LED will be able to be run at is when its value in `pixels_max_ticks` is set to `0` meaning it gets a pulse every time its row is looped over. The dimmest an LED can be is off, but the above algorithm doesn't always turns the LED at some point. It will have to be determined how many ticks it takes before an LED turns off and just flashes, this will also determine the number of brightness values. For example, if it takes 100 ticks between pulsing the LED before it looks 'off,' then we'll only have 100 brightness levels. How fast the rows and LEDs can be looped over and loaded also determines how many brightness values are available.
 
-Based on the above, I implemented the algorithm in Octave using some made up values for assumed delay that will occur between, during, and after updating LEDs in each row. I ran the update algorithm across all the rows multiple times using the `PIXELS_MAX_TICKS` values in the below table for a screen that is 4x3 pixels.
+How fast can the rows and LEDs be looped over? Well that's a function of the complexity of the LED pulsing and checking algorithm, the microprocessor's speed, the rate at which shift registers can be loaded, and how long it takes for a row to be supplied max current by the transistor. Let's break these down one by one:
+
+1. **LED pulsing/checking algorithm complexity:**
+This should be very complex, here's some pseudo C code I can came up with:
+
+```C
+#include <string.h>
+#include <stdint.h>
+
+#define SCREEN_WIDTH 32
+#define SCREEN_HEIGHT 16
+#define SCREEN_BUFFER_SIZE_BYTES = (SCREEN_WIDTH * SCREEN_HEIGHT) * 2   // Times two since 16-bit
+
+// Buffers for defining and tracking pixel brightness states
+uint16_t pixels_max_ticks[SCREEN_WIDTH][SCREEN_HEIGHT];
+uint16_t pixels_tracked_ticks[SCREEN_WIDTH][SCREEN_HEIGHT];
+
+// ... load pixels_max_ticks with delay data to display something at some brightness ...
+
+// Make sure all tracked ticks are start at 0 initially
+memset(pixels_tracked_ticks, 0, SCREEN_BUFFER_SIZE_BYTES);
+
+
+void load_row(uint8_t row){
+    for(uint8_t column=0; column<SCREEN_WIDTH; column++){
+
+    }
+}
+
+
+int main(int argc, char *argv[]){
+
+    for(uint8_t row=0; row<SCREEN_HEIGHT; row++){
+        load_row(row);
+
+        // ... make row MOSFET conduct ...
+        // ... wait some very small amount of time to let LEDs light ...
+        // ... make row MOS
+    }
+
+    return 0;
+}
+```
+
+2. **Microprocessor's speed:**
+
+3. **Shift register loading rate:**
+
+4. **Transistor 'on' time:**
+
+Based on the above, I implemented the algorithm in Octave using some made up values for assumed delay that will occur between, during, and after updating LEDs in each row. I ran the update algorithm across all the rows multiple times using the `pixels_max_ticks` values in the below table for a screen that is 4x3 pixels.
 
 | Index  |  0  |  1  |  2  |  3  |
 |:-:| :-: | :-: | :-: | :-: |
-| 0 |  0  |  2  |  4  |  6  |
-| 1 |  8  | 10  | 12  | 14  |
-| 2 | 16  | 18  | 20  | 22  |
+| 0 |  0  |  3  |  6  |  9  |
+| 1 |  1  |  4  |  7  | 10  |
+| 2 |  2  |  5  |  8  | 11  |
 
-<p class="center"><i>Table 1: `PIXELS_MAX_TICKS` Values for Plotting Screen Update Algorithm</i></p>
+<p class="center"><i>Table 1: `pixels_max_ticks` Values for Plotting Screen Update Algorithm</i></p>
 
 ---
 ---

@@ -11,9 +11,9 @@ SCREEN_HEIGHT = 3
 
 # How many times a row needs to be touched for each
 # pixel inside to be pulsed (controls dimmability)
-PIXELS_MAX_TICKS = [[0, 2, 4, 6],
-                    [8, 10, 12, 14],
-                    [16, 18, 20, 22]]
+PIXELS_MAX_TICKS = [[0, 3, 6, 9],
+                    [1, 4, 7, 10],
+                    [2, 5, 8, 11]]
 
 # How many times the pixels in each row have been
 # touched (meaning how many times the row it lives
@@ -48,7 +48,7 @@ t_current = 0
 # Loop over each row and its entries. Increment the values
 # for each pixel in each row inside `PIXELS_TRACKED_TICKS`
 # and pulse when > than entry in `PIXELS_MAX_TICKS`
-for i in range(40):
+for i in range(20):
     for y in range(SCREEN_HEIGHT):
 
         # Take time to fill row
