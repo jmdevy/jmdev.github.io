@@ -1,9 +1,9 @@
 <?xml version="1.0" encoding="UTF-8" standalone="no"?>
 <svg
-   width="8.1019602mm"
-   height="175.25mm"
+   width="305.04999mm"
+   height="305.04999mm"
    version="1.2"
-   viewBox="0 0 81.019602 1752.5"
+   viewBox="0 0 3050.4999 3050.4999"
    id="svg28"
    sodipodi:docname="pencil.svg"
    inkscape:version="1.3.2 (091e20e, 2023-11-25, custom)"
@@ -16,23 +16,23 @@
    xmlns:dc="http://purl.org/dc/elements/1.1/">
   <sodipodi:namedview
      id="namedview28"
-     pagecolor="#ffffff"
+     pagecolor="#474747"
      bordercolor="#000000"
      borderopacity="0.25"
      inkscape:showpageshadow="2"
      inkscape:pageopacity="0.0"
      inkscape:pagecheckerboard="0"
-     inkscape:deskcolor="#d1d1d1"
+     inkscape:deskcolor="#6a6a6a"
      inkscape:document-units="mm"
-     inkscape:zoom="1.0847917"
-     inkscape:cx="15.210294"
-     inkscape:cy="331.40004"
+     inkscape:zoom="0.54239585"
+     inkscape:cx="386.24927"
+     inkscape:cy="528.21201"
      inkscape:window-width="1920"
      inkscape:window-height="1057"
-     inkscape:window-x="-8"
-     inkscape:window-y="-3"
+     inkscape:window-x="1912"
+     inkscape:window-y="-4"
      inkscape:window-maximized="1"
-     inkscape:current-layer="Page" />
+     inkscape:current-layer="DrawingContent" />
   <title
      id="title1">FreeCAD SVG Export</title>
   <desc
@@ -61,13 +61,8 @@
          fill-opacity="1"
          font-size="29.1042px"
          font-family="'MS Shell Dlg 2'"
-         id="g1">
-        <path
-           d="M 3.39052,-872.369 C 2.9938,-873.917 1.59845,-875 1.67712e-5,-875 v 0 C -1.59842,-875 -2.99377,-873.917 -3.39049,-872.369 h -1e-5 l -35.8693,140 V 875 h 19.6299 39.2598 19.6299 V -732.369 l -35.86929,-140"
-           fill-rule="evenodd"
-           vector-effect="non-scaling-stroke"
-           id="path1" />
-      </g>
+         id="g1"
+         style="stroke:#ffffff;stroke-opacity:1" />
       <g
          fill="none"
          stroke="#000000"
@@ -80,13 +75,15 @@
          stroke-linecap="square"
          font-family="'MS Shell Dlg 2'"
          stroke-opacity="1"
-         id="g2">
+         id="g2"
+         style="stroke:#ffffff;stroke-opacity:1">
         <rect
            x="0"
            width="0"
            height="0"
            y="0"
-           id="rect1" />
+           id="rect1"
+           style="stroke:#ffffff;stroke-opacity:1" />
       </g>
       <g
          fill="#ffffff"
@@ -97,13 +94,8 @@
          fill-opacity="1"
          font-size="29.1042px"
          font-family="'MS Shell Dlg 2'"
-         id="g3">
-        <path
-           d="M -19.6299,875 H 19.6299 V -732.369 C 15.8544,-739.73 12.484,-744.744 9.27678,-748.047 6.07212,-751.333 3.03722,-752.892 0,-752.898 c -3.03722,0.006 -6.07212,1.565 -9.27678,4.851 -3.20722,3.303 -6.57762,8.317 -10.35312,15.678 V 875"
-           fill-rule="evenodd"
-           vector-effect="non-scaling-stroke"
-           id="path2" />
-      </g>
+         id="g3"
+         style="stroke:#ffffff;stroke-opacity:1" />
       <g
          fill="none"
          stroke="#000000"
@@ -116,13 +108,15 @@
          stroke-linecap="square"
          font-family="'MS Shell Dlg 2'"
          stroke-opacity="1"
-         id="g4">
+         id="g4"
+         style="stroke:#ffffff;stroke-opacity:1">
         <rect
            x="0"
            width="0"
            height="0"
            y="0"
-           id="rect3" />
+           id="rect3"
+           style="stroke:#ffffff;stroke-opacity:1" />
       </g>
       <g
          fill="#ffffff"
@@ -133,13 +127,8 @@
          fill-opacity="1"
          font-size="29.1042px"
          font-family="'MS Shell Dlg 2'"
-         id="g5">
-        <path
-           d="M 19.6299,875 H 39.2598 V -732.369 c -1.762,-6.872 -3.347,-11.693 -4.8548,-14.996 -1.4949,-3.261 -2.9457,-5.077 -4.3526,-5.448 -1.6214,-0.444 -3.2293,0.876 -4.9265,4.131 -1.6988,3.276 -3.4826,8.464 -5.496,16.313 V 875"
-           fill-rule="evenodd"
-           vector-effect="non-scaling-stroke"
-           id="path4" />
-      </g>
+         id="g5"
+         style="stroke:#ffffff;stroke-opacity:1" />
       <g
          fill="none"
          stroke="#000000"
@@ -152,13 +141,15 @@
          stroke-linecap="square"
          font-family="'MS Shell Dlg 2'"
          stroke-opacity="1"
-         id="g6">
+         id="g6"
+         style="stroke:#ffffff;stroke-opacity:1">
         <rect
            x="0"
            width="0"
            height="0"
            y="0"
-           id="rect5" />
+           id="rect5"
+           style="stroke:#ffffff;stroke-opacity:1" />
       </g>
       <g
          fill="#ffffff"
@@ -169,13 +160,8 @@
          fill-opacity="1"
          font-size="29.1042px"
          font-family="'MS Shell Dlg 2'"
-         id="g7">
-        <path
-           d="m -39.2598,875 h 19.6299 V -732.369 c -1.8878,-7.361 -3.5729,-12.375 -5.1766,-15.678 -1.6023,-3.286 -3.1198,-4.845 -4.6384,-4.851 -1.5186,0.006 -3.036,1.565 -4.6384,4.851 -1.6036,3.303 -3.2888,8.317 -5.1765,15.678 V 875"
-           fill-rule="evenodd"
-           vector-effect="non-scaling-stroke"
-           id="path6" />
-      </g>
+         id="g7"
+         style="stroke:#ffffff;stroke-opacity:1" />
       <g
          fill="none"
          stroke="#000000"
@@ -188,13 +174,15 @@
          stroke-linecap="square"
          font-family="'MS Shell Dlg 2'"
          stroke-opacity="1"
-         id="g8">
+         id="g8"
+         style="stroke:#ffffff;stroke-opacity:1">
         <rect
            x="0"
            width="0"
            height="0"
            y="0"
-           id="rect7" />
+           id="rect7"
+           style="stroke:#ffffff;stroke-opacity:1" />
       </g>
       <g
          fill="#ffffff"
@@ -205,13 +193,8 @@
          fill-opacity="1"
          font-size="29.1042px"
          font-family="'MS Shell Dlg 2'"
-         id="g9">
-        <path
-           d="m 30.0524,-752.813 c 1.4069,0.371 2.8577,2.187 4.3526,5.448 1.5078,3.303 3.0928,8.124 4.8548,14.996 l -35.8693,-140 h -6.781 l -35.8693,140 c 1.8877,-7.361 3.5729,-12.375 5.1765,-15.678 1.6024,-3.286 3.1198,-4.845 4.6384,-4.851 1.5186,0.006 3.0361,1.565 4.6384,4.851 1.6037,3.303 3.2888,8.317 5.1766,15.678 3.7755,-7.361 7.1459,-12.375 10.35312,-15.678 3.20466,-3.286 6.23956,-4.845 9.27678,-4.851 3.03722,0.006 6.07212,1.565 9.27678,4.851 3.20722,3.303 6.57762,8.317 10.35312,15.678 2.0134,-7.849 3.7972,-13.037 5.496,-16.313 1.6972,-3.255 3.3051,-4.575 4.9265,-4.131"
-           fill-rule="evenodd"
-           vector-effect="non-scaling-stroke"
-           id="path8" />
-      </g>
+         id="g9"
+         style="stroke:#ffffff;stroke-opacity:1" />
       <g
          fill="none"
          stroke="#000000"
@@ -224,13 +207,15 @@
          stroke-linecap="square"
          font-family="'MS Shell Dlg 2'"
          stroke-opacity="1"
-         id="g10">
+         id="g10"
+         style="stroke:#ffffff;stroke-opacity:1">
         <rect
            x="0"
            width="0"
            height="0"
            y="0"
-           id="rect9" />
+           id="rect9"
+           style="stroke:#ffffff;stroke-opacity:1" />
       </g>
       <g
          fill="#ffffff"
@@ -241,13 +226,8 @@
          fill-opacity="1"
          font-size="29.1042px"
          font-family="'MS Shell Dlg 2'"
-         id="g11">
-        <path
-           d="M 3.39052,-872.369 C 2.9938,-873.917 1.59845,-875 1.67712e-5,-875 v 0 C -1.59842,-875 -2.99377,-873.917 -3.39049,-872.369 h -1e-5 6.78101"
-           fill-rule="evenodd"
-           vector-effect="non-scaling-stroke"
-           id="path10" />
-      </g>
+         id="g11"
+         style="stroke:#ffffff;stroke-opacity:1" />
       <g
          fill="none"
          stroke="#000000"
@@ -260,317 +240,351 @@
          stroke-linecap="square"
          font-family="'MS Shell Dlg 2'"
          stroke-opacity="1"
-         id="g12">
+         id="g12"
+         style="stroke:#ffffff;stroke-opacity:1">
         <rect
            x="0"
            width="0"
            height="0"
            y="0"
-           id="rect11" />
+           id="rect11"
+           style="stroke:#ffffff;stroke-opacity:1" />
       </g>
       <g
          fill="none"
          stroke="#000000"
          stroke-linejoin="bevel"
          font-style="normal"
-         transform="translate(1485,1050)"
+         transform="matrix(1.000005,0,0,1,2969.7402,1699)"
          font-weight="400"
          stroke-width="2.5"
          font-size="29.1042px"
          stroke-linecap="round"
          font-family="'MS Shell Dlg 2'"
          stroke-opacity="1"
-         id="g13">
+         id="g13"
+         style="stroke:#ffffff;stroke-opacity:1">
         <path
            d="M -3.39049,-872.369 C -2.99377,-873.917 -1.59842,-875 1.67712e-5,-875"
            fill-rule="evenodd"
            vector-effect="none"
-           id="path12" />
+           id="path12"
+           style="stroke:#ffffff;stroke-opacity:1" />
       </g>
       <g
          fill="none"
          stroke="#000000"
          stroke-linejoin="bevel"
          font-style="normal"
-         transform="translate(1485,1050)"
+         transform="matrix(1.000005,0,0,1,2969.7402,1699)"
          font-weight="400"
          stroke-width="2.5"
          font-size="29.1042px"
          stroke-linecap="round"
          font-family="'MS Shell Dlg 2'"
          stroke-opacity="1"
-         id="g14">
+         id="g14"
+         style="stroke:#ffffff;stroke-opacity:1">
         <path
            d="m -39.2598,-732.369 35.8693,-140"
            fill-rule="evenodd"
            vector-effect="none"
-           id="path13" />
+           id="path13"
+           style="stroke:#ffffff;stroke-opacity:1" />
       </g>
       <g
          fill="none"
          stroke="#000000"
          stroke-linejoin="bevel"
          font-style="normal"
-         transform="translate(1485,1050)"
+         transform="matrix(1.000005,0,0,1,2969.7402,1699)"
          font-weight="400"
          stroke-width="2.5"
          font-size="29.1042px"
          stroke-linecap="round"
          font-family="'MS Shell Dlg 2'"
          stroke-opacity="1"
-         id="g15">
+         id="g15"
+         style="stroke:#ffffff;stroke-opacity:1">
         <path
            d="m -19.6299,-732.369 c -1.8878,-7.361 -3.5729,-12.375 -5.1766,-15.678 -1.6023,-3.286 -3.1198,-4.845 -4.6384,-4.851 -1.5186,0.006 -3.036,1.565 -4.6384,4.851 -1.6036,3.303 -3.2888,8.317 -5.1765,15.678"
            fill-rule="evenodd"
            vector-effect="none"
-           id="path14" />
+           id="path14"
+           style="stroke:#ffffff;stroke-opacity:1" />
       </g>
       <g
          fill="none"
          stroke="#000000"
          stroke-linejoin="bevel"
          font-style="normal"
-         transform="translate(1485,1050)"
+         transform="matrix(1.000005,0,0,1,2969.7402,1699)"
          font-weight="400"
          stroke-width="2.5"
          font-size="29.1042px"
          stroke-linecap="round"
          font-family="'MS Shell Dlg 2'"
          stroke-opacity="1"
-         id="g16">
+         id="g16"
+         style="stroke:#ffffff;stroke-opacity:1">
         <path
            d="M 19.6299,-732.369 C 15.8544,-739.73 12.484,-744.744 9.27678,-748.047 6.07212,-751.333 3.03722,-752.892 0,-752.898 c -3.03722,0.006 -6.07212,1.565 -9.27678,4.851 -3.20722,3.303 -6.57762,8.317 -10.35312,15.678"
            fill-rule="evenodd"
            vector-effect="none"
-           id="path15" />
+           id="path15"
+           style="stroke:#ffffff;stroke-opacity:1" />
       </g>
       <g
          fill="none"
          stroke="#000000"
          stroke-linejoin="bevel"
          font-style="normal"
-         transform="translate(1485,1050)"
+         transform="matrix(1.000005,0,0,1,2969.7402,1699)"
          font-weight="400"
          stroke-width="2.5"
          font-size="29.1042px"
          stroke-linecap="round"
          font-family="'MS Shell Dlg 2'"
          stroke-opacity="1"
-         id="g17">
+         id="g17"
+         style="stroke:#ffffff;stroke-opacity:1">
         <path
            d="m 39.2598,-732.369 c -1.8877,-7.361 -3.5729,-12.375 -5.1765,-15.678 -1.6024,-3.286 -3.1198,-4.845 -4.6384,-4.851 -1.5186,0.006 -3.0361,1.565 -4.6384,4.851 -1.6037,3.303 -3.2888,8.317 -5.1766,15.678"
            fill-rule="evenodd"
            vector-effect="none"
-           id="path16" />
+           id="path16"
+           style="stroke:#ffffff;stroke-opacity:1" />
       </g>
       <g
          fill="none"
          stroke="#000000"
          stroke-linejoin="bevel"
          font-style="normal"
-         transform="translate(1485,1050)"
+         transform="matrix(1.000005,0,0,1,2969.7402,1699)"
          font-weight="400"
          stroke-width="2.5"
          font-size="29.1042px"
          stroke-linecap="round"
          font-family="'MS Shell Dlg 2'"
          stroke-opacity="1"
-         id="g18">
+         id="g18"
+         style="stroke:#ffffff;stroke-opacity:1">
         <path
            d="m 30.0524,-752.813 c 1.4069,0.371 2.8577,2.187 4.3526,5.448 1.5078,3.303 3.0928,8.124 4.8548,14.996"
            fill-rule="evenodd"
            vector-effect="none"
-           id="path17" />
+           id="path17"
+           style="stroke:#ffffff;stroke-opacity:1" />
       </g>
       <g
          fill="none"
          stroke="#000000"
          stroke-linejoin="bevel"
          font-style="normal"
-         transform="translate(1485,1050)"
+         transform="matrix(1.000005,0,0,1,2969.7402,1699)"
          font-weight="400"
          stroke-width="2.5"
          font-size="29.1042px"
          stroke-linecap="round"
          font-family="'MS Shell Dlg 2'"
          stroke-opacity="1"
-         id="g19">
+         id="g19"
+         style="stroke:#ffffff;stroke-opacity:1">
         <path
            d="M -19.6299,875 V -732.369"
            fill-rule="evenodd"
            vector-effect="none"
-           id="path18" />
+           id="path18"
+           style="stroke:#ffffff;stroke-opacity:1" />
       </g>
       <g
          fill="none"
          stroke="#000000"
          stroke-linejoin="bevel"
          font-style="normal"
-         transform="translate(1485,1050)"
+         transform="matrix(1.000005,0,0,1,2969.7402,1699)"
          font-weight="400"
          stroke-width="2.5"
          font-size="29.1042px"
          stroke-linecap="round"
          font-family="'MS Shell Dlg 2'"
          stroke-opacity="1"
-         id="g20">
+         id="g20"
+         style="stroke:#ffffff;stroke-opacity:1">
         <path
            d="M -19.6299,875 H 19.6299"
            fill-rule="evenodd"
            vector-effect="none"
-           id="path19" />
+           id="path19"
+           style="stroke:#ffffff;stroke-opacity:1" />
       </g>
       <g
          fill="none"
          stroke="#000000"
          stroke-linejoin="bevel"
          font-style="normal"
-         transform="translate(1485,1050)"
+         transform="matrix(1.000005,0,0,1,2969.7402,1699)"
          font-weight="400"
          stroke-width="2.5"
          font-size="29.1042px"
          stroke-linecap="round"
          font-family="'MS Shell Dlg 2'"
          stroke-opacity="1"
-         id="g21">
+         id="g21"
+         style="stroke:#ffffff;stroke-opacity:1">
         <path
            d="M 19.6299,875 V -732.369"
            fill-rule="evenodd"
            vector-effect="none"
-           id="path20" />
+           id="path20"
+           style="stroke:#ffffff;stroke-opacity:1" />
       </g>
       <g
          fill="none"
          stroke="#000000"
          stroke-linejoin="bevel"
          font-style="normal"
-         transform="translate(1485,1050)"
+         transform="matrix(1.000005,0,0,1,2969.7402,1699)"
          font-weight="400"
          stroke-width="2.5"
          font-size="29.1042px"
          stroke-linecap="round"
          font-family="'MS Shell Dlg 2'"
          stroke-opacity="1"
-         id="g22">
+         id="g22"
+         style="stroke:#ffffff;stroke-opacity:1">
         <path
            d="M -39.2598,875 V -732.369"
            fill-rule="evenodd"
            vector-effect="none"
-           id="path21" />
+           id="path21"
+           style="stroke:#ffffff;stroke-opacity:1" />
       </g>
       <g
          fill="none"
          stroke="#000000"
          stroke-linejoin="bevel"
          font-style="normal"
-         transform="translate(1485,1050)"
+         transform="matrix(1.000005,0,0,1,2969.7402,1699)"
          font-weight="400"
          stroke-width="2.5"
          font-size="29.1042px"
          stroke-linecap="round"
          font-family="'MS Shell Dlg 2'"
          stroke-opacity="1"
-         id="g23">
+         id="g23"
+         style="stroke:#ffffff;stroke-opacity:1">
         <path
            d="m -39.2598,875 h 19.6299"
            fill-rule="evenodd"
            vector-effect="none"
-           id="path22" />
+           id="path22"
+           style="stroke:#ffffff;stroke-opacity:1" />
       </g>
       <g
          fill="none"
          stroke="#000000"
          stroke-linejoin="bevel"
          font-style="normal"
-         transform="translate(1485,1050)"
+         transform="matrix(1.000005,0,0,1,2969.7402,1699)"
          font-weight="400"
          stroke-width="2.5"
          font-size="29.1042px"
          stroke-linecap="round"
          font-family="'MS Shell Dlg 2'"
          stroke-opacity="1"
-         id="g24">
+         id="g24"
+         style="stroke:#ffffff;stroke-opacity:1">
         <path
            d="M 39.2598,875 V -732.369"
            fill-rule="evenodd"
            vector-effect="none"
-           id="path23" />
+           id="path23"
+           style="stroke:#ffffff;stroke-opacity:1" />
       </g>
       <g
          fill="none"
          stroke="#000000"
          stroke-linejoin="bevel"
          font-style="normal"
-         transform="translate(1485,1050)"
+         transform="matrix(1.000005,0,0,1,2969.7402,1699)"
          font-weight="400"
          stroke-width="2.5"
          font-size="29.1042px"
          stroke-linecap="round"
          font-family="'MS Shell Dlg 2'"
          stroke-opacity="1"
-         id="g25">
+         id="g25"
+         style="stroke:#ffffff;stroke-opacity:1">
         <path
            d="M 19.6299,875 H 39.2598"
            fill-rule="evenodd"
            vector-effect="none"
-           id="path24" />
+           id="path24"
+           style="stroke:#ffffff;stroke-opacity:1" />
       </g>
       <g
          fill="none"
          stroke="#000000"
          stroke-linejoin="bevel"
          font-style="normal"
-         transform="translate(1485,1050)"
+         transform="matrix(1.000005,0,0,1,2969.7402,1699)"
          font-weight="400"
          stroke-width="2.5"
          font-size="29.1042px"
          stroke-linecap="round"
          font-family="'MS Shell Dlg 2'"
          stroke-opacity="1"
-         id="g26">
+         id="g26"
+         style="stroke:#ffffff;stroke-opacity:1">
         <path
            d="M 3.39052,-872.369 C 2.9938,-873.917 1.59845,-875 1.67712e-5,-875"
            fill-rule="evenodd"
            vector-effect="none"
-           id="path25" />
+           id="path25"
+           style="stroke:#ffffff;stroke-opacity:1" />
       </g>
       <g
          fill="none"
          stroke="#000000"
          stroke-linejoin="bevel"
          font-style="normal"
-         transform="translate(1485,1050)"
+         transform="matrix(1.000005,0,0,1,2969.7402,1699)"
          font-weight="400"
          stroke-width="2.5"
          font-size="29.1042px"
          stroke-linecap="round"
          font-family="'MS Shell Dlg 2'"
          stroke-opacity="1"
-         id="g27">
+         id="g27"
+         style="stroke:#ffffff;stroke-opacity:1">
         <path
            d="m 3.3905,-872.369 35.8693,140"
            fill-rule="evenodd"
            vector-effect="none"
-           id="path26" />
+           id="path26"
+           style="stroke:#ffffff;stroke-opacity:1" />
       </g>
       <g
          fill="none"
          stroke="#000000"
          stroke-linejoin="bevel"
          font-style="normal"
-         transform="translate(1485,1050)"
+         transform="matrix(1.000005,0,0,1,2969.7402,1699)"
          font-weight="400"
          stroke-width="2.5"
          font-size="29.1042px"
          stroke-linecap="round"
          font-family="'MS Shell Dlg 2'"
          stroke-opacity="1"
-         id="g28">
+         id="g28"
+         style="stroke:#ffffff;stroke-opacity:1">
         <path
            d="m -3.3905,-872.369 h 6.781"
            fill-rule="evenodd"
            vector-effect="none"
-           id="path27" />
+           id="path27"
+           style="stroke:#ffffff;stroke-opacity:1" />
       </g>
     </g>
   </g>

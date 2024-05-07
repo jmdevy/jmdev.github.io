@@ -1,9 +1,9 @@
 <?xml version="1.0" encoding="UTF-8" standalone="no"?>
 <svg
    width="305.04999mm"
-   height="25.65mm"
+   height="305.04999mm"
    version="1.2"
-   viewBox="0 0 3050.4999 256.5"
+   viewBox="0 0 3050.4999 3050.4999"
    id="svg6"
    sodipodi:docname="large_ruler.svg"
    inkscape:version="1.3.2 (091e20e, 2023-11-25, custom)"
@@ -16,23 +16,23 @@
    xmlns:dc="http://purl.org/dc/elements/1.1/">
   <sodipodi:namedview
      id="namedview6"
-     pagecolor="#ffffff"
+     pagecolor="#777777"
      bordercolor="#000000"
      borderopacity="0.25"
      inkscape:showpageshadow="2"
      inkscape:pageopacity="0.0"
      inkscape:pagecheckerboard="0"
-     inkscape:deskcolor="#d1d1d1"
+     inkscape:deskcolor="#5d5d5d"
      inkscape:document-units="mm"
-     inkscape:zoom="1.0847917"
-     inkscape:cx="576.60841"
-     inkscape:cy="48.396389"
+     inkscape:zoom="0.38353178"
+     inkscape:cx="522.77284"
+     inkscape:cy="452.3745"
      inkscape:window-width="1920"
      inkscape:window-height="1057"
-     inkscape:window-x="-8"
-     inkscape:window-y="-3"
+     inkscape:window-x="1912"
+     inkscape:window-y="-4"
      inkscape:window-maximized="1"
-     inkscape:current-layer="Page" />
+     inkscape:current-layer="DrawingContent" />
   <title
      id="title1">FreeCAD SVG Export</title>
   <desc
@@ -52,22 +52,6 @@
        fill-rule="evenodd"
        stroke-width="1"
        stroke-linecap="square">
-      <g
-         fill="#ffffff"
-         stroke="none"
-         font-style="normal"
-         transform="translate(1485,1050)"
-         font-weight="400"
-         fill-opacity="1"
-         font-size="29.1042px"
-         font-family="'MS Shell Dlg 2'"
-         id="g1">
-        <path
-           d="M 1524,127 V -127 H -1524 V 127 H 1524"
-           fill-rule="evenodd"
-           vector-effect="non-scaling-stroke"
-           id="path1" />
-      </g>
       <g
          fill="none"
          stroke="#000000"
@@ -93,76 +77,84 @@
          stroke="#000000"
          stroke-linejoin="bevel"
          font-style="normal"
-         transform="translate(1485,1050)"
+         transform="translate(1485,2447)"
          font-weight="400"
          stroke-width="2.5"
          font-size="29.1042px"
          stroke-linecap="round"
          font-family="'MS Shell Dlg 2'"
          stroke-opacity="1"
-         id="g3">
+         id="g3"
+         style="fill:#000000;fill-opacity:1;stroke:#ffffff;stroke-opacity:1">
         <path
            d="M -1524,-127 V 127"
            fill-rule="evenodd"
            vector-effect="none"
-           id="path2" />
+           id="path2"
+           style="fill:#000000;fill-opacity:1;stroke:#ffffff;stroke-opacity:1" />
       </g>
       <g
          fill="none"
          stroke="#000000"
          stroke-linejoin="bevel"
          font-style="normal"
-         transform="translate(1485,1050)"
+         transform="translate(1485,2447)"
          font-weight="400"
          stroke-width="2.5"
          font-size="29.1042px"
          stroke-linecap="round"
          font-family="'MS Shell Dlg 2'"
          stroke-opacity="1"
-         id="g4">
+         id="g4"
+         style="fill:#000000;fill-opacity:1;stroke:#ffffff;stroke-opacity:1">
         <path
            d="M 1524,-127 H -1524"
            fill-rule="evenodd"
            vector-effect="none"
-           id="path3" />
+           id="path3"
+           style="fill:#000000;fill-opacity:1;stroke:#ffffff;stroke-opacity:1" />
       </g>
       <g
          fill="none"
          stroke="#000000"
          stroke-linejoin="bevel"
          font-style="normal"
-         transform="translate(1485,1050)"
+         transform="translate(1485,2447)"
          font-weight="400"
          stroke-width="2.5"
          font-size="29.1042px"
          stroke-linecap="round"
          font-family="'MS Shell Dlg 2'"
          stroke-opacity="1"
-         id="g5">
+         id="g5"
+         style="fill:#000000;fill-opacity:1;stroke:#ffffff;stroke-opacity:1">
         <path
            d="M 1524,127 V -127"
            fill-rule="evenodd"
            vector-effect="none"
-           id="path4" />
+           id="path4"
+           style="fill:#000000;fill-opacity:1;stroke:#ffffff;stroke-opacity:1" />
       </g>
       <g
          fill="none"
          stroke="#000000"
          stroke-linejoin="bevel"
          font-style="normal"
-         transform="translate(1485,1050)"
+         transform="translate(1485,2447)"
          font-weight="400"
          stroke-width="2.5"
          font-size="29.1042px"
          stroke-linecap="round"
          font-family="'MS Shell Dlg 2'"
          stroke-opacity="1"
-         id="g6">
+         id="g6"
+         style="fill:#000000;fill-opacity:1;stroke:#ffffff;stroke-opacity:1">
         <path
            d="M -1524,127 H 1524"
            fill-rule="evenodd"
            vector-effect="none"
-           id="path5" />
+           id="path5"
+           style="fill:#000000;fill-opacity:1;stroke:#ffffff;stroke-opacity:1" />
       </g>
     </g>
   </g>
