@@ -20,7 +20,7 @@ During the entire design process I will include citations inside my drawings for
 
 * [**Snap-Fit Joints for Plastics**](https://web.archive.org/web/20230816100057/https://fab.cba.mit.edu/classes/S62.12/people/vernelle.noel/Plastic_Snap_fit_design.pdf){:target="_blank"}{:rel="noopener noreferrer"}
 
-* [**Engineering Plastics Joining Techniques**](https://web.archive.org/web/20230816100057/https://fab.cba.mit.edu/classes/S62.12/people/vernelle.noel/Plastic_Snap_fit_design.pdf){:target="_blank"}{:rel="noopener noreferrer"}
+* [**Engineering Plastics Joining Techniques**](https://web.archive.org/web/20230602222325/https://techcenter.lanxess.com/scp/americas/en/docguard/Joining_Guide.pdf?docId=77016){:target="_blank"}{:rel="noopener noreferrer"}
 
 ## **Product Features**
 What are we designing? Well I, the author, wanted a simple stand that holds my Iphone on its side while charging at night. This will allow me to [**StandBy**](https://support.apple.com/guide/iphone/use-standby-iph878d77632/ios){:target="_blank"}{:rel="noopener noreferrer"} to have a bedside clock. Here's what I want:
