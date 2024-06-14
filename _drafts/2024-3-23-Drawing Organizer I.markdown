@@ -244,7 +244,7 @@ The detector switch boards will contain 3 signals that will be LOW when no pen/p
 
 Where connections **S0**, **S1**, an **S2** will be detector signals that will be read by the microcontroller constantly.
 
-Well, after looking at DigiKey and Mouser the idea of cables and connectors to connect the LED and switch boards to the main board will have to be abandoned, out of principle. At the time of writing this, the cheapest cables, *just the cables* cost about $1. We'll just go with some non solid core wire manually soldered from board to board.
+After looking at DigiKey and Mouser the idea of cables and connectors to connect the LED and switch boards to the main board will have to be abandoned, out of principle. At the time of writing this, the cheapest cables, *just the cables*, cost about $1. We'll just go with some non solid core wire manually soldered from board to board.
 
 #### Screws
 Although there is a bunch of theory around what type of screw to choose for different materials, we're just going to go with what fits in the room we have. A company I've used for cheap thread forming (not thread cutting) screws is [**WKOOA**](https://www.wkooa.com/product/small-self-tapping-screws-for-electronic-phillips-pan-head-black/){:target="_blank"}.
