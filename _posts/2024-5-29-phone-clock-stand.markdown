@@ -42,6 +42,6 @@ What are we designing? Well I, the author, wanted a simple stand that holds my I
 <br>
 
 <div style="width:100%; display:flex; justify-content:center; align-items:center; margin-top:25px">
-    <img width="75%" src="/assets/2024-5-29-phone-clock-stand-hands-on-guide-to-plastic-design/names_drawing.svg" alt="Names Extents"/>
+    <img width="75%" src="/assets/2024-5-29-phone-clock-stand-hands-on-guide-to-plastic-design/names_drawing.svg" alt="Part Names"/>
 </div>
-<center><i>Figure 2: Names Extents</i></center>
+<center><i>Figure 2: Part Names</i></center>
