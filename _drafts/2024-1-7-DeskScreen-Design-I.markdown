@@ -107,6 +107,7 @@ According to the above diagram and the resolution stated earlier, 16 rows + 32 c
 
 Because of the size of the screen, 2 shift registers will be needed since each has 16 outputs (16-bit registers). Two to control the columns and transistors connected to the IC GPIO to control the rows.
 
+
 #### **Dimming LEDs**
 To provide another dimension to the display, the LEDs should be dimmable so that basic grayscale is possible. _Figure 2_ shows that all LEDs in a row get activated when the corresponding columns are closed, so _how can the LEDs be individually dimmed with respect to the LEDs in the same row?_ Although PWM is the typical solution, I came up with a different solution that suits the multiplexed configuration a little better.
 
@@ -162,14 +163,28 @@ int main(int argc, char *argv[]){
     return 0;
 }
 ```
+<p class="center"><i>Figure 3: Simple Pseudo C Code for Turning LEDs ON in Dimmable Fashion</i></p>
 
 <center>
     <video width="640" height="480" controls>
         <source src="/assets/2024-1-7-DeskScreen-Design-I/driving_leds_animation.webm" type="video/webm">
     </video>
 </center>
+<p class="center"><i>Figure 4: Example of fig. 3 Code in Action</i></p>
 
 
+#### **The LED**
+To give the display a warm feeling, these [5630 Series 3000K 65mA CreeLED](https://www.digikey.com/en/products/detail/samsung-semiconductor-inc/SPMWH22286D7WAQMS3/7560861){:target="_blank"}{:rel="noopener noreferrer"} LEDs should do the job. So, *what voltage and current should these be driven at? What does that configuration look like in conjunction with the current sinking shift register?*
+
+
+---
+---
+---
+---
+---
+---
+---
+---
 ---
 
 #### **Evaluating the TLC59283 Shift Register**
