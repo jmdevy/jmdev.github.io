@@ -1,0 +1,97 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="48.942mm" height="39.468mm" version="1.2" viewBox="0 0 489.42 394.68" xmlns="http://www.w3.org/2000/svg" xmlns:cc="http://creativecommons.org/ns#" xmlns:dc="http://purl.org/dc/elements/1.1/" xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#">
+ <title>FreeCAD SVG Export</title>
+ <desc>Drawing page: Page exported from FreeCAD document: LED_LM281BA_</desc>
+ <g id="Page" transform="translate(-1807.7 -1137.1)">
+  <g id="A4_Landscape_blank.svg" transform="scale(10)">
+   <metadata>
+    <rdf:RDF>
+     <cc:Work rdf:about="">
+      <dc:format>image/svg+xml</dc:format>
+      <dc:type rdf:resource="http://purl.org/dc/dcmitype/StillImage"/>
+      <dc:title>FreeCAD SVG Export</dc:title>
+     </cc:Work>
+    </rdf:RDF>
+   </metadata>
+  </g>
+  <g id="DrawingContent" fill="none" fill-rule="evenodd" font-family="'MS Shell Dlg 2'" font-size="29.104px" font-weight="400" stroke="#000" stroke-linecap="square" stroke-linejoin="bevel">
+   <g transform="translate(1485,1050)" fill="none" stroke="#000" stroke-linecap="square" stroke-linejoin="bevel">
+    <rect width="0" height="0" fill="#fff" stroke="#fff"/>
+   </g>
+   <g transform="translate(2021.1 1381.5)" fill="#f1f3f5" fill-opacity="0" fill-rule="evenodd" stroke="none">
+    <path d="m-42.426 132.68 28.284 16.33 226.27-130.64v-53.072l-197.99-114.31-226.27 130.64v53.072l18.385 10.614v11.431l141.42 81.65 9.8995-5.715" vector-effect="non-scaling-stroke"/>
+    <path d="m-14.142 95.938 226.27-130.64-197.99-114.31-226.27 130.64 197.99 114.31" vector-effect="non-scaling-stroke"/>
+    <path d="m-14.142 149.01v-53.073l226.27-130.64v53.072l-226.27 130.64" vector-effect="non-scaling-stroke"/>
+    <path d="m-212.13 34.701 18.385 10.614v-8.9815l9.899-5.7155 141.42 81.649v20.413l28.284 16.33v-53.073l-197.99-114.31v53.072" vector-effect="non-scaling-stroke"/>
+    <path d="m-52.326 138.4-141.42-81.65v-20.412l141.42 81.65v20.412" vector-effect="non-scaling-stroke"/>
+    <path d="m-183.85 30.619 141.42 81.649-9.8995 5.716-141.42-81.65 9.899-5.7155" vector-effect="non-scaling-stroke"/>
+    <path d="m-42.426 112.27v20.413l-9.8995 5.715v-20.412l9.8995-5.716" vector-effect="non-scaling-stroke"/>
+   </g>
+   <g stroke-linejoin="bevel">
+    <g transform="translate(2021.1 1381.5)" fill="#fff" fill-rule="evenodd" stroke="#fff" stroke-linecap="round" stroke-width="2.5">
+     <path d="m-14.142 149.01v-53.073"/>
+     <path d="m212.13 18.371v-53.072"/>
+     <path d="m-14.142 149.01 226.27-130.64"/>
+     <path d="m-14.142 95.938 226.27-130.64"/>
+     <path d="m-212.13 34.701 18.385 10.614"/>
+     <path d="m-183.85 30.619 141.42 81.649"/>
+     <path d="m-42.426 112.27v20.413"/>
+     <path d="m-42.426 132.68 28.284 16.33"/>
+     <path d="m-212.13-18.371 197.99 114.31"/>
+     <path d="m-212.13 34.701v-53.072"/>
+     <path d="m212.13-34.701-197.99-114.31"/>
+     <path d="m14.142-149.01-226.27 130.64"/>
+     <path d="m-193.75 36.334 9.899-5.7155"/>
+     <path d="m-193.75 56.746v-20.412"/>
+     <path d="m-42.426 112.27-9.8995 5.716"/>
+     <path d="m-52.326 117.98-141.42-81.65"/>
+     <path d="m-42.426 132.68-9.8995 5.715"/>
+     <path d="m-52.326 138.4v-20.412"/>
+     <path d="m-52.326 138.4-141.42-81.65"/>
+    </g>
+    <g transform="rotate(-30 3471.2 -3106.1)" fill="#fff" stroke="#000" stroke-linecap="square">
+     <text x="4" y="92" fill="#ffffff" font-family="osifont" font-size="67px" font-weight="400" stroke="none" xml:space="preserve">3.2</text>
+    </g>
+    <g transform="translate(2021.1 1381.5)" fill="none" stroke="#000" stroke-linecap="round" stroke-width="1.3">
+     <path d="m-14.142 64.881 226.27-130.64m0 31.057v-41.457m-226.27 172.1v-41.457" fill="#fff" fill-rule="evenodd" stroke="#fff"/>
+    </g>
+   </g>
+   <g stroke="#000" stroke-linejoin="bevel">
+    <g transform="translate(2233.3 1315.8)" fill="#f5f5f5" stroke-linecap="round" stroke-width="1.3">
+     <path d="M 0,0 -18.9872,7.11325 -15.6538,12.8868 0,0" fill="#f5f5f5" fill-rule="evenodd" stroke="#fff"/>
+    </g>
+    <g transform="translate(2007 1446.4)" fill="#fcfcfc" stroke-linecap="round" stroke-width="1.3">
+     <path d="M 0,0 18.9872,-7.11325 15.6538,-12.8868 0,0" fill="#fcfcfc" fill-rule="evenodd" stroke="#fff"/>
+    </g>
+    <g transform="rotate(30 -1427.9 4255.4)" fill="#fff" stroke-linecap="square">
+     <text x="4" y="92" fill="#ffffff" font-family="osifont" font-size="67px" font-weight="400" stroke="none" xml:space="preserve">2.8</text>
+    </g>
+   </g>
+   <g transform="translate(2021.1 1381.5)" fill="none" stroke="#000" stroke-linecap="round" stroke-linejoin="bevel" stroke-width="1.3">
+    <path d="m-14.142 63.798-197.99-114.31m0 32.141v-42.541m197.99 156.85v-42.541" fill="#fff" fill-rule="evenodd" stroke="#fff"/>
+   </g>
+   <g fill="#fff" stroke="#000" stroke-linejoin="bevel">
+    <g transform="translate(1809,1331)" stroke-linecap="round" stroke-width="1.3">
+     <path d="M 0,0 15.6538,12.8868 18.9872,7.11325 0,0" fill="#fff" fill-rule="evenodd" stroke="#fff"/>
+    </g>
+    <g transform="translate(2007 1445.3)" stroke-linecap="round" stroke-width="1.3">
+     <path d="M 0,0 -15.6538,-12.8868 -18.9872,-7.11325 0,0" fill="#fff" fill-rule="evenodd" stroke="#fff"/>
+    </g>
+    <g transform="rotate(-90 1736 -447.46)" stroke-linecap="square">
+     <text x="4" y="92" fill="#ffffff" font-family="osifont" font-size="67px" font-weight="400" stroke="none" xml:space="preserve">0.65</text>
+    </g>
+   </g>
+   <g stroke="#000" stroke-linecap="round" stroke-linejoin="bevel" stroke-width="1.3">
+    <g transform="translate(2021.1 1381.5)" fill="none">
+     <path d="m266.38 27.049v-235.61m-54.251 173.86 63.258-36.522m-63.258 89.594 63.258-36.522" fill="#fff" fill-rule="evenodd" stroke="#fff"/>
+    </g>
+    <g transform="translate(2287.5 1315.5)" fill="#fafafa">
+     <path d="m0 0 3.3333-20h-6.6667l3.3333 20" fill="#fafafa" fill-rule="evenodd" stroke="#fff"/>
+    </g>
+    <g transform="translate(2287.5 1368.6)" fill="#fff">
+     <path d="m0 0-3.3333 20h6.6667l-3.3333-20" fill="#fff" fill-rule="evenodd" stroke="#fff"/>
+    </g>
+   </g>
+  </g>
+ </g>
+</svg>

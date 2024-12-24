@@ -1,6 +1,6 @@
 ---
 layout: post
-title:  Electrical Engineering 1 - Voltage
+title:  Electrical Engineering 1 - Voltage, Basic
 date:   2024-8-5 00:00:00 -0500
 categories: jekyll update
 ---
@@ -20,7 +20,7 @@ _NOTE: There are clarifying summary notes at the end of sections, indicated by [
 
 
 # _What is **Voltage At a Point?**_
-Think of this term, "**voltage**," as the **pressure** at a point.
+Think of this term, "**voltage**," as the **pressure** at a point (more on the **pressure** idea in later chapters...).
 
 Where is this point? For us, the **voltage** (**pressure**) is on a segment of wire. Wire connected to a **voltage at a point** takes on/continues the **voltage** at that point.
 
@@ -28,7 +28,7 @@ We'll say that two points of **voltages** are created by two sides of a battery,
 
 <br>
 <div style="flex:1; display:flex; justify-content:center; align-items:center; flex-flow:column">
-    <img width="35%" src="/assets/2024-8-5-Electrical-Engineering-1-Voltage/voltage-at-a-point.svg" alt="voltage at points"/>
+    <img width="35%" src="/assets/2024-8-5-Electrical-Engineering-1-Voltage-Basic/voltage-at-a-point.svg" alt="voltage at points"/>
 </div>
 <center><i>Figure 1</i></center>
 <br>
@@ -43,17 +43,17 @@ As you can see, the **voltage** of the wire connected to the "+" side is _5V_ (i
 <br>
 
 
-# _What is **Voltage Difference?**_
-Think of **voltage difference** as a **pressure difference** between wires. **Voltage difference** is commonly created by two sides of a battery, as in _Figure 1_
+# _What is **Total Voltage Difference?**_
+Think of **total voltage difference** as the _**total**_ **pressure difference** between wires. **Total voltage difference** is commonly created by two sides of a battery, as in _Figure 1_, because the battery creates two points of **different voltages** at **different points**.
 
-For example, the **voltage difference** between wire _A_ and wire _B_ can be expressed as:
+For example, in _Figure 1_, the **total voltage difference** between wire _A_ and wire _B_ can be expressed as:
 
 $$\begin{align}  V_{AB} &= V_A - V_B  \\  &= 5V - 0V  \\  &= \boxed{5V}  \end{align}$$
 
 <center><i>Equation 1</i></center>
 <br>
 
-It's important to know that you can also express the voltage from _B_ to _A_ (_Figure 1_) as
+It's important to know that you can also express the voltage from _B_ to _A_ as
 
 $$\begin{align}  V_{BA} &= V_B - V_A  \\  &= 0V - 5V  \\  &= \boxed{-5V}  \end{align}$$
 
@@ -70,7 +70,7 @@ $$\begin{align}  V_{BA} &= V_B - V_A  \\  &= 0V - 5V  \\  &= \boxed{-5V}  \end{a
 
 # _**Summary**_
 * _Two points of voltage are created by the two ends of a battery_
-* _Voltage difference is the difference of the voltage values at two points/ends of a battery/wires and can be expressed in two directions_
+* _Voltage difference is the **total** difference of the voltage values at two points/ends of a battery/wires and can be expressed in two directions_
 
 
 <br>
@@ -83,10 +83,10 @@ $$\begin{align}  V_{BA} &= V_B - V_A  \\  &= 0V - 5V  \\  &= \boxed{-5V}  \end{a
 # _**Exercises**_
 
 #### **#1**
-What is the voltage difference $$V_{AB}$$ and $$V_{BA}$$ of the following setup:
+What is the total voltage difference $$V_{AB}$$ and $$V_{BA}$$ of the following setup:
 <br>
 <div style="flex:1; display:flex; justify-content:center; align-items:center; flex-flow:column">
-    <img width="35%" src="/assets/2024-8-5-Electrical-Engineering-1-Voltage/exercise_1.svg" alt="exercise #1 image"/>
+    <img width="35%" src="/assets/2024-8-5-Electrical-Engineering-1-Voltage-Basic/exercise_1.svg" alt="exercise #1 image"/>
 </div>
 <center><i>Figure 2</i></center>
 <br>

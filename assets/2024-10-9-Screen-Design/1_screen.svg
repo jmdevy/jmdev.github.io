@@ -1,0 +1,1184 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="122.52mm" height="54.592mm" version="1.2" viewBox="0 0 1225.2 545.92" xmlns="http://www.w3.org/2000/svg" xmlns:cc="http://creativecommons.org/ns#" xmlns:dc="http://purl.org/dc/elements/1.1/" xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#">
+ <title>FreeCAD SVG Export</title>
+ <desc>Drawing page: Page exported from FreeCAD document: model</desc>
+ <g id="Page" transform="translate(-921.75 -708.93)">
+  <g id="A4_Landscape_blank1.svg" transform="scale(10)">
+   <metadata>
+    <rdf:RDF>
+     <cc:Work rdf:about="">
+      <dc:format>image/svg+xml</dc:format>
+      <dc:type rdf:resource="http://purl.org/dc/dcmitype/StillImage"/>
+      <dc:title>FreeCAD SVG Export</dc:title>
+     </cc:Work>
+    </rdf:RDF>
+   </metadata>
+  </g>
+  <g id="DrawingContent" fill="none" fill-rule="evenodd" font-family="'MS Shell Dlg 2'" font-size="29.104px" font-weight="400" stroke="#fff" stroke-linecap="square" stroke-linejoin="bevel">
+   <g transform="translate(1485,1050)" fill="#f1f3f5" fill-opacity="0" fill-rule="evenodd">
+    <path d="m-562 203.6h1124v-407.2h-1124v407.2" vector-effect="non-scaling-stroke"/>
+    <path d="m-517.2-114h-40.8v-40.8h40.8v40.8" vector-effect="non-scaling-stroke"/>
+    <path d="m-558 158.8v40.8h40.8v-40.8h-40.8" vector-effect="non-scaling-stroke"/>
+    <path d="m-517.2 110h-40.8v-40.8h40.8v40.8" vector-effect="non-scaling-stroke"/>
+    <path d="m-517.2 65.2h-40.8v-40.8h40.8v40.8" vector-effect="non-scaling-stroke"/>
+    <path d="m-517.2-158.8h-40.8v-40.8h40.8v40.8" vector-effect="non-scaling-stroke"/>
+    <path d="m-517.2 154.8h-40.8v-40.8h40.8v40.8" vector-effect="non-scaling-stroke"/>
+    <path d="m-517.2-24.4h-40.8v-40.8h40.8v40.8" vector-effect="non-scaling-stroke"/>
+    <path d="m-517.2-69.2h-40.8v-40.8h40.8v40.8" vector-effect="non-scaling-stroke"/>
+    <path d="m-517.2 20.4h-40.8v-40.8h40.8v40.8" vector-effect="non-scaling-stroke"/>
+    <path d="m472.4 199.6v-40.8h40.8v40.8h-40.8" vector-effect="non-scaling-stroke"/>
+    <path d="m-513.2 199.6v-40.8h40.8v40.8h-40.8" vector-effect="non-scaling-stroke"/>
+    <path d="m-378.8 199.6v-40.8h40.8v40.8h-40.8" vector-effect="non-scaling-stroke"/>
+    <path d="m513.2-114h-40.8v-40.8h40.8v40.8" vector-effect="non-scaling-stroke"/>
+    <path d="m158.8 199.6v-40.8h40.8v40.8h-40.8" vector-effect="non-scaling-stroke"/>
+    <path d="m24.4 199.6v-40.8h40.8v40.8h-40.8" vector-effect="non-scaling-stroke"/>
+    <path d="m-20.4 199.6v-40.8h40.8v40.8h-40.8" vector-effect="non-scaling-stroke"/>
+    <path d="m-154.8 199.6v-40.8h40.8v40.8h-40.8" vector-effect="non-scaling-stroke"/>
+    <path d="m-199.6 199.6v-40.8h40.8v40.8h-40.8" vector-effect="non-scaling-stroke"/>
+    <path d="m293.2 199.6v-40.8h40.8v40.8h-40.8" vector-effect="non-scaling-stroke"/>
+    <path d="m-334 199.6v-40.8h40.8v40.8h-40.8" vector-effect="non-scaling-stroke"/>
+    <path d="m-468.4 199.6v-40.8h40.8v40.8h-40.8" vector-effect="non-scaling-stroke"/>
+    <path d="m423.6 154.8h-40.8v-40.8h40.8v40.8" vector-effect="non-scaling-stroke"/>
+    <path d="m-289.2 199.6v-40.8h40.8v40.8h-40.8" vector-effect="non-scaling-stroke"/>
+    <path d="m427.6 199.6v-40.8h40.8v40.8h-40.8" vector-effect="non-scaling-stroke"/>
+    <path d="m-244.4 199.6v-40.8h40.8v40.8h-40.8" vector-effect="non-scaling-stroke"/>
+    <path d="m114 199.6v-40.8h40.8v40.8h-40.8" vector-effect="non-scaling-stroke"/>
+    <path d="m-65.2 199.6v-40.8h40.8v40.8h-40.8" vector-effect="non-scaling-stroke"/>
+    <path d="m69.2 199.6v-40.8h40.8v40.8h-40.8" vector-effect="non-scaling-stroke"/>
+    <path d="m-110 199.6v-40.8h40.8v40.8h-40.8" vector-effect="non-scaling-stroke"/>
+    <path d="m203.6 199.6v-40.8h40.8v40.8h-40.8" vector-effect="non-scaling-stroke"/>
+    <path d="m248.4 199.6v-40.8h40.8v40.8h-40.8" vector-effect="non-scaling-stroke"/>
+    <path d="m-423.6 199.6v-40.8h40.8v40.8h-40.8" vector-effect="non-scaling-stroke"/>
+    <path d="m-293.2 154.8h-40.8v-40.8h40.8v40.8" vector-effect="non-scaling-stroke"/>
+    <path d="m382.8 199.6v-40.8h40.8v40.8h-40.8" vector-effect="non-scaling-stroke"/>
+    <path d="m338 199.6v-40.8h40.8v40.8h-40.8" vector-effect="non-scaling-stroke"/>
+    <path d="m-338-158.8h-40.8v-40.8h40.8v40.8" vector-effect="non-scaling-stroke"/>
+    <path d="m-472.4-158.8h-40.8v-40.8h40.8v40.8" vector-effect="non-scaling-stroke"/>
+    <path d="m-338 154.8h-40.8v-40.8h40.8v40.8" vector-effect="non-scaling-stroke"/>
+    <path d="m558-158.8h-40.8v-40.8h40.8v40.8" vector-effect="non-scaling-stroke"/>
+    <path d="m468.4-114h-40.8v-40.8h40.8v40.8" vector-effect="non-scaling-stroke"/>
+    <path d="m378.8 154.8h-40.8v-40.8h40.8v40.8" vector-effect="non-scaling-stroke"/>
+    <path d="m423.6-158.8h-40.8v-40.8h40.8v40.8" vector-effect="non-scaling-stroke"/>
+    <path d="m-158.8-158.8h-40.8v-40.8h40.8v40.8" vector-effect="non-scaling-stroke"/>
+    <path d="m199.6-158.8h-40.8v-40.8h40.8v40.8" vector-effect="non-scaling-stroke"/>
+    <path d="m558-69.2h-40.8v-40.8h40.8v40.8" vector-effect="non-scaling-stroke"/>
+    <path d="m-472.4 110h-40.8v-40.8h40.8v40.8" vector-effect="non-scaling-stroke"/>
+    <path d="m-338 110h-40.8v-40.8h40.8v40.8" vector-effect="non-scaling-stroke"/>
+    <path d="m-114-114h-40.8v-40.8h40.8v40.8" vector-effect="non-scaling-stroke"/>
+    <path d="m-114 154.8h-40.8v-40.8h40.8v40.8" vector-effect="non-scaling-stroke"/>
+    <path d="m-248.4 110h-40.8v-40.8h40.8v40.8" vector-effect="non-scaling-stroke"/>
+    <path d="m558 65.2h-40.8v-40.8h40.8v40.8" vector-effect="non-scaling-stroke"/>
+    <path d="m423.6-24.4h-40.8v-40.8h40.8v40.8" vector-effect="non-scaling-stroke"/>
+    <path d="m-338-24.4h-40.8v-40.8h40.8v40.8" vector-effect="non-scaling-stroke"/>
+    <path d="m-114-158.8h-40.8v-40.8h40.8v40.8" vector-effect="non-scaling-stroke"/>
+    <path d="m199.6-24.4h-40.8v-40.8h40.8v40.8" vector-effect="non-scaling-stroke"/>
+    <path d="m-158.8 110h-40.8v-40.8h40.8v40.8" vector-effect="non-scaling-stroke"/>
+    <path d="m378.8 20.4h-40.8v-40.8h40.8v40.8" vector-effect="non-scaling-stroke"/>
+    <path d="m65.2 154.8h-40.8v-40.8h40.8v40.8" vector-effect="non-scaling-stroke"/>
+    <path d="m289.2-24.4h-40.8v-40.8h40.8v40.8" vector-effect="non-scaling-stroke"/>
+    <path d="m20.4 154.8h-40.8v-40.8h40.8v40.8" vector-effect="non-scaling-stroke"/>
+    <path d="m-293.2-158.8h-40.8v-40.8h40.8v40.8" vector-effect="non-scaling-stroke"/>
+    <path d="m558-114h-40.8v-40.8h40.8v40.8" vector-effect="non-scaling-stroke"/>
+    <path d="m-158.8-69.2h-40.8v-40.8h40.8v40.8" vector-effect="non-scaling-stroke"/>
+    <path d="m289.2 154.8h-40.8v-40.8h40.8v40.8" vector-effect="non-scaling-stroke"/>
+    <path d="m20.4-158.8h-40.8v-40.8h40.8v40.8" vector-effect="non-scaling-stroke"/>
+    <path d="m-158.8 154.8h-40.8v-40.8h40.8v40.8" vector-effect="non-scaling-stroke"/>
+    <path d="m244.4-158.8h-40.8v-40.8h40.8v40.8" vector-effect="non-scaling-stroke"/>
+    <path d="m-382.8-158.8h-40.8v-40.8h40.8v40.8" vector-effect="non-scaling-stroke"/>
+    <path d="m-248.4-158.8h-40.8v-40.8h40.8v40.8" vector-effect="non-scaling-stroke"/>
+    <path d="m199.6 110h-40.8v-40.8h40.8v40.8" vector-effect="non-scaling-stroke"/>
+    <path d="m65.2 110h-40.8v-40.8h40.8v40.8" vector-effect="non-scaling-stroke"/>
+    <path d="m65.2 20.4h-40.8v-40.8h40.8v40.8" vector-effect="non-scaling-stroke"/>
+    <path d="m20.4 20.4h-40.8v-40.8h40.8v40.8" vector-effect="non-scaling-stroke"/>
+    <path d="m-203.6-69.2h-40.8v-40.8h40.8v40.8" vector-effect="non-scaling-stroke"/>
+    <path d="m-158.8-114h-40.8v-40.8h40.8v40.8" vector-effect="non-scaling-stroke"/>
+    <path d="m20.4-114h-40.8v-40.8h40.8v40.8" vector-effect="non-scaling-stroke"/>
+    <path d="m378.8-69.2h-40.8v-40.8h40.8v40.8" vector-effect="non-scaling-stroke"/>
+    <path d="m558-24.4h-40.8v-40.8h40.8v40.8" vector-effect="non-scaling-stroke"/>
+    <path d="m468.4-69.2h-40.8v-40.8h40.8v40.8" vector-effect="non-scaling-stroke"/>
+    <path d="m513.2-69.2h-40.8v-40.8h40.8v40.8" vector-effect="non-scaling-stroke"/>
+    <path d="m513.2 65.2h-40.8v-40.8h40.8v40.8" vector-effect="non-scaling-stroke"/>
+    <path d="m-203.6 154.8h-40.8v-40.8h40.8v40.8" vector-effect="non-scaling-stroke"/>
+    <path d="m423.6 20.4h-40.8v-40.8h40.8v40.8" vector-effect="non-scaling-stroke"/>
+    <path d="m-248.4-114h-40.8v-40.8h40.8v40.8" vector-effect="non-scaling-stroke"/>
+    <path d="m-293.2 110h-40.8v-40.8h40.8v40.8" vector-effect="non-scaling-stroke"/>
+    <path d="m199.6 154.8h-40.8v-40.8h40.8v40.8" vector-effect="non-scaling-stroke"/>
+    <path d="m-338 65.2h-40.8v-40.8h40.8v40.8" vector-effect="non-scaling-stroke"/>
+    <path d="m289.2-114h-40.8v-40.8h40.8v40.8" vector-effect="non-scaling-stroke"/>
+    <path d="m244.4-114h-40.8v-40.8h40.8v40.8" vector-effect="non-scaling-stroke"/>
+    <path d="m-293.2-69.2h-40.8v-40.8h40.8v40.8" vector-effect="non-scaling-stroke"/>
+    <path d="m-382.8 110h-40.8v-40.8h40.8v40.8" vector-effect="non-scaling-stroke"/>
+    <path d="m-472.4-69.2h-40.8v-40.8h40.8v40.8" vector-effect="non-scaling-stroke"/>
+    <path d="m558 110h-40.8v-40.8h40.8v40.8" vector-effect="non-scaling-stroke"/>
+    <path d="m-472.4 20.4h-40.8v-40.8h40.8v40.8" vector-effect="non-scaling-stroke"/>
+    <path d="m-338 20.4h-40.8v-40.8h40.8v40.8" vector-effect="non-scaling-stroke"/>
+    <path d="m289.2-69.2h-40.8v-40.8h40.8v40.8" vector-effect="non-scaling-stroke"/>
+    <path d="m20.4-24.4h-40.8v-40.8h40.8v40.8" vector-effect="non-scaling-stroke"/>
+    <path d="m-114 65.2h-40.8v-40.8h40.8v40.8" vector-effect="non-scaling-stroke"/>
+    <path d="m-114 20.4h-40.8v-40.8h40.8v40.8" vector-effect="non-scaling-stroke"/>
+    <path d="m244.4 20.4h-40.8v-40.8h40.8v40.8" vector-effect="non-scaling-stroke"/>
+    <path d="m244.4-24.4h-40.8v-40.8h40.8v40.8" vector-effect="non-scaling-stroke"/>
+    <path d="m20.4 110h-40.8v-40.8h40.8v40.8" vector-effect="non-scaling-stroke"/>
+    <path d="m-203.6 20.4h-40.8v-40.8h40.8v40.8" vector-effect="non-scaling-stroke"/>
+    <path d="m65.2-24.4h-40.8v-40.8h40.8v40.8" vector-effect="non-scaling-stroke"/>
+    <path d="m199.6 65.2h-40.8v-40.8h40.8v40.8" vector-effect="non-scaling-stroke"/>
+    <path d="m513.2 20.4h-40.8v-40.8h40.8v40.8" vector-effect="non-scaling-stroke"/>
+    <path d="m65.2 65.2h-40.8v-40.8h40.8v40.8" vector-effect="non-scaling-stroke"/>
+    <path d="m378.8-24.4h-40.8v-40.8h40.8v40.8" vector-effect="non-scaling-stroke"/>
+    <path d="m20.4 65.2h-40.8v-40.8h40.8v40.8" vector-effect="non-scaling-stroke"/>
+    <path d="m289.2 65.2h-40.8v-40.8h40.8v40.8" vector-effect="non-scaling-stroke"/>
+    <path d="m558 20.4h-40.8v-40.8h40.8v40.8" vector-effect="non-scaling-stroke"/>
+    <path d="m65.2-114h-40.8v-40.8h40.8v40.8" vector-effect="non-scaling-stroke"/>
+    <path d="m199.6 20.4h-40.8v-40.8h40.8v40.8" vector-effect="non-scaling-stroke"/>
+    <path d="m289.2 20.4h-40.8v-40.8h40.8v40.8" vector-effect="non-scaling-stroke"/>
+    <path d="m-382.8-24.4h-40.8v-40.8h40.8v40.8" vector-effect="non-scaling-stroke"/>
+    <path d="m244.4-69.2h-40.8v-40.8h40.8v40.8" vector-effect="non-scaling-stroke"/>
+    <path d="m513.2-24.4h-40.8v-40.8h40.8v40.8" vector-effect="non-scaling-stroke"/>
+    <path d="m-203.6-24.4h-40.8v-40.8h40.8v40.8" vector-effect="non-scaling-stroke"/>
+    <path d="m-158.8 20.4h-40.8v-40.8h40.8v40.8" vector-effect="non-scaling-stroke"/>
+    <path d="m-114 110h-40.8v-40.8h40.8v40.8" vector-effect="non-scaling-stroke"/>
+    <path d="m423.6 65.2h-40.8v-40.8h40.8v40.8" vector-effect="non-scaling-stroke"/>
+    <path d="m65.2-69.2h-40.8v-40.8h40.8v40.8" vector-effect="non-scaling-stroke"/>
+    <path d="m65.2-158.8h-40.8v-40.8h40.8v40.8" vector-effect="non-scaling-stroke"/>
+    <path d="m-69.2 154.8h-40.8v-40.8h40.8v40.8" vector-effect="non-scaling-stroke"/>
+    <path d="m-472.4 65.2h-40.8v-40.8h40.8v40.8" vector-effect="non-scaling-stroke"/>
+    <path d="m199.6-69.2h-40.8v-40.8h40.8v40.8" vector-effect="non-scaling-stroke"/>
+    <path d="m-114-24.4h-40.8v-40.8h40.8v40.8" vector-effect="non-scaling-stroke"/>
+    <path d="m-248.4 20.4h-40.8v-40.8h40.8v40.8" vector-effect="non-scaling-stroke"/>
+    <path d="m20.4-69.2h-40.8v-40.8h40.8v40.8" vector-effect="non-scaling-stroke"/>
+    <path d="m-158.8-24.4h-40.8v-40.8h40.8v40.8" vector-effect="non-scaling-stroke"/>
+    <path d="m378.8 65.2h-40.8v-40.8h40.8v40.8" vector-effect="non-scaling-stroke"/>
+    <path d="m244.4 65.2h-40.8v-40.8h40.8v40.8" vector-effect="non-scaling-stroke"/>
+    <path d="m-427.6 20.4h-40.8v-40.8h40.8v40.8" vector-effect="non-scaling-stroke"/>
+    <path d="m-24.4-24.4h-40.8v-40.8h40.8v40.8" vector-effect="non-scaling-stroke"/>
+    <path d="m-248.4-24.4h-40.8v-40.8h40.8v40.8" vector-effect="non-scaling-stroke"/>
+    <path d="m244.4 110h-40.8v-40.8h40.8v40.8" vector-effect="non-scaling-stroke"/>
+    <path d="m513.2 110h-40.8v-40.8h40.8v40.8" vector-effect="non-scaling-stroke"/>
+    <path d="m-203.6-114h-40.8v-40.8h40.8v40.8" vector-effect="non-scaling-stroke"/>
+    <path d="m-203.6 110h-40.8v-40.8h40.8v40.8" vector-effect="non-scaling-stroke"/>
+    <path d="m423.6 110h-40.8v-40.8h40.8v40.8" vector-effect="non-scaling-stroke"/>
+    <path d="m-382.8 20.4h-40.8v-40.8h40.8v40.8" vector-effect="non-scaling-stroke"/>
+    <path d="m-338-69.2h-40.8v-40.8h40.8v40.8" vector-effect="non-scaling-stroke"/>
+    <path d="m-427.6 65.2h-40.8v-40.8h40.8v40.8" vector-effect="non-scaling-stroke"/>
+    <path d="m-293.2 20.4h-40.8v-40.8h40.8v40.8" vector-effect="non-scaling-stroke"/>
+    <path d="m-293.2-114h-40.8v-40.8h40.8v40.8" vector-effect="non-scaling-stroke"/>
+    <path d="m-248.4-69.2h-40.8v-40.8h40.8v40.8" vector-effect="non-scaling-stroke"/>
+    <path d="m-69.2 20.4h-40.8v-40.8h40.8v40.8" vector-effect="non-scaling-stroke"/>
+    <path d="m-427.6 110h-40.8v-40.8h40.8v40.8" vector-effect="non-scaling-stroke"/>
+    <path d="m-293.2 65.2h-40.8v-40.8h40.8v40.8" vector-effect="non-scaling-stroke"/>
+    <path d="m-69.2-158.8h-40.8v-40.8h40.8v40.8" vector-effect="non-scaling-stroke"/>
+    <path d="m-427.6-69.2h-40.8v-40.8h40.8v40.8" vector-effect="non-scaling-stroke"/>
+    <path d="m-338-114h-40.8v-40.8h40.8v40.8" vector-effect="non-scaling-stroke"/>
+    <path d="m-472.4-24.4h-40.8v-40.8h40.8v40.8" vector-effect="non-scaling-stroke"/>
+    <path d="m244.4 154.8h-40.8v-40.8h40.8v40.8" vector-effect="non-scaling-stroke"/>
+    <path d="m-24.4 20.4h-40.8v-40.8h40.8v40.8" vector-effect="non-scaling-stroke"/>
+    <path d="m154.8-24.4h-40.8v-40.8h40.8v40.8" vector-effect="non-scaling-stroke"/>
+    <path d="m-69.2 65.2h-40.8v-40.8h40.8v40.8" vector-effect="non-scaling-stroke"/>
+    <path d="m-24.4 154.8h-40.8v-40.8h40.8v40.8" vector-effect="non-scaling-stroke"/>
+    <path d="m-24.4 110h-40.8v-40.8h40.8v40.8" vector-effect="non-scaling-stroke"/>
+    <path d="m-24.4-114h-40.8v-40.8h40.8v40.8" vector-effect="non-scaling-stroke"/>
+    <path d="m110 20.4h-40.8v-40.8h40.8v40.8" vector-effect="non-scaling-stroke"/>
+    <path d="m110-158.8h-40.8v-40.8h40.8v40.8" vector-effect="non-scaling-stroke"/>
+    <path d="m110 110h-40.8v-40.8h40.8v40.8" vector-effect="non-scaling-stroke"/>
+    <path d="m-427.6-24.4h-40.8v-40.8h40.8v40.8" vector-effect="non-scaling-stroke"/>
+    <path d="m-69.2-24.4h-40.8v-40.8h40.8v40.8" vector-effect="non-scaling-stroke"/>
+    <path d="m-69.2-114h-40.8v-40.8h40.8v40.8" vector-effect="non-scaling-stroke"/>
+    <path d="m110 65.2h-40.8v-40.8h40.8v40.8" vector-effect="non-scaling-stroke"/>
+    <path d="m-24.4 65.2h-40.8v-40.8h40.8v40.8" vector-effect="non-scaling-stroke"/>
+    <path d="m-293.2-24.4h-40.8v-40.8h40.8v40.8" vector-effect="non-scaling-stroke"/>
+    <path d="m154.8 65.2h-40.8v-40.8h40.8v40.8" vector-effect="non-scaling-stroke"/>
+    <path d="m-114-69.2h-40.8v-40.8h40.8v40.8" vector-effect="non-scaling-stroke"/>
+    <path d="m154.8 20.4h-40.8v-40.8h40.8v40.8" vector-effect="non-scaling-stroke"/>
+    <path d="m-203.6 65.2h-40.8v-40.8h40.8v40.8" vector-effect="non-scaling-stroke"/>
+    <path d="m-158.8 65.2h-40.8v-40.8h40.8v40.8" vector-effect="non-scaling-stroke"/>
+    <path d="m110-24.4h-40.8v-40.8h40.8v40.8" vector-effect="non-scaling-stroke"/>
+    <path d="m199.6-114h-40.8v-40.8h40.8v40.8" vector-effect="non-scaling-stroke"/>
+    <path d="m-382.8 65.2h-40.8v-40.8h40.8v40.8" vector-effect="non-scaling-stroke"/>
+    <path d="m-248.4 65.2h-40.8v-40.8h40.8v40.8" vector-effect="non-scaling-stroke"/>
+    <path d="m-69.2 110h-40.8v-40.8h40.8v40.8" vector-effect="non-scaling-stroke"/>
+    <path d="m110 154.8h-40.8v-40.8h40.8v40.8" vector-effect="non-scaling-stroke"/>
+    <path d="m-24.4-158.8h-40.8v-40.8h40.8v40.8" vector-effect="non-scaling-stroke"/>
+    <path d="m110-69.2h-40.8v-40.8h40.8v40.8" vector-effect="non-scaling-stroke"/>
+    <path d="m-69.2-69.2h-40.8v-40.8h40.8v40.8" vector-effect="non-scaling-stroke"/>
+    <path d="m-24.4-69.2h-40.8v-40.8h40.8v40.8" vector-effect="non-scaling-stroke"/>
+    <path d="m154.8 110h-40.8v-40.8h40.8v40.8" vector-effect="non-scaling-stroke"/>
+    <path d="m110-114h-40.8v-40.8h40.8v40.8" vector-effect="non-scaling-stroke"/>
+    <path d="m334-24.4h-40.8v-40.8h40.8v40.8" vector-effect="non-scaling-stroke"/>
+    <path d="m-248.4 154.8h-40.8v-40.8h40.8v40.8" vector-effect="non-scaling-stroke"/>
+    <path d="m-382.8-69.2h-40.8v-40.8h40.8v40.8" vector-effect="non-scaling-stroke"/>
+    <path d="m334-69.2h-40.8v-40.8h40.8v40.8" vector-effect="non-scaling-stroke"/>
+    <path d="m468.4 110h-40.8v-40.8h40.8v40.8" vector-effect="non-scaling-stroke"/>
+    <path d="m558 154.8h-40.8v-40.8h40.8v40.8" vector-effect="non-scaling-stroke"/>
+    <path d="m-382.8-114h-40.8v-40.8h40.8v40.8" vector-effect="non-scaling-stroke"/>
+    <path d="m334-158.8h-40.8v-40.8h40.8v40.8" vector-effect="non-scaling-stroke"/>
+    <path d="m-427.6 154.8h-40.8v-40.8h40.8v40.8" vector-effect="non-scaling-stroke"/>
+    <path d="m-472.4 154.8h-40.8v-40.8h40.8v40.8" vector-effect="non-scaling-stroke"/>
+    <path d="m334 154.8h-40.8v-40.8h40.8v40.8" vector-effect="non-scaling-stroke"/>
+    <path d="m-427.6-158.8h-40.8v-40.8h40.8v40.8" vector-effect="non-scaling-stroke"/>
+    <path d="m468.4-158.8h-40.8v-40.8h40.8v40.8" vector-effect="non-scaling-stroke"/>
+    <path d="m513.2-158.8h-40.8v-40.8h40.8v40.8" vector-effect="non-scaling-stroke"/>
+    <path d="m154.8-158.8h-40.8v-40.8h40.8v40.8" vector-effect="non-scaling-stroke"/>
+    <path d="m-427.6-114h-40.8v-40.8h40.8v40.8" vector-effect="non-scaling-stroke"/>
+    <path d="m289.2 110h-40.8v-40.8h40.8v40.8" vector-effect="non-scaling-stroke"/>
+    <path d="m468.4 65.2h-40.8v-40.8h40.8v40.8" vector-effect="non-scaling-stroke"/>
+    <path d="m423.6-69.2h-40.8v-40.8h40.8v40.8" vector-effect="non-scaling-stroke"/>
+    <path d="m468.4 154.8h-40.8v-40.8h40.8v40.8" vector-effect="non-scaling-stroke"/>
+    <path d="m517.2 199.6v-40.8h40.8v40.8h-40.8" vector-effect="non-scaling-stroke"/>
+    <path d="m154.8 154.8h-40.8v-40.8h40.8v40.8" vector-effect="non-scaling-stroke"/>
+    <path d="m154.8-114h-40.8v-40.8h40.8v40.8" vector-effect="non-scaling-stroke"/>
+    <path d="m334-114h-40.8v-40.8h40.8v40.8" vector-effect="non-scaling-stroke"/>
+    <path d="m423.6-114h-40.8v-40.8h40.8v40.8" vector-effect="non-scaling-stroke"/>
+    <path d="m378.8-114h-40.8v-40.8h40.8v40.8" vector-effect="non-scaling-stroke"/>
+    <path d="m378.8 110h-40.8v-40.8h40.8v40.8" vector-effect="non-scaling-stroke"/>
+    <path d="m468.4 20.4h-40.8v-40.8h40.8v40.8" vector-effect="non-scaling-stroke"/>
+    <path d="m154.8-69.2h-40.8v-40.8h40.8v40.8" vector-effect="non-scaling-stroke"/>
+    <path d="m334 20.4h-40.8v-40.8h40.8v40.8" vector-effect="non-scaling-stroke"/>
+    <path d="m334 65.2h-40.8v-40.8h40.8v40.8" vector-effect="non-scaling-stroke"/>
+    <path d="m-203.6-158.8h-40.8v-40.8h40.8v40.8" vector-effect="non-scaling-stroke"/>
+    <path d="m334 110h-40.8v-40.8h40.8v40.8" vector-effect="non-scaling-stroke"/>
+    <path d="m468.4-24.4h-40.8v-40.8h40.8v40.8" vector-effect="non-scaling-stroke"/>
+    <path d="m-382.8 154.8h-40.8v-40.8h40.8v40.8" vector-effect="non-scaling-stroke"/>
+    <path d="m-472.4-114h-40.8v-40.8h40.8v40.8" vector-effect="non-scaling-stroke"/>
+    <path d="m289.2-158.8h-40.8v-40.8h40.8v40.8" vector-effect="non-scaling-stroke"/>
+    <path d="m378.8-158.8h-40.8v-40.8h40.8v40.8" vector-effect="non-scaling-stroke"/>
+    <path d="m513.2 154.8h-40.8v-40.8h40.8v40.8" vector-effect="non-scaling-stroke"/>
+   </g>
+   <g stroke-linejoin="bevel">
+    <g transform="translate(1485,1050)" fill="none" fill-rule="evenodd" stroke-linecap="round" stroke-width="2.5">
+     <path d="m-517.2-158.8h-40.8"/>
+     <path d="m-517.2-158.8v-40.8"/>
+     <path d="m-517.2-199.6h-40.8"/>
+     <path d="m-558-199.6v40.8"/>
+     <path d="m-517.2 20.4h-40.8"/>
+     <path d="m-517.2 20.4v-40.8"/>
+     <path d="m-558-20.4v40.8"/>
+     <path d="m-517.2-20.4h-40.8"/>
+     <path d="m-517.2-114h-40.8"/>
+     <path d="m-517.2-114v-40.8"/>
+     <path d="m-558-154.8v40.8"/>
+     <path d="m-517.2-154.8h-40.8"/>
+     <path d="m-517.2 110h-40.8"/>
+     <path d="m-517.2 110v-40.8"/>
+     <path d="m-558 69.2v40.8"/>
+     <path d="m-517.2 69.2h-40.8"/>
+     <path d="m-517.2 154.8h-40.8"/>
+     <path d="m-517.2 154.8v-40.8"/>
+     <path d="m-558 114v40.8"/>
+     <path d="m-517.2 114h-40.8"/>
+     <path d="m-517.2 65.2h-40.8"/>
+     <path d="m-517.2 65.2v-40.8"/>
+     <path d="m-558 24.4v40.8"/>
+     <path d="m-517.2 24.4h-40.8"/>
+     <path d="m-517.2-24.4h-40.8"/>
+     <path d="m-517.2-24.4v-40.8"/>
+     <path d="m-558-65.2v40.8"/>
+     <path d="m-517.2-65.2h-40.8"/>
+     <path d="m-517.2-69.2h-40.8"/>
+     <path d="m-517.2-69.2v-40.8"/>
+     <path d="m-558-110v40.8"/>
+     <path d="m-517.2-110h-40.8"/>
+     <path d="m-558 158.8v40.8"/>
+     <path d="m-558 199.6h40.8"/>
+     <path d="m-517.2 199.6v-40.8"/>
+     <path d="m-517.2 158.8h-40.8"/>
+     <path d="m69.2 199.6v-40.8"/>
+     <path d="m110 158.8h-40.8"/>
+     <path d="m69.2 199.6h40.8"/>
+     <path d="m110 199.6v-40.8"/>
+     <path d="m-513.2 199.6v-40.8"/>
+     <path d="m-472.4 158.8h-40.8"/>
+     <path d="m-513.2 199.6h40.8"/>
+     <path d="m-472.4 199.6v-40.8"/>
+     <path d="m-110 199.6v-40.8"/>
+     <path d="m-69.2 158.8h-40.8"/>
+     <path d="m-110 199.6h40.8"/>
+     <path d="m-69.2 199.6v-40.8"/>
+     <path d="m-378.8 199.6v-40.8"/>
+     <path d="m-338 158.8h-40.8"/>
+     <path d="m-378.8 199.6h40.8"/>
+     <path d="m-338 199.6v-40.8"/>
+     <path d="m-154.8 199.6v-40.8"/>
+     <path d="m-114 158.8h-40.8"/>
+     <path d="m-154.8 199.6h40.8"/>
+     <path d="m-114 199.6v-40.8"/>
+     <path d="m-199.6 199.6v-40.8"/>
+     <path d="m-158.8 158.8h-40.8"/>
+     <path d="m-199.6 199.6h40.8"/>
+     <path d="m-158.8 199.6v-40.8"/>
+     <path d="m114 199.6v-40.8"/>
+     <path d="m154.8 158.8h-40.8"/>
+     <path d="m114 199.6h40.8"/>
+     <path d="m154.8 199.6v-40.8"/>
+     <path d="m293.2 199.6v-40.8"/>
+     <path d="m334 158.8h-40.8"/>
+     <path d="m293.2 199.6h40.8"/>
+     <path d="m334 199.6v-40.8"/>
+     <path d="m248.4 199.6v-40.8"/>
+     <path d="m289.2 158.8h-40.8"/>
+     <path d="m248.4 199.6h40.8"/>
+     <path d="m289.2 199.6v-40.8"/>
+     <path d="m-20.4 199.6v-40.8"/>
+     <path d="m20.4 158.8h-40.8"/>
+     <path d="m-20.4 199.6h40.8"/>
+     <path d="m20.4 199.6v-40.8"/>
+     <path d="m-468.4 199.6v-40.8"/>
+     <path d="m-427.6 158.8h-40.8"/>
+     <path d="m-468.4 199.6h40.8"/>
+     <path d="m-427.6 199.6v-40.8"/>
+     <path d="m-423.6 199.6v-40.8"/>
+     <path d="m-382.8 158.8h-40.8"/>
+     <path d="m-423.6 199.6h40.8"/>
+     <path d="m-382.8 199.6v-40.8"/>
+     <path d="m24.4 199.6v-40.8"/>
+     <path d="m65.2 158.8h-40.8"/>
+     <path d="m24.4 199.6h40.8"/>
+     <path d="m65.2 199.6v-40.8"/>
+     <path d="m517.2 199.6v-40.8"/>
+     <path d="m558 158.8h-40.8"/>
+     <path d="m517.2 199.6h40.8"/>
+     <path d="m558 199.6v-40.8"/>
+     <path d="m-289.2 199.6v-40.8"/>
+     <path d="m-248.4 158.8h-40.8"/>
+     <path d="m-289.2 199.6h40.8"/>
+     <path d="m-248.4 199.6v-40.8"/>
+     <path d="m472.4 199.6v-40.8"/>
+     <path d="m513.2 158.8h-40.8"/>
+     <path d="m472.4 199.6h40.8"/>
+     <path d="m513.2 199.6v-40.8"/>
+     <path d="m427.6 199.6v-40.8"/>
+     <path d="m468.4 158.8h-40.8"/>
+     <path d="m427.6 199.6h40.8"/>
+     <path d="m468.4 199.6v-40.8"/>
+     <path d="m-244.4 199.6v-40.8"/>
+     <path d="m-203.6 158.8h-40.8"/>
+     <path d="m-244.4 199.6h40.8"/>
+     <path d="m-203.6 199.6v-40.8"/>
+     <path d="m203.6 199.6v-40.8"/>
+     <path d="m244.4 158.8h-40.8"/>
+     <path d="m203.6 199.6h40.8"/>
+     <path d="m244.4 199.6v-40.8"/>
+     <path d="m382.8 199.6v-40.8"/>
+     <path d="m423.6 158.8h-40.8"/>
+     <path d="m382.8 199.6h40.8"/>
+     <path d="m423.6 199.6v-40.8"/>
+     <path d="m158.8 199.6v-40.8"/>
+     <path d="m199.6 158.8h-40.8"/>
+     <path d="m158.8 199.6h40.8"/>
+     <path d="m199.6 199.6v-40.8"/>
+     <path d="m338 199.6v-40.8"/>
+     <path d="m378.8 158.8h-40.8"/>
+     <path d="m338 199.6h40.8"/>
+     <path d="m378.8 199.6v-40.8"/>
+     <path d="m-334 199.6v-40.8"/>
+     <path d="m-293.2 158.8h-40.8"/>
+     <path d="m-334 199.6h40.8"/>
+     <path d="m-293.2 199.6v-40.8"/>
+     <path d="m-65.2 199.6v-40.8"/>
+     <path d="m-24.4 158.8h-40.8"/>
+     <path d="m-65.2 199.6h40.8"/>
+     <path d="m-24.4 199.6v-40.8"/>
+     <path d="m69.2-158.8v-40.8"/>
+     <path d="m110-158.8h-40.8"/>
+     <path d="m110-199.6h-40.8"/>
+     <path d="m110-158.8v-40.8"/>
+     <path d="m-513.2-158.8v-40.8"/>
+     <path d="m-472.4-158.8h-40.8"/>
+     <path d="m-472.4-199.6h-40.8"/>
+     <path d="m-472.4-158.8v-40.8"/>
+     <path d="m114-158.8v-40.8"/>
+     <path d="m154.8-158.8h-40.8"/>
+     <path d="m154.8-199.6h-40.8"/>
+     <path d="m154.8-158.8v-40.8"/>
+     <path d="m517.2-158.8v-40.8"/>
+     <path d="m558-158.8h-40.8"/>
+     <path d="m558-158.8v-40.8"/>
+     <path d="m558-199.6h-40.8"/>
+     <path d="m472.4-158.8v-40.8"/>
+     <path d="m513.2-158.8h-40.8"/>
+     <path d="m513.2-199.6h-40.8"/>
+     <path d="m513.2-158.8v-40.8"/>
+     <path d="m427.6-158.8v-40.8"/>
+     <path d="m468.4-158.8h-40.8"/>
+     <path d="m468.4-199.6h-40.8"/>
+     <path d="m468.4-158.8v-40.8"/>
+     <path d="m382.8-158.8v-40.8"/>
+     <path d="m423.6-158.8h-40.8"/>
+     <path d="m423.6-199.6h-40.8"/>
+     <path d="m423.6-158.8v-40.8"/>
+     <path d="m-468.4-158.8v-40.8"/>
+     <path d="m-427.6-158.8h-40.8"/>
+     <path d="m-427.6-199.6h-40.8"/>
+     <path d="m-427.6-158.8v-40.8"/>
+     <path d="m-378.8-158.8v-40.8"/>
+     <path d="m-338-158.8h-40.8"/>
+     <path d="m-338-199.6h-40.8"/>
+     <path d="m-338-158.8v-40.8"/>
+     <path d="m-334-158.8v-40.8"/>
+     <path d="m-293.2-158.8h-40.8"/>
+     <path d="m-293.2-199.6h-40.8"/>
+     <path d="m-293.2-158.8v-40.8"/>
+     <path d="m-244.4-158.8v-40.8"/>
+     <path d="m-203.6-158.8h-40.8"/>
+     <path d="m-203.6-199.6h-40.8"/>
+     <path d="m-203.6-158.8v-40.8"/>
+     <path d="m-289.2-158.8v-40.8"/>
+     <path d="m-248.4-158.8h-40.8"/>
+     <path d="m-248.4-199.6h-40.8"/>
+     <path d="m-248.4-158.8v-40.8"/>
+     <path d="m-65.2-158.8v-40.8"/>
+     <path d="m-24.4-158.8h-40.8"/>
+     <path d="m-24.4-199.6h-40.8"/>
+     <path d="m-24.4-158.8v-40.8"/>
+     <path d="m-110-158.8v-40.8"/>
+     <path d="m-69.2-158.8h-40.8"/>
+     <path d="m-69.2-199.6h-40.8"/>
+     <path d="m-69.2-158.8v-40.8"/>
+     <path d="m-20.4-158.8v-40.8"/>
+     <path d="m20.4-158.8h-40.8"/>
+     <path d="m20.4-199.6h-40.8"/>
+     <path d="m20.4-158.8v-40.8"/>
+     <path d="m-154.8-158.8v-40.8"/>
+     <path d="m-114-158.8h-40.8"/>
+     <path d="m-114-199.6h-40.8"/>
+     <path d="m-114-158.8v-40.8"/>
+     <path d="m248.4-158.8v-40.8"/>
+     <path d="m289.2-158.8h-40.8"/>
+     <path d="m289.2-199.6h-40.8"/>
+     <path d="m289.2-158.8v-40.8"/>
+     <path d="m203.6-158.8v-40.8"/>
+     <path d="m244.4-158.8h-40.8"/>
+     <path d="m244.4-199.6h-40.8"/>
+     <path d="m244.4-158.8v-40.8"/>
+     <path d="m-423.6-158.8v-40.8"/>
+     <path d="m-382.8-158.8h-40.8"/>
+     <path d="m-382.8-199.6h-40.8"/>
+     <path d="m-382.8-158.8v-40.8"/>
+     <path d="m-199.6-158.8v-40.8"/>
+     <path d="m-158.8-158.8h-40.8"/>
+     <path d="m-158.8-199.6h-40.8"/>
+     <path d="m-158.8-158.8v-40.8"/>
+     <path d="m293.2-158.8v-40.8"/>
+     <path d="m334-158.8h-40.8"/>
+     <path d="m334-199.6h-40.8"/>
+     <path d="m334-158.8v-40.8"/>
+     <path d="m338-158.8v-40.8"/>
+     <path d="m378.8-158.8h-40.8"/>
+     <path d="m378.8-199.6h-40.8"/>
+     <path d="m378.8-158.8v-40.8"/>
+     <path d="m158.8-158.8v-40.8"/>
+     <path d="m199.6-158.8h-40.8"/>
+     <path d="m199.6-199.6h-40.8"/>
+     <path d="m199.6-158.8v-40.8"/>
+     <path d="m24.4-158.8v-40.8"/>
+     <path d="m65.2-158.8h-40.8"/>
+     <path d="m65.2-199.6h-40.8"/>
+     <path d="m65.2-158.8v-40.8"/>
+     <path d="m517.2-114v-40.8"/>
+     <path d="m558-114h-40.8"/>
+     <path d="m558-154.8h-40.8"/>
+     <path d="m558-114v-40.8"/>
+     <path d="m517.2 20.4v-40.8"/>
+     <path d="m558 20.4h-40.8"/>
+     <path d="m558-20.4h-40.8"/>
+     <path d="m558 20.4v-40.8"/>
+     <path d="m517.2-24.4v-40.8"/>
+     <path d="m558-24.4h-40.8"/>
+     <path d="m558-65.2h-40.8"/>
+     <path d="m558-24.4v-40.8"/>
+     <path d="m517.2 110v-40.8"/>
+     <path d="m558 110h-40.8"/>
+     <path d="m558 69.2h-40.8"/>
+     <path d="m558 110v-40.8"/>
+     <path d="m517.2 154.8v-40.8"/>
+     <path d="m558 154.8h-40.8"/>
+     <path d="m558 114h-40.8"/>
+     <path d="m558 154.8v-40.8"/>
+     <path d="m517.2 65.2v-40.8"/>
+     <path d="m558 65.2h-40.8"/>
+     <path d="m558 24.4h-40.8"/>
+     <path d="m558 65.2v-40.8"/>
+     <path d="m517.2-69.2v-40.8"/>
+     <path d="m558-69.2h-40.8"/>
+     <path d="m558-110h-40.8"/>
+     <path d="m558-69.2v-40.8"/>
+     <path d="m427.6 110v-40.8"/>
+     <path d="m468.4 110h-40.8"/>
+     <path d="m468.4 69.2h-40.8"/>
+     <path d="m468.4 110v-40.8"/>
+     <path d="m293.2 110v-40.8"/>
+     <path d="m334 110h-40.8"/>
+     <path d="m334 69.2h-40.8"/>
+     <path d="m334 110v-40.8"/>
+     <path d="m114 20.4v-40.8"/>
+     <path d="m154.8 20.4h-40.8"/>
+     <path d="m154.8-20.4h-40.8"/>
+     <path d="m154.8 20.4v-40.8"/>
+     <path d="m114 110v-40.8"/>
+     <path d="m154.8 110h-40.8"/>
+     <path d="m154.8 69.2h-40.8"/>
+     <path d="m154.8 110v-40.8"/>
+     <path d="m293.2 20.4v-40.8"/>
+     <path d="m334 20.4h-40.8"/>
+     <path d="m334-20.4h-40.8"/>
+     <path d="m334 20.4v-40.8"/>
+     <path d="m293.2-114v-40.8"/>
+     <path d="m334-114h-40.8"/>
+     <path d="m334-154.8h-40.8"/>
+     <path d="m334-114v-40.8"/>
+     <path d="m427.6-114v-40.8"/>
+     <path d="m468.4-114h-40.8"/>
+     <path d="m468.4-154.8h-40.8"/>
+     <path d="m468.4-114v-40.8"/>
+     <path d="m114-114v-40.8"/>
+     <path d="m154.8-114h-40.8"/>
+     <path d="m154.8-154.8h-40.8"/>
+     <path d="m154.8-114v-40.8"/>
+     <path d="m427.6 20.4v-40.8"/>
+     <path d="m468.4 20.4h-40.8"/>
+     <path d="m468.4-20.4h-40.8"/>
+     <path d="m468.4 20.4v-40.8"/>
+     <path d="m114 154.8v-40.8"/>
+     <path d="m154.8 154.8h-40.8"/>
+     <path d="m154.8 114h-40.8"/>
+     <path d="m154.8 154.8v-40.8"/>
+     <path d="m293.2 65.2v-40.8"/>
+     <path d="m334 65.2h-40.8"/>
+     <path d="m334 24.4h-40.8"/>
+     <path d="m334 65.2v-40.8"/>
+     <path d="m427.6 154.8v-40.8"/>
+     <path d="m468.4 154.8h-40.8"/>
+     <path d="m468.4 114h-40.8"/>
+     <path d="m468.4 154.8v-40.8"/>
+     <path d="m427.6 65.2v-40.8"/>
+     <path d="m468.4 65.2h-40.8"/>
+     <path d="m468.4 24.4h-40.8"/>
+     <path d="m468.4 65.2v-40.8"/>
+     <path d="m114 65.2v-40.8"/>
+     <path d="m154.8 65.2h-40.8"/>
+     <path d="m154.8 24.4h-40.8"/>
+     <path d="m154.8 65.2v-40.8"/>
+     <path d="m293.2 154.8v-40.8"/>
+     <path d="m334 154.8h-40.8"/>
+     <path d="m334 114h-40.8"/>
+     <path d="m334 154.8v-40.8"/>
+     <path d="m427.6-69.2v-40.8"/>
+     <path d="m468.4-69.2h-40.8"/>
+     <path d="m468.4-110h-40.8"/>
+     <path d="m468.4-69.2v-40.8"/>
+     <path d="m114-24.4v-40.8"/>
+     <path d="m154.8-24.4h-40.8"/>
+     <path d="m154.8-65.2h-40.8"/>
+     <path d="m154.8-24.4v-40.8"/>
+     <path d="m427.6-24.4v-40.8"/>
+     <path d="m468.4-24.4h-40.8"/>
+     <path d="m468.4-65.2h-40.8"/>
+     <path d="m468.4-24.4v-40.8"/>
+     <path d="m114-69.2v-40.8"/>
+     <path d="m154.8-69.2h-40.8"/>
+     <path d="m154.8-110h-40.8"/>
+     <path d="m154.8-69.2v-40.8"/>
+     <path d="m293.2-69.2v-40.8"/>
+     <path d="m334-69.2h-40.8"/>
+     <path d="m334-110h-40.8"/>
+     <path d="m334-69.2v-40.8"/>
+     <path d="m293.2-24.4v-40.8"/>
+     <path d="m334-24.4h-40.8"/>
+     <path d="m334-65.2h-40.8"/>
+     <path d="m334-24.4v-40.8"/>
+     <path d="m-110 20.4v-40.8"/>
+     <path d="m-69.2 20.4h-40.8"/>
+     <path d="m-69.2-20.4h-40.8"/>
+     <path d="m-69.2 20.4v-40.8"/>
+     <path d="m-65.2 20.4v-40.8"/>
+     <path d="m-24.4 20.4h-40.8"/>
+     <path d="m-24.4-20.4h-40.8"/>
+     <path d="m-24.4 20.4v-40.8"/>
+     <path d="m-65.2-114v-40.8"/>
+     <path d="m-24.4-114h-40.8"/>
+     <path d="m-24.4-154.8h-40.8"/>
+     <path d="m-24.4-114v-40.8"/>
+     <path d="m69.2 20.4v-40.8"/>
+     <path d="m110 20.4h-40.8"/>
+     <path d="m110-20.4h-40.8"/>
+     <path d="m110 20.4v-40.8"/>
+     <path d="m69.2-114v-40.8"/>
+     <path d="m110-114h-40.8"/>
+     <path d="m110-154.8h-40.8"/>
+     <path d="m110-114v-40.8"/>
+     <path d="m-110-114v-40.8"/>
+     <path d="m-69.2-114h-40.8"/>
+     <path d="m-69.2-154.8h-40.8"/>
+     <path d="m-69.2-114v-40.8"/>
+     <path d="m69.2 110v-40.8"/>
+     <path d="m110 110h-40.8"/>
+     <path d="m110 69.2h-40.8"/>
+     <path d="m110 110v-40.8"/>
+     <path d="m-110 110v-40.8"/>
+     <path d="m-69.2 110h-40.8"/>
+     <path d="m-69.2 69.2h-40.8"/>
+     <path d="m-69.2 110v-40.8"/>
+     <path d="m-65.2 110v-40.8"/>
+     <path d="m-24.4 110h-40.8"/>
+     <path d="m-24.4 69.2h-40.8"/>
+     <path d="m-24.4 110v-40.8"/>
+     <path d="m-110 154.8v-40.8"/>
+     <path d="m-69.2 154.8h-40.8"/>
+     <path d="m-69.2 114h-40.8"/>
+     <path d="m-69.2 154.8v-40.8"/>
+     <path d="m-65.2 154.8v-40.8"/>
+     <path d="m-24.4 154.8h-40.8"/>
+     <path d="m-24.4 114h-40.8"/>
+     <path d="m-24.4 154.8v-40.8"/>
+     <path d="m69.2 154.8v-40.8"/>
+     <path d="m110 154.8h-40.8"/>
+     <path d="m110 114h-40.8"/>
+     <path d="m110 154.8v-40.8"/>
+     <path d="m-110 65.2v-40.8"/>
+     <path d="m-69.2 65.2h-40.8"/>
+     <path d="m-69.2 24.4h-40.8"/>
+     <path d="m-69.2 65.2v-40.8"/>
+     <path d="m-65.2 65.2v-40.8"/>
+     <path d="m-24.4 65.2h-40.8"/>
+     <path d="m-24.4 24.4h-40.8"/>
+     <path d="m-24.4 65.2v-40.8"/>
+     <path d="m69.2 65.2v-40.8"/>
+     <path d="m110 65.2h-40.8"/>
+     <path d="m110 24.4h-40.8"/>
+     <path d="m110 65.2v-40.8"/>
+     <path d="m-65.2-69.2v-40.8"/>
+     <path d="m-24.4-69.2h-40.8"/>
+     <path d="m-24.4-110h-40.8"/>
+     <path d="m-24.4-69.2v-40.8"/>
+     <path d="m-110-24.4v-40.8"/>
+     <path d="m-69.2-24.4h-40.8"/>
+     <path d="m-69.2-65.2h-40.8"/>
+     <path d="m-69.2-24.4v-40.8"/>
+     <path d="m-110-69.2v-40.8"/>
+     <path d="m-69.2-69.2h-40.8"/>
+     <path d="m-69.2-110h-40.8"/>
+     <path d="m-69.2-69.2v-40.8"/>
+     <path d="m-65.2-24.4v-40.8"/>
+     <path d="m-24.4-24.4h-40.8"/>
+     <path d="m-24.4-65.2h-40.8"/>
+     <path d="m-24.4-24.4v-40.8"/>
+     <path d="m69.2-69.2v-40.8"/>
+     <path d="m110-69.2h-40.8"/>
+     <path d="m110-110h-40.8"/>
+     <path d="m110-69.2v-40.8"/>
+     <path d="m69.2-24.4v-40.8"/>
+     <path d="m110-24.4h-40.8"/>
+     <path d="m110-65.2h-40.8"/>
+     <path d="m110-24.4v-40.8"/>
+     <path d="m-468.4-114v-40.8"/>
+     <path d="m-427.6-114h-40.8"/>
+     <path d="m-427.6-154.8h-40.8"/>
+     <path d="m-427.6-114v-40.8"/>
+     <path d="m-468.4 20.4v-40.8"/>
+     <path d="m-427.6 20.4h-40.8"/>
+     <path d="m-427.6-20.4h-40.8"/>
+     <path d="m-427.6 20.4v-40.8"/>
+     <path d="m-513.2-114v-40.8"/>
+     <path d="m-472.4-114h-40.8"/>
+     <path d="m-472.4-154.8h-40.8"/>
+     <path d="m-472.4-114v-40.8"/>
+     <path d="m-513.2 20.4v-40.8"/>
+     <path d="m-472.4 20.4h-40.8"/>
+     <path d="m-472.4-20.4h-40.8"/>
+     <path d="m-472.4 20.4v-40.8"/>
+     <path d="m-468.4 110v-40.8"/>
+     <path d="m-427.6 110h-40.8"/>
+     <path d="m-427.6 69.2h-40.8"/>
+     <path d="m-427.6 110v-40.8"/>
+     <path d="m-513.2 110v-40.8"/>
+     <path d="m-472.4 110h-40.8"/>
+     <path d="m-472.4 69.2h-40.8"/>
+     <path d="m-472.4 110v-40.8"/>
+     <path d="m-334-114v-40.8"/>
+     <path d="m-293.2-114h-40.8"/>
+     <path d="m-293.2-154.8h-40.8"/>
+     <path d="m-293.2-114v-40.8"/>
+     <path d="m-513.2 65.2v-40.8"/>
+     <path d="m-472.4 65.2h-40.8"/>
+     <path d="m-472.4 24.4h-40.8"/>
+     <path d="m-472.4 65.2v-40.8"/>
+     <path d="m-334 20.4v-40.8"/>
+     <path d="m-293.2 20.4h-40.8"/>
+     <path d="m-293.2-20.4h-40.8"/>
+     <path d="m-293.2 20.4v-40.8"/>
+     <path d="m-468.4 65.2v-40.8"/>
+     <path d="m-427.6 65.2h-40.8"/>
+     <path d="m-427.6 24.4h-40.8"/>
+     <path d="m-427.6 65.2v-40.8"/>
+     <path d="m-468.4 154.8v-40.8"/>
+     <path d="m-427.6 154.8h-40.8"/>
+     <path d="m-427.6 114h-40.8"/>
+     <path d="m-427.6 154.8v-40.8"/>
+     <path d="m-513.2 154.8v-40.8"/>
+     <path d="m-472.4 154.8h-40.8"/>
+     <path d="m-472.4 114h-40.8"/>
+     <path d="m-472.4 154.8v-40.8"/>
+     <path d="m-334 110v-40.8"/>
+     <path d="m-293.2 110h-40.8"/>
+     <path d="m-293.2 69.2h-40.8"/>
+     <path d="m-293.2 110v-40.8"/>
+     <path d="m-378.8 20.4v-40.8"/>
+     <path d="m-338 20.4h-40.8"/>
+     <path d="m-338-20.4h-40.8"/>
+     <path d="m-338 20.4v-40.8"/>
+     <path d="m-334 65.2v-40.8"/>
+     <path d="m-293.2 65.2h-40.8"/>
+     <path d="m-293.2 24.4h-40.8"/>
+     <path d="m-293.2 65.2v-40.8"/>
+     <path d="m-423.6-114v-40.8"/>
+     <path d="m-382.8-114h-40.8"/>
+     <path d="m-382.8-154.8h-40.8"/>
+     <path d="m-382.8-114v-40.8"/>
+     <path d="m-468.4-69.2v-40.8"/>
+     <path d="m-427.6-69.2h-40.8"/>
+     <path d="m-427.6-110h-40.8"/>
+     <path d="m-427.6-69.2v-40.8"/>
+     <path d="m-468.4-24.4v-40.8"/>
+     <path d="m-427.6-24.4h-40.8"/>
+     <path d="m-427.6-65.2h-40.8"/>
+     <path d="m-427.6-24.4v-40.8"/>
+     <path d="m-378.8-114v-40.8"/>
+     <path d="m-338-114h-40.8"/>
+     <path d="m-338-154.8h-40.8"/>
+     <path d="m-338-114v-40.8"/>
+     <path d="m-334 154.8v-40.8"/>
+     <path d="m-293.2 154.8h-40.8"/>
+     <path d="m-293.2 114h-40.8"/>
+     <path d="m-293.2 154.8v-40.8"/>
+     <path d="m-513.2-24.4v-40.8"/>
+     <path d="m-472.4-24.4h-40.8"/>
+     <path d="m-472.4-65.2h-40.8"/>
+     <path d="m-472.4-24.4v-40.8"/>
+     <path d="m-513.2-69.2v-40.8"/>
+     <path d="m-472.4-69.2h-40.8"/>
+     <path d="m-472.4-110h-40.8"/>
+     <path d="m-472.4-69.2v-40.8"/>
+     <path d="m-423.6 20.4v-40.8"/>
+     <path d="m-382.8 20.4h-40.8"/>
+     <path d="m-382.8-20.4h-40.8"/>
+     <path d="m-382.8 20.4v-40.8"/>
+     <path d="m-423.6 110v-40.8"/>
+     <path d="m-382.8 110h-40.8"/>
+     <path d="m-382.8 69.2h-40.8"/>
+     <path d="m-382.8 110v-40.8"/>
+     <path d="m-378.8 110v-40.8"/>
+     <path d="m-338 110h-40.8"/>
+     <path d="m-338 69.2h-40.8"/>
+     <path d="m-338 110v-40.8"/>
+     <path d="m-244.4-114v-40.8"/>
+     <path d="m-203.6-114h-40.8"/>
+     <path d="m-203.6-154.8h-40.8"/>
+     <path d="m-203.6-114v-40.8"/>
+     <path d="m382.8-114v-40.8"/>
+     <path d="m423.6-114h-40.8"/>
+     <path d="m423.6-154.8h-40.8"/>
+     <path d="m423.6-114v-40.8"/>
+     <path d="m158.8-114v-40.8"/>
+     <path d="m199.6-114h-40.8"/>
+     <path d="m199.6-154.8h-40.8"/>
+     <path d="m199.6-114v-40.8"/>
+     <path d="m158.8 20.4v-40.8"/>
+     <path d="m199.6 20.4h-40.8"/>
+     <path d="m199.6-20.4h-40.8"/>
+     <path d="m199.6 20.4v-40.8"/>
+     <path d="m203.6 20.4v-40.8"/>
+     <path d="m244.4 20.4h-40.8"/>
+     <path d="m244.4-20.4h-40.8"/>
+     <path d="m244.4 20.4v-40.8"/>
+     <path d="m203.6-114v-40.8"/>
+     <path d="m244.4-114h-40.8"/>
+     <path d="m244.4-154.8h-40.8"/>
+     <path d="m244.4-114v-40.8"/>
+     <path d="m248.4-114v-40.8"/>
+     <path d="m289.2-114h-40.8"/>
+     <path d="m289.2-154.8h-40.8"/>
+     <path d="m289.2-114v-40.8"/>
+     <path d="m248.4 20.4v-40.8"/>
+     <path d="m289.2 20.4h-40.8"/>
+     <path d="m289.2-20.4h-40.8"/>
+     <path d="m289.2 20.4v-40.8"/>
+     <path d="m-423.6 154.8v-40.8"/>
+     <path d="m-382.8 154.8h-40.8"/>
+     <path d="m-382.8 114h-40.8"/>
+     <path d="m-382.8 154.8v-40.8"/>
+     <path d="m-423.6 65.2v-40.8"/>
+     <path d="m-382.8 65.2h-40.8"/>
+     <path d="m-382.8 24.4h-40.8"/>
+     <path d="m-382.8 65.2v-40.8"/>
+     <path d="m-378.8 154.8v-40.8"/>
+     <path d="m-338 154.8h-40.8"/>
+     <path d="m-338 114h-40.8"/>
+     <path d="m-338 154.8v-40.8"/>
+     <path d="m472.4 20.4v-40.8"/>
+     <path d="m513.2 20.4h-40.8"/>
+     <path d="m513.2-20.4h-40.8"/>
+     <path d="m513.2 20.4v-40.8"/>
+     <path d="m472.4-114v-40.8"/>
+     <path d="m513.2-114h-40.8"/>
+     <path d="m513.2-154.8h-40.8"/>
+     <path d="m513.2-114v-40.8"/>
+     <path d="m-378.8 65.2v-40.8"/>
+     <path d="m-338 65.2h-40.8"/>
+     <path d="m-338 24.4h-40.8"/>
+     <path d="m-338 65.2v-40.8"/>
+     <path d="m-334-69.2v-40.8"/>
+     <path d="m-293.2-69.2h-40.8"/>
+     <path d="m-293.2-110h-40.8"/>
+     <path d="m-293.2-69.2v-40.8"/>
+     <path d="m-334-24.4v-40.8"/>
+     <path d="m-293.2-24.4h-40.8"/>
+     <path d="m-293.2-65.2h-40.8"/>
+     <path d="m-293.2-24.4v-40.8"/>
+     <path d="m-289.2 20.4v-40.8"/>
+     <path d="m-248.4 20.4h-40.8"/>
+     <path d="m-248.4-20.4h-40.8"/>
+     <path d="m-248.4 20.4v-40.8"/>
+     <path d="m338-114v-40.8"/>
+     <path d="m378.8-114h-40.8"/>
+     <path d="m378.8-154.8h-40.8"/>
+     <path d="m378.8-114v-40.8"/>
+     <path d="m338 20.4v-40.8"/>
+     <path d="m378.8 20.4h-40.8"/>
+     <path d="m378.8-20.4h-40.8"/>
+     <path d="m378.8 20.4v-40.8"/>
+     <path d="m-244.4 20.4v-40.8"/>
+     <path d="m-203.6 20.4h-40.8"/>
+     <path d="m-203.6-20.4h-40.8"/>
+     <path d="m-203.6 20.4v-40.8"/>
+     <path d="m-289.2-114v-40.8"/>
+     <path d="m-248.4-114h-40.8"/>
+     <path d="m-248.4-154.8h-40.8"/>
+     <path d="m-248.4-114v-40.8"/>
+     <path d="m382.8 20.4v-40.8"/>
+     <path d="m423.6 20.4h-40.8"/>
+     <path d="m423.6-20.4h-40.8"/>
+     <path d="m423.6 20.4v-40.8"/>
+     <path d="m-289.2 110v-40.8"/>
+     <path d="m-248.4 110h-40.8"/>
+     <path d="m-248.4 69.2h-40.8"/>
+     <path d="m-248.4 110v-40.8"/>
+     <path d="m203.6 110v-40.8"/>
+     <path d="m244.4 110h-40.8"/>
+     <path d="m244.4 69.2h-40.8"/>
+     <path d="m244.4 110v-40.8"/>
+     <path d="m472.4 110v-40.8"/>
+     <path d="m513.2 110h-40.8"/>
+     <path d="m513.2 69.2h-40.8"/>
+     <path d="m513.2 110v-40.8"/>
+     <path d="m338 110v-40.8"/>
+     <path d="m378.8 110h-40.8"/>
+     <path d="m378.8 69.2h-40.8"/>
+     <path d="m378.8 110v-40.8"/>
+     <path d="m-244.4 110v-40.8"/>
+     <path d="m-203.6 110h-40.8"/>
+     <path d="m-203.6 69.2h-40.8"/>
+     <path d="m-203.6 110v-40.8"/>
+     <path d="m203.6 154.8v-40.8"/>
+     <path d="m244.4 154.8h-40.8"/>
+     <path d="m244.4 114h-40.8"/>
+     <path d="m244.4 154.8v-40.8"/>
+     <path d="m203.6 65.2v-40.8"/>
+     <path d="m244.4 65.2h-40.8"/>
+     <path d="m244.4 24.4h-40.8"/>
+     <path d="m244.4 65.2v-40.8"/>
+     <path d="m-289.2 154.8v-40.8"/>
+     <path d="m-248.4 154.8h-40.8"/>
+     <path d="m-248.4 114h-40.8"/>
+     <path d="m-248.4 154.8v-40.8"/>
+     <path d="m-244.4 154.8v-40.8"/>
+     <path d="m-203.6 154.8h-40.8"/>
+     <path d="m-203.6 114h-40.8"/>
+     <path d="m-203.6 154.8v-40.8"/>
+     <path d="m472.4 65.2v-40.8"/>
+     <path d="m513.2 65.2h-40.8"/>
+     <path d="m513.2 24.4h-40.8"/>
+     <path d="m513.2 65.2v-40.8"/>
+     <path d="m-289.2 65.2v-40.8"/>
+     <path d="m-248.4 65.2h-40.8"/>
+     <path d="m-248.4 24.4h-40.8"/>
+     <path d="m-248.4 65.2v-40.8"/>
+     <path d="m-378.8-69.2v-40.8"/>
+     <path d="m-338-69.2h-40.8"/>
+     <path d="m-338-110h-40.8"/>
+     <path d="m-338-69.2v-40.8"/>
+     <path d="m-378.8-24.4v-40.8"/>
+     <path d="m-338-24.4h-40.8"/>
+     <path d="m-338-65.2h-40.8"/>
+     <path d="m-338-24.4v-40.8"/>
+     <path d="m-423.6-24.4v-40.8"/>
+     <path d="m-382.8-24.4h-40.8"/>
+     <path d="m-382.8-65.2h-40.8"/>
+     <path d="m-382.8-24.4v-40.8"/>
+     <path d="m-423.6-69.2v-40.8"/>
+     <path d="m-382.8-69.2h-40.8"/>
+     <path d="m-382.8-110h-40.8"/>
+     <path d="m-382.8-69.2v-40.8"/>
+     <path d="m472.4 154.8v-40.8"/>
+     <path d="m513.2 154.8h-40.8"/>
+     <path d="m513.2 114h-40.8"/>
+     <path d="m513.2 154.8v-40.8"/>
+     <path d="m-244.4 65.2v-40.8"/>
+     <path d="m-203.6 65.2h-40.8"/>
+     <path d="m-203.6 24.4h-40.8"/>
+     <path d="m-203.6 65.2v-40.8"/>
+     <path d="m338 65.2v-40.8"/>
+     <path d="m378.8 65.2h-40.8"/>
+     <path d="m378.8 24.4h-40.8"/>
+     <path d="m378.8 65.2v-40.8"/>
+     <path d="m338 154.8v-40.8"/>
+     <path d="m378.8 154.8h-40.8"/>
+     <path d="m378.8 114h-40.8"/>
+     <path d="m378.8 154.8v-40.8"/>
+     <path d="m158.8-24.4v-40.8"/>
+     <path d="m199.6-24.4h-40.8"/>
+     <path d="m199.6-65.2h-40.8"/>
+     <path d="m199.6-24.4v-40.8"/>
+     <path d="m203.6-24.4v-40.8"/>
+     <path d="m244.4-24.4h-40.8"/>
+     <path d="m244.4-65.2h-40.8"/>
+     <path d="m244.4-24.4v-40.8"/>
+     <path d="m203.6-69.2v-40.8"/>
+     <path d="m244.4-69.2h-40.8"/>
+     <path d="m244.4-110h-40.8"/>
+     <path d="m244.4-69.2v-40.8"/>
+     <path d="m-289.2-24.4v-40.8"/>
+     <path d="m-248.4-24.4h-40.8"/>
+     <path d="m-248.4-65.2h-40.8"/>
+     <path d="m-248.4-24.4v-40.8"/>
+     <path d="m472.4-69.2v-40.8"/>
+     <path d="m513.2-69.2h-40.8"/>
+     <path d="m513.2-110h-40.8"/>
+     <path d="m513.2-69.2v-40.8"/>
+     <path d="m472.4-24.4v-40.8"/>
+     <path d="m513.2-24.4h-40.8"/>
+     <path d="m513.2-65.2h-40.8"/>
+     <path d="m513.2-24.4v-40.8"/>
+     <path d="m248.4-24.4v-40.8"/>
+     <path d="m289.2-24.4h-40.8"/>
+     <path d="m289.2-65.2h-40.8"/>
+     <path d="m289.2-24.4v-40.8"/>
+     <path d="m-244.4-24.4v-40.8"/>
+     <path d="m-203.6-24.4h-40.8"/>
+     <path d="m-203.6-65.2h-40.8"/>
+     <path d="m-203.6-24.4v-40.8"/>
+     <path d="m-289.2-69.2v-40.8"/>
+     <path d="m-248.4-69.2h-40.8"/>
+     <path d="m-248.4-110h-40.8"/>
+     <path d="m-248.4-69.2v-40.8"/>
+     <path d="m382.8-24.4v-40.8"/>
+     <path d="m423.6-24.4h-40.8"/>
+     <path d="m423.6-65.2h-40.8"/>
+     <path d="m423.6-24.4v-40.8"/>
+     <path d="m-244.4-69.2v-40.8"/>
+     <path d="m-203.6-69.2h-40.8"/>
+     <path d="m-203.6-110h-40.8"/>
+     <path d="m-203.6-69.2v-40.8"/>
+     <path d="m338-69.2v-40.8"/>
+     <path d="m378.8-69.2h-40.8"/>
+     <path d="m378.8-110h-40.8"/>
+     <path d="m378.8-69.2v-40.8"/>
+     <path d="m338-24.4v-40.8"/>
+     <path d="m378.8-24.4h-40.8"/>
+     <path d="m378.8-65.2h-40.8"/>
+     <path d="m378.8-24.4v-40.8"/>
+     <path d="m24.4-114v-40.8"/>
+     <path d="m65.2-114h-40.8"/>
+     <path d="m65.2-154.8h-40.8"/>
+     <path d="m65.2-114v-40.8"/>
+     <path d="m-20.4-114v-40.8"/>
+     <path d="m20.4-114h-40.8"/>
+     <path d="m20.4-154.8h-40.8"/>
+     <path d="m20.4-114v-40.8"/>
+     <path d="m-154.8-114v-40.8"/>
+     <path d="m-114-114h-40.8"/>
+     <path d="m-114-154.8h-40.8"/>
+     <path d="m-114-114v-40.8"/>
+     <path d="m-199.6-114v-40.8"/>
+     <path d="m-158.8-114h-40.8"/>
+     <path d="m-158.8-154.8h-40.8"/>
+     <path d="m-158.8-114v-40.8"/>
+     <path d="m-154.8 20.4v-40.8"/>
+     <path d="m-114 20.4h-40.8"/>
+     <path d="m-114-20.4h-40.8"/>
+     <path d="m-114 20.4v-40.8"/>
+     <path d="m-20.4 20.4v-40.8"/>
+     <path d="m20.4 20.4h-40.8"/>
+     <path d="m20.4-20.4h-40.8"/>
+     <path d="m20.4 20.4v-40.8"/>
+     <path d="m-199.6 20.4v-40.8"/>
+     <path d="m-158.8 20.4h-40.8"/>
+     <path d="m-158.8-20.4h-40.8"/>
+     <path d="m-158.8 20.4v-40.8"/>
+     <path d="m24.4 20.4v-40.8"/>
+     <path d="m65.2 20.4h-40.8"/>
+     <path d="m65.2-20.4h-40.8"/>
+     <path d="m65.2 20.4v-40.8"/>
+     <path d="m-154.8 110v-40.8"/>
+     <path d="m-114 110h-40.8"/>
+     <path d="m-114 69.2h-40.8"/>
+     <path d="m-114 110v-40.8"/>
+     <path d="m-199.6 110v-40.8"/>
+     <path d="m-158.8 110h-40.8"/>
+     <path d="m-158.8 69.2h-40.8"/>
+     <path d="m-158.8 110v-40.8"/>
+     <path d="m382.8 110v-40.8"/>
+     <path d="m423.6 110h-40.8"/>
+     <path d="m423.6 69.2h-40.8"/>
+     <path d="m423.6 110v-40.8"/>
+     <path d="m24.4 110v-40.8"/>
+     <path d="m65.2 110h-40.8"/>
+     <path d="m65.2 69.2h-40.8"/>
+     <path d="m65.2 110v-40.8"/>
+     <path d="m248.4 110v-40.8"/>
+     <path d="m289.2 110h-40.8"/>
+     <path d="m289.2 69.2h-40.8"/>
+     <path d="m289.2 110v-40.8"/>
+     <path d="m-20.4 110v-40.8"/>
+     <path d="m20.4 110h-40.8"/>
+     <path d="m20.4 69.2h-40.8"/>
+     <path d="m20.4 110v-40.8"/>
+     <path d="m158.8 110v-40.8"/>
+     <path d="m199.6 110h-40.8"/>
+     <path d="m199.6 69.2h-40.8"/>
+     <path d="m199.6 110v-40.8"/>
+     <path d="m-154.8 65.2v-40.8"/>
+     <path d="m-114 65.2h-40.8"/>
+     <path d="m-114 24.4h-40.8"/>
+     <path d="m-114 65.2v-40.8"/>
+     <path d="m382.8 154.8v-40.8"/>
+     <path d="m423.6 154.8h-40.8"/>
+     <path d="m423.6 114h-40.8"/>
+     <path d="m423.6 154.8v-40.8"/>
+     <path d="m-154.8 154.8v-40.8"/>
+     <path d="m-114 154.8h-40.8"/>
+     <path d="m-114 114h-40.8"/>
+     <path d="m-114 154.8v-40.8"/>
+     <path d="m-199.6 154.8v-40.8"/>
+     <path d="m-158.8 154.8h-40.8"/>
+     <path d="m-158.8 114h-40.8"/>
+     <path d="m-158.8 154.8v-40.8"/>
+     <path d="m-199.6 65.2v-40.8"/>
+     <path d="m-158.8 65.2h-40.8"/>
+     <path d="m-158.8 24.4h-40.8"/>
+     <path d="m-158.8 65.2v-40.8"/>
+     <path d="m24.4 65.2v-40.8"/>
+     <path d="m65.2 65.2h-40.8"/>
+     <path d="m65.2 24.4h-40.8"/>
+     <path d="m65.2 65.2v-40.8"/>
+     <path d="m248.4 154.8v-40.8"/>
+     <path d="m289.2 154.8h-40.8"/>
+     <path d="m289.2 114h-40.8"/>
+     <path d="m289.2 154.8v-40.8"/>
+     <path d="m248.4 65.2v-40.8"/>
+     <path d="m289.2 65.2h-40.8"/>
+     <path d="m289.2 24.4h-40.8"/>
+     <path d="m289.2 65.2v-40.8"/>
+     <path d="m24.4 154.8v-40.8"/>
+     <path d="m65.2 154.8h-40.8"/>
+     <path d="m65.2 114h-40.8"/>
+     <path d="m65.2 154.8v-40.8"/>
+     <path d="m-20.4 65.2v-40.8"/>
+     <path d="m20.4 65.2h-40.8"/>
+     <path d="m20.4 24.4h-40.8"/>
+     <path d="m20.4 65.2v-40.8"/>
+     <path d="m-20.4 154.8v-40.8"/>
+     <path d="m20.4 154.8h-40.8"/>
+     <path d="m20.4 114h-40.8"/>
+     <path d="m20.4 154.8v-40.8"/>
+     <path d="m158.8 65.2v-40.8"/>
+     <path d="m199.6 65.2h-40.8"/>
+     <path d="m199.6 24.4h-40.8"/>
+     <path d="m199.6 65.2v-40.8"/>
+     <path d="m158.8 154.8v-40.8"/>
+     <path d="m199.6 154.8h-40.8"/>
+     <path d="m199.6 114h-40.8"/>
+     <path d="m199.6 154.8v-40.8"/>
+     <path d="m382.8 65.2v-40.8"/>
+     <path d="m423.6 65.2h-40.8"/>
+     <path d="m423.6 24.4h-40.8"/>
+     <path d="m423.6 65.2v-40.8"/>
+     <path d="m-154.8-69.2v-40.8"/>
+     <path d="m-114-69.2h-40.8"/>
+     <path d="m-114-110h-40.8"/>
+     <path d="m-114-69.2v-40.8"/>
+     <path d="m382.8-69.2v-40.8"/>
+     <path d="m423.6-69.2h-40.8"/>
+     <path d="m423.6-110h-40.8"/>
+     <path d="m423.6-69.2v-40.8"/>
+     <path d="m-199.6-24.4v-40.8"/>
+     <path d="m-158.8-24.4h-40.8"/>
+     <path d="m-158.8-65.2h-40.8"/>
+     <path d="m-158.8-24.4v-40.8"/>
+     <path d="m-199.6-69.2v-40.8"/>
+     <path d="m-158.8-69.2h-40.8"/>
+     <path d="m-158.8-110h-40.8"/>
+     <path d="m-158.8-69.2v-40.8"/>
+     <path d="m24.4-69.2v-40.8"/>
+     <path d="m65.2-69.2h-40.8"/>
+     <path d="m65.2-110h-40.8"/>
+     <path d="m65.2-69.2v-40.8"/>
+     <path d="m24.4-24.4v-40.8"/>
+     <path d="m65.2-24.4h-40.8"/>
+     <path d="m65.2-65.2h-40.8"/>
+     <path d="m65.2-24.4v-40.8"/>
+     <path d="m248.4-69.2v-40.8"/>
+     <path d="m289.2-69.2h-40.8"/>
+     <path d="m289.2-110h-40.8"/>
+     <path d="m289.2-69.2v-40.8"/>
+     <path d="m-20.4-69.2v-40.8"/>
+     <path d="m20.4-69.2h-40.8"/>
+     <path d="m20.4-110h-40.8"/>
+     <path d="m20.4-69.2v-40.8"/>
+     <path d="m-20.4-24.4v-40.8"/>
+     <path d="m20.4-24.4h-40.8"/>
+     <path d="m20.4-65.2h-40.8"/>
+     <path d="m20.4-24.4v-40.8"/>
+     <path d="m158.8-69.2v-40.8"/>
+     <path d="m199.6-69.2h-40.8"/>
+     <path d="m199.6-110h-40.8"/>
+     <path d="m199.6-69.2v-40.8"/>
+     <path d="m-154.8-24.4v-40.8"/>
+     <path d="m-114-24.4h-40.8"/>
+     <path d="m-114-65.2h-40.8"/>
+     <path d="m-114-24.4v-40.8"/>
+     <path d="m-562 203.6h1124"/>
+     <path d="m562 203.6v-407.2"/>
+     <path d="m562-203.6h-1124"/>
+     <path d="m-562-203.6v407.2"/>
+    </g>
+    <g transform="translate(1419 666.65)" fill="#fff" stroke-linecap="square">
+     <text x="4" y="92" fill="#ffffff" font-family="osifont" font-size="67px" font-weight="400" stroke="#ffffff" xml:space="preserve">112.4</text>
+    </g>
+    <g transform="translate(1485,1050)" fill="none" stroke-linecap="round" stroke-width="1.3">
+     <path d="m-562-279h1124m0 75.396v-85.796m-1124 85.796v-85.796" fill-rule="evenodd" stroke="#fff"/>
+    </g>
+   </g>
+   <g stroke-linejoin="bevel">
+    <g transform="translate(2047 771)" fill="#fefefe" stroke-linecap="round" stroke-width="1.3">
+     <path d="m0 0-20-3.3333v6.6667l20-3.3333" fill="#fefefe" fill-rule="evenodd" stroke="#fff"/>
+    </g>
+    <g transform="translate(923 771)" fill="#fff" stroke-linecap="round" stroke-width="1.3">
+     <path d="m0 0 20 3.3333v-6.6667l-20 3.3333" fill="#fff" fill-rule="evenodd" stroke="#fff"/>
+    </g>
+    <g transform="rotate(-90 1578 -453.52)" fill="#fff" stroke-linecap="square">
+     <text x="4" y="92" fill="#ffffff" font-family="osifont" font-size="67px" font-weight="400" stroke="#ffffff" xml:space="preserve">40.72</text>
+    </g>
+   </g>
+   <g stroke-linecap="round" stroke-linejoin="bevel" stroke-width="1.3">
+    <g transform="translate(1485,1050)" fill="none">
+     <path d="m650.9-203.6v407.2m-88.901 0h99.301m-99.301-407.2h99.301" fill-rule="evenodd" stroke="#fff"/>
+    </g>
+    <g transform="translate(2135.9,1253.6)" fill="#fff">
+     <path d="m0 0 3.3333-20h-6.6667l3.3333 20" fill="#fff" fill-rule="evenodd" stroke="#fff"/>
+    </g>
+    <g transform="translate(2135.9,846.4)" fill="#fff">
+     <path d="m0 0-3.3333 20h6.6667l-3.3333-20" fill="#fff" fill-rule="evenodd" stroke="#fff"/>
+    </g>
+   </g>
+  </g>
+ </g>
+</svg>
