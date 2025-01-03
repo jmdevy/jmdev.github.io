@@ -5,12 +5,14 @@ const ballMass        = 0.0459;                             // [kg]
 const gravityAccelVec = new THREE.Vector3(0.0, -9.81, 0.0); // [m/s^2]
 const airDensity      = 1.225;                              // [kg/m^3]
 const ballRadius      = 0.02135;                            // [m]
-const ballCrossArea   = Math.PI * (ballRadius)^2;           // [m^2]
+const ballCrossArea   = Math.PI * Math.pow(ballRadius, 2);  // [m^2]
 const ballDragCoef    = 0.23;
 
 // Come up with some initial values
-const ballVelVec          = new THREE.Vector3(0.707, 0.707, 0.707);   // [m/s]
-const ballAngularVelVec   = new THREE.Vector3(0.0, 1000.0, 0.0);         // [rad/s]
+// const ballVelVec          = new THREE.Vector3(1000.707, 1000.707, 1000.707);   // [m/s]
+let ballVelVec          = new THREE.Vector3(108 * Math.cos(0.707), 108 * Math.sin(0.707), 0);   // [m/s]
+let ballAngularVelVec   = new THREE.Vector3(100.0, 1000.0, 0.0);         // [rad/s]
+let windVel             = new THREE.Vector3(10 * Math.cos(0.707), 10 * Math.cos(0.707), 10 * Math.cos(0.707));
 
 
 function gravityForce(){
@@ -62,7 +64,7 @@ const renderer = new THREE.WebGLRenderer();
 renderer.setSize(700, 700);
 document.body.appendChild(renderer.domElement);
 
-const camera = new THREE.PerspectiveCamera(45, 700 / 700, 1, 500);
+const camera = new THREE.PerspectiveCamera(45, 700 / 700, 1, 5000);
 camera.position.set(-30, 20, 100);
 camera.lookAt(0, 0, 0);
 
@@ -74,7 +76,7 @@ controls.update();
 
 const scene = new THREE.Scene();
 
-const gridHelper = new THREE.GridHelper(300, 10);
+const gridHelper = new THREE.GridHelper(600, 600);
 scene.add(gridHelper);
 
 //create a blue LineBasicMaterial
@@ -82,19 +84,28 @@ const material = new THREE.LineBasicMaterial({ color: 0x0000ff });
 
 const points = [];
 
-let dt = 0.001;
+let dt = 0.1;
+let t = 0
 let position = new THREE.Vector3(0, 0, 0);
+points.push(position.clone());
 
-for(let i=0; i<5000; i++){
+for(let i=0; i<80; i++){
     let dvdt = calculateDeltaVBall();
     dvdt.multiplyScalar(dt);
     ballVelVec.add(dvdt);
 
+
     let vel = ballVelVec.clone();
-    // vel.multiplyScalar(dt);
+    let wvel = windVel.clone();
+    
+    vel.sub(wvel)
+    vel.multiplyScalar(dt);
+
     position.add(vel);
 
     points.push(position.clone());
+
+    t += dt;
 }
 
 const geometry = new THREE.BufferGeometry().setFromPoints(points);

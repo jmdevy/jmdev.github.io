@@ -140,6 +140,19 @@ In this equation, the variables are as follows:
 <br>
 
 
+## *Wind Velocity*
+At the end of *pg 5.* in the article, assuming the wind is constant, it can be modeled as such:
+
+
+
+
+<br>
+
+---
+
+<br>
+
+
 ## *Solving*
 To solve the differential equation in *Equation 1.* we'll use the **Euler** method. First, we'll start with an initial value for both the translational and angular $$\vec{v}_{ball}$$ & $$\vec{ω}_{ball}$$ velocities. The independent variable is time *t* which we'll set to $$t=0$$ at the start.
 
@@ -241,31 +254,5 @@ function magnusForce(){
 <script src="/assets/2024-12-21-Simulating-3D-Golf-Ball-Trajectory/simulation.js" type="module">
 </script>
 
-<script type="module">
-    import * as THREE from 'three';
 
-    const scene = new THREE.Scene();
-    const camera = new THREE.PerspectiveCamera( 75, 600 / 600, 0.1, 1000 );
-
-    const axesHelper = new THREE.AxesHelper( 5 );
-    scene.add( axesHelper );
-
-    const renderer = new THREE.WebGLRenderer();
-    renderer.setSize(600, 600);
-    document.body.appendChild( renderer.domElement );
-
-    const geometry = new THREE.BoxGeometry( 1, 1, 1 );
-    const material = new THREE.MeshBasicMaterial( { color: 0x00ff00 } );
-    const cube = new THREE.Mesh( geometry, material );
-    scene.add( cube );
-
-    camera.position.z = 5;
-
-    function animate() {
-        cube.rotation.x += 0.01;
-        cube.rotation.y += 0.01;
-
-        renderer.render(scene, camera);
-    }
-    renderer.setAnimationLoop( animate );
-</script>
+END
