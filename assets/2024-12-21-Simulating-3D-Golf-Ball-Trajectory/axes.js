@@ -10,7 +10,7 @@ const renderDiv = document.getElementById("axesDiv");
 
 const renderer = new THREE.WebGLRenderer({alpha: true});
 renderer.setSize(VIEWPORT_WIDTH, VIEWPORT_HEIGHT);
-renderer.setClearColor( 0x000000, 0 );
+renderer.setClearColor(0x000000, 0);
 renderDiv.appendChild(renderer.domElement);
 
 const labelRenderer = new CSS2DRenderer();

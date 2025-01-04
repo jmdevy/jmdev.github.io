@@ -6,9 +6,9 @@ categories: jekyll update
 ---
 
 ## *The Equation*
-Recently, for a mod for a game I am writing, I did some research into simulating the trajectory of a Golf ball in 3D, and I found this article very useful: ["Interactive 3D Golf Simulator"](https://www.researchgate.net/profile/Chang-Song-11/publication/267680093_Interactive_3D_Golf_Simulator/links/555c163508ae6aea0817315e/Interactive-3D-Golf-Simulator.pdf).
+Recently, for game mod I am developing, I researched simulating the trajectory of a golf ball in 3D. I found article ["Interactive 3D Golf Simulator"](https://www.researchgate.net/profile/Chang-Song-11/publication/267680093_Interactive_3D_Golf_Simulator/links/555c163508ae6aea0817315e/Interactive-3D-Golf-Simulator.pdf) very useful.
 
-In the article they mention this differential equation:
+In the article, they mention this differential equation:
 
 
 $$
@@ -34,14 +34,14 @@ We can solve this in real time using numerical methods like **Euler** or **Runge
 
 
 ## *Coordinate system*
-First, a coordinate system should be defined:
+A coordinate system should be defined so we're on the same page:
 
 <center>
     <div id="axesDiv" style="width:min-content; height:min-content; position:relative">
     </div>
 </center>
 
-This is mostly just important for defining the y-axis as the up/down or the axis gravity will act in.
+This is mostly important for defining the y-axis as the up/down or the axis where gravity acts.
 
 
 <br>
@@ -53,7 +53,7 @@ This is mostly just important for defining the y-axis as the up/down or the axis
 
 
 ## *Gravity Force: $$\vec{F}_{gravity}$$*
-Everyone knows this one:
+Simple enough:
 
 
 $$
@@ -67,7 +67,7 @@ $$
 <center><i>Equation 2: Gravity force</i></center>
 <br>
 
-The variables in this equation are typically the following:
+The variables in this equation typically have the following values:
 
 * Golf ball mass: $$m = 0.0459 \ [kg]$$
 * Gravity vector: $$\vec{g} = <0, -9.81, 0> [m/s^2]$$
@@ -116,33 +116,24 @@ $$
 
 $$
 
-<center><i>Equation 5: Lift coefficient calculation</i></center>
+<center><i>Equation 5: Lift coefficient</i></center>
 <br>
 
 
-In this equation, the variables are as follows:
-* Air density: $$ρ = 1.225 \ [kg/m^3]$$
-* Golf ball radius: $$b = 0.02135 \ [m]$$
-* Golf ball cross sectional area: $$A = \pi b^2 = \pi(0.02135m)^2 = 0.00143 \ [m^2]$$
-* Golf ball drag coefficient: $$C_D = (0.21 + 0.25)/2 = 0.23$$
-* Translational velocity vector: $$\vec{v}_{ball} = <v_{ball_x}, v_{ball_y}, v_{ball_z}> [m/s]$$
-* Angular velocity: $$\vec{ω}_{ball} = <ω_{ball_x}, ω_{ball_y}, ω_{ball_z}> \ [rad/s]$$
-* Magnitude of translational velocity: $$\left\lvert \vec{v}_{ball} \right\rvert = \sqrt{v_{ball_x}^2+v_{ball_y}^2+v_{ball_z}^2}$$
-* Magnitude of angular velocity: $$\left\lvert \vec{ω}_{ball} \right\rvert = \sqrt{ω_{ball_x}^2+ω_{ball_y}^2+ω_{ball_z}^2}$$
-* Translational velocity unit vector: $$\hat{\vec{v}}_{ball} = \frac{\vec{v}_{ball}}{\left\lvert \vec{v}_{ball} \right\rvert}$$
-* Angular velocity unit vector: $$\hat{\vec{ω}}_{ball} = \frac{\vec{ω}_{ball}}{\left\lvert \vec{ω}_{ball} \right\rvert}$$
+In these equations, the variables are as follows:
 
-
-<br>
-
----
-
-<br>
-
-
-## *Wind Velocity*
-At the end of *pg 5.* in the article, assuming the wind is constant, it can be modeled as such:
-
+| Variable                           | Equation                                      | Units     |
+|------------------------------------|-----------------------------------------------|-----------|
+| Air density                        | $$ρ = 1.225$$                                 | $$[kg/m^3]$$ |
+| Golf ball radius                   | $$b = 0.02135$$                               | $$[m]$$   |
+| Golf ball cross-sectional area     | $$A = \pi b^2 = \pi(0.02135m)^2 = 0.00143$$   | $$[m^2]$$ |
+| Golf ball drag coefficient         | $$C_D = (0.21 + 0.25)/2 = 0.23$$              | -         |
+| Translational velocity vector      | $$\vec{v}_{ball} = <v_{ball_x}, v_{ball_y}, v_{ball_z}>$$ | $$[m/s]$$ |
+| Angular velocity                   | $$\vec{ω}_{ball} = <ω_{ball_x}, ω_{ball_y}, ω_{ball_z}>$$ | $$[rad/s]$$ |
+| Magnitude of translational velocity| $$\left\lvert \vec{v}_{ball} \right\rvert = \sqrt{v_{ball_x}^2+v_{ball_y}^2+v_{ball_z}^2}$$ | - |
+| Magnitude of angular velocity      | $$\left\lvert \vec{ω}_{ball} \right\rvert = \sqrt{ω_{ball_x}^2+ω_{ball_y}^2+ω_{ball_z}^2}$$ | - |
+| Translational velocity unit vector | $$\hat{\vec{v}}_{ball} = \frac{\vec{v}_{ball}}{\left\lvert \vec{v}_{ball} \right\rvert}$$ | - |
+| Angular velocity unit vector       | $$\hat{\vec{ω}}_{ball} = \frac{\vec{ω}_{ball}}{\left\lvert \vec{ω}_{ball} \right\rvert}$$ | - |
 
 
 
@@ -153,37 +144,82 @@ At the end of *pg 5.* in the article, assuming the wind is constant, it can be m
 <br>
 
 
-## *Solving*
-To solve the differential equation in *Equation 1.* we'll use the **Euler** method. First, we'll start with an initial value for both the translational and angular $$\vec{v}_{ball}$$ & $$\vec{ω}_{ball}$$ velocities. The independent variable is time *t* which we'll set to $$t=0$$ at the start.
+## *Solving for Translational Velocity*
+To solve the differential equation in *Equation 1*, we'll use the **Euler** method. This is a numerical and iterative approach that will be performed in $$n$$ number of steps:
 
-Second, we'll choose how much to change the time by each *step*. For example, a small change in time would be maybe be something like $$dt = 0.01$$.
+**1.** Choose initial conditions for the translational and angular velocities when $$n = 0$$:
 
-Third, if we express the differential equation *Equation 1.* as a function with initial condition:
+<br>
 
-$$
-f(t, \vec{v}_{ball}) = {d \vec{v}_{ball} \over dt} \ \ \ \ \vec{v}_{ball}(t_0) = \vec{v}_{ball_0}
-$$
+$$v_{ball_0} = <70.7, 70.7, 0> [m/s] \ \ \ \ w_{ball_0} = <0, 1000, 0> [rad/s]$$
 
-<center><i>Equation 6: Equation 1. as a function</i></center>
+<br>
+
+These initial conditions would depend on how the ball was hit, but we'll just choose convenient values. The above values should hit the ball in the xy-plane at a 45-degree angle with a decent amount of counter-clockwise spin.
+
+
+**2.** Choose how big of a time step to take between steps of $$n$$:
+
+<br>
+
+$$t_{n+1} - t_n = dt = 0.01 \ [s]$$
+
+<center><i>Equation 7: Discrete time steps</i></center>
+<br>
+
+Smaller time steps provide better accuracy but require more steps $$n$$ to complete the trajectory.
+
+
+**3.** Define the next velocity in terms of the previous velocity plus the change in velocity over discrete time steps:
+
+<br>
+
+$$v_{ball_{n+1}} = v_{ball_n} + {d \vec{v}_{ball} \over dt} * dt \ [m/s]$$
+
+<center><i>Equation 8: Calculate next velocity after time dt</i></center>
 <br>
 
 
-Then
-
-$$
-\vec{v}_{ball_{n+1}} = \vec{v}_{ball_n} + f(t_n, \vec{v}_{ball_n})(t_{n+1}-t_n) \ [m/s]
-$$
-
-<center><i>Equation 7: The Euler form for step-wise solving</i></center>
 <br>
 
-Finally, for each change in translational velocity $$\vec{v}_{ball}$$ we can calculate the newest position based on the last position and the newest approximated velocity:
+---
+
+<br>
+
+
+## *Accounting for Wind Velocity*
+At the end of *pg 5.* in the article, assuming the wind is constant, it can be modeled as a constant velocity affecting the ball's velocity:
+
+<br>
+
+$$v_{ball_{n+1}} = v_{ball_n} + {d \vec{v}_{ball} \over dt} * dt - v_{wind}$$
+
+<center><i>Equation 9: Calculate next velocity after time dt while accounting for wind</i></center>
+<br>
+
+We'll set the wind velocity to something easy to visualize on a single axis:
+
+$$v_{wind} = <10, 0, 0> \ [m/s]$$
+
+
+<br>
+
+---
+
+<br>
+
+
+## *Calculating Position for Trajectory*
+
+Finally, for each change in translational velocity $$\vec{v}_{ball}$$ from *Equation 9*, we can calculate the newest position based on the last position and the newest approximated velocity in discrete steps:
+
+<br>
 
 $$
 \vec{p}_{n+1} = \vec{p}_n + (\vec{v}_{ball_{n+1}})(t_{n+1} - t_n) \ [m]
 $$
 
-<center><i>Equation 8: Simulated Golf ball position calculation</i></center>
+<center><i>Equation 10: Golf ball position calculation</i></center>
 <br>
 
 
@@ -192,6 +228,7 @@ $$
 ---
 
 <br>
+
 
 
 ## *Simulation Code*

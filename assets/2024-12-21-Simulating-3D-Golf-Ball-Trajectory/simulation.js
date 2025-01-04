@@ -1,127 +1,128 @@
 import * as THREE from 'three';
 import { OrbitControls } from 'three/addons/controls/OrbitControls.js';
 
-const ballMass        = 0.0459;                             // [kg]
+// Constants
+const ballMass = 0.0459;                             // [kg]
 const gravityAccelVec = new THREE.Vector3(0.0, -9.81, 0.0); // [m/s^2]
-const airDensity      = 1.225;                              // [kg/m^3]
-const ballRadius      = 0.02135;                            // [m]
-const ballCrossArea   = Math.PI * Math.pow(ballRadius, 2);  // [m^2]
-const ballDragCoef    = 0.23;
+const airDensity = 1.225;                              // [kg/m^3]
+const ballRadius = 0.02135;                            // [m]
+const ballCrossArea = Math.PI * Math.pow(ballRadius, 2);  // [m^2]
+const ballDragCoef = 0.23;
 
-// Come up with some initial values
-// const ballVelVec          = new THREE.Vector3(1000.707, 1000.707, 1000.707);   // [m/s]
-let ballVelVec          = new THREE.Vector3(108 * Math.cos(0.707), 108 * Math.sin(0.707), 0);   // [m/s]
-let ballAngularVelVec   = new THREE.Vector3(100.0, 1000.0, 0.0);         // [rad/s]
-let windVel             = new THREE.Vector3(10 * Math.cos(0.707), 10 * Math.cos(0.707), 10 * Math.cos(0.707));
+// Initial values
+let ballVelVec = new THREE.Vector3(108 * Math.cos(0.707), 108 * Math.sin(0.707), 0);   // [m/s]
+let ballAngularVelVec = new THREE.Vector3(100.0, 1000.0, 0.0);                                // [rad/s]
+let windVel = new THREE.Vector3(10, 0, 0);                                          // [m/s]
 
-
-function gravityForce(){
+function gravityForce() {
     let gravityForceVec = gravityAccelVec.clone();
     gravityForceVec.multiplyScalar(ballMass);
-
     return gravityForceVec;
 }
 
-
-function dragForce(){
-    let ballVelUnitVec = ballVelVec.clone();
-    ballVelUnitVec.normalize();
-
+function dragForce() {
+    let ballVelUnitVec = ballVelVec.clone().normalize();
     let ballVelMag = ballVelVec.length();
-
-    let dragForce = ballVelUnitVec.multiplyScalar((-1/2) * airDensity * ballCrossArea * ballDragCoef * Math.pow(ballVelMag, 2));
-
+    let dragForce = ballVelUnitVec.multiplyScalar((-1 / 2) * airDensity * ballCrossArea * ballDragCoef * Math.pow(ballVelMag, 2));
     return dragForce;
 }
 
-
-function magnusForce(){
+function magnusForce() {
     let ballVelMag = ballVelVec.length();
     let ballAngularVelMag = ballAngularVelVec.length();
     let ballLiftCoef = -0.05 + Math.sqrt(0.0025 + 0.036 * ((ballRadius * ballAngularVelMag) / ballVelMag));
 
-
-    let ballVelUnitVec = ballVelVec.clone();
-    ballVelUnitVec.normalize();
-
-    let ballAngularVelUnitVec = ballAngularVelVec.clone();
-    ballAngularVelUnitVec.normalize();
-
-    let magnusForce = ballAngularVelUnitVec.cross(ballVelUnitVec).multiplyScalar(((1/2) * airDensity * ballCrossArea * ballLiftCoef * Math.pow(ballVelMag, 2)));
+    let ballVelUnitVec = ballVelVec.clone().normalize();
+    let ballAngularVelUnitVec = ballAngularVelVec.clone().normalize();
+    let magnusForce = ballAngularVelUnitVec.cross(ballVelUnitVec).multiplyScalar((1 / 2) * airDensity * ballCrossArea * ballLiftCoef * Math.pow(ballVelMag, 2));
 
     return magnusForce;
 }
 
-
-function calculateDeltaVBall(){
+function calculateDeltaVBall() {
     let deltaVBall = gravityForce().add(dragForce()).add(magnusForce());
     deltaVBall.divideScalar(ballMass);
     return deltaVBall;
 }
 
-
-const renderer = new THREE.WebGLRenderer();
-renderer.setSize(700, 700);
+// Main renderer and scene
+const renderer = new THREE.WebGLRenderer({ alpha: true });
+renderer.setClearColor(0x000000, 0);
+renderer.setSize(600, 600);
 document.body.appendChild(renderer.domElement);
 
-const camera = new THREE.PerspectiveCamera(45, 700 / 700, 1, 5000);
-camera.position.set(-30, 20, 100);
-camera.lookAt(0, 0, 0);
+const mainCamera = new THREE.PerspectiveCamera(45, 600 / 600, 1, 5000);
+mainCamera.position.set(-30, 20, 100);
+mainCamera.lookAt(0, 0, 0);
 
-const controls = new OrbitControls( camera, renderer.domElement );
+const controls = new OrbitControls(mainCamera, renderer.domElement);
 
-controls.update();
-
-
-
-const scene = new THREE.Scene();
-
+const mainScene = new THREE.Scene();
 const gridHelper = new THREE.GridHelper(600, 600);
-scene.add(gridHelper);
+mainScene.add(gridHelper);
 
-//create a blue LineBasicMaterial
+// Create line geometry
 const material = new THREE.LineBasicMaterial({ color: 0x0000ff });
-
 const points = [];
-
 let dt = 0.1;
-let t = 0
 let position = new THREE.Vector3(0, 0, 0);
 points.push(position.clone());
 
-for(let i=0; i<80; i++){
+for (let i = 0; i < 100; i++) {
     let dvdt = calculateDeltaVBall();
     dvdt.multiplyScalar(dt);
     ballVelVec.add(dvdt);
 
-
-    let vel = ballVelVec.clone();
-    let wvel = windVel.clone();
-    
-    vel.sub(wvel)
-    vel.multiplyScalar(dt);
-
+    let vel = ballVelVec.clone().sub(windVel).multiplyScalar(dt);
     position.add(vel);
 
     points.push(position.clone());
-
-    t += dt;
 }
 
 const geometry = new THREE.BufferGeometry().setFromPoints(points);
-
 const line = new THREE.Line(geometry, material);
+mainScene.add(line);
 
-scene.add(line);
+// Axes scene setup
+const axesScene = new THREE.Scene();
+const axesHelper = new THREE.AxesHelper(5); // Adjusted size for better visibility
+axesScene.add(axesHelper);
 
-function animate() {
+const axesCamera = new THREE.PerspectiveCamera(50, 1, 0.1, 100);
+axesCamera.position.set(2, 2, 2);
+axesCamera.lookAt(axesHelper.position);
 
-	requestAnimationFrame( animate );
+const axesControls = new OrbitControls(axesCamera, renderer.domElement);
+axesControls.enableZoom = false;
+axesControls.enablePan = false;
 
-	controls.update();
+function render() {
+    requestAnimationFrame(render);
 
-	renderer.render( scene, camera );
+    controls.update();
+    axesControls.update();
 
+    // Render the main scene
+    renderer.setViewport(0, 0, 600, 600);
+    renderer.clear();
+    renderer.render(mainScene, mainCamera);
+
+    // Disable auto clearing for the axes scene
+    renderer.autoClear = false;
+
+    // Render the axes scene in the top-right corner without clearing the background
+    const insetWidth = 100;
+    const insetHeight = 100;
+    renderer.setViewport(490, 10, insetWidth, insetHeight);
+    renderer.setScissor(490, 10, insetWidth, insetHeight);
+    renderer.setScissorTest(true);
+    renderer.render(axesScene, axesCamera);
+
+    // Reset the viewport, scissor, and auto clearing
+    renderer.setViewport(0, 0, 600, 600);
+    renderer.setScissorTest(false);
+    renderer.autoClear = true;
 }
 
-animate();
+
+renderer.setAnimationLoop( render );
