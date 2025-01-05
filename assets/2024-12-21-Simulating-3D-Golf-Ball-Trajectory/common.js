@@ -6,7 +6,7 @@ function manageRendererSize(renderer, camera, childDivToMonitor, maxWidth, maxHe
     // If a max is `undefined`, return the below
     // respective values for that dimension
     let width = parentWidth;
-    let height = width;
+    let height = window.innerHeight - 20;
 
     if(maxWidth != undefined && width > maxWidth){
         width = maxWidth;
