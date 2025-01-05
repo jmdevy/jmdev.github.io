@@ -1,5 +1,5 @@
 import * as THREE from 'three';
-import {VIEWPORT_WIDTH, VIEWPORT_HEIGHT, VIEWPORT_ASPECT_RATIO} from "/assets/2024-12-21-Simulating-3D-Golf-Ball-Trajectory/common.js"
+import {manageRendererSize} from "/assets/2024-12-21-Simulating-3D-Golf-Ball-Trajectory/common.js"
 
 // Axes scene setup
 const axesScene = new THREE.Scene();
@@ -28,15 +28,14 @@ function handleRender(renderer){
     renderer.autoClear = false;
 
     // Render the axes scene in the top-right corner without clearing the background
-    const insetWidth = 100;
-    const insetHeight = 100;
-    renderer.setViewport(VIEWPORT_WIDTH - insetWidth - 10, 10, insetWidth, insetHeight);
-    renderer.setScissor(VIEWPORT_HEIGHT - insetHeight - 10, 10, insetWidth, insetHeight);
+    const axesViewportDim = 100;
+    const axesViewportMargin = 10;
+    renderer.setViewport(axesViewportMargin, axesViewportMargin, axesViewportDim, axesViewportDim);
+    renderer.setScissor(axesViewportMargin, axesViewportMargin, axesViewportDim, axesViewportDim);
     renderer.setScissorTest(true);
     renderer.render(axesScene, axesCamera);
 
     // Reset the viewport, scissor, and auto clearing
-    renderer.setViewport(0, 0, VIEWPORT_WIDTH, VIEWPORT_HEIGHT);
     renderer.setScissorTest(false);
     renderer.autoClear = true;
 }

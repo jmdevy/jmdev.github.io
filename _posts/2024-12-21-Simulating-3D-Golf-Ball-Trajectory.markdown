@@ -25,7 +25,7 @@ categories: jekyll update
 ## *Introduction*
 Recently, for game mod I am developing, I researched simulating the trajectory of a golf ball in 3D. I found article ["Interactive 3D Golf Simulator"](https://www.researchgate.net/profile/Chang-Song-11/publication/267680093_Interactive_3D_Golf_Simulator/links/555c163508ae6aea0817315e/Interactive-3D-Golf-Simulator.pdf) very useful.
 
-In the article, they mention this differential equation:
+In the article, they mention this ordinary differential equation:
 
 
 $$
@@ -137,20 +137,17 @@ $$
 <br>
 
 
-In these equations, the variables are as follows:
+In these equations, the constant variables are as follows:
 
 | Variable                           | Equation                                      | Units     |
 |------------------------------------|-----------------------------------------------|-----------|
 | Golf ball radius                   | $$b = 0.02135$$                               | $$[m]$$   |
-| Golf ball cross-sectional area     | $$A = \pi b^2 = \pi(0.02135m)^2 = 0.00143$$   | $$[m^2]$$ |
-| Golf ball drag coefficient         | $$C_D = (0.21 + 0.25)/2 = 0.23$$              | -         |
+| Golf ball cross-sectional area     | $$A = \pi b^2 = 0.00143$$                     | $$[m^2]$$ |
+| Golf ball drag coefficient         | $$C_D = 0.23$$                                | -         |
 | Air density                        | $$ρ = 1.225$$                                 | $$[kg/m^3]$$ |
-| Translational velocity vector      | $$\vec{v}_{ball} = <v_{ball_x}, v_{ball_y}, v_{ball_z}>$$ | $$[m/s]$$ |
-| Angular velocity                   | $$\vec{ω}_{ball} = <ω_{ball_x}, ω_{ball_y}, ω_{ball_z}>$$ | $$[rad/s]$$ |
-| Magnitude of translational velocity| $$\left\lvert \vec{v}_{ball} \right\rvert = \sqrt{v_{ball_x}^2+v_{ball_y}^2+v_{ball_z}^2}$$ | - |
-| Magnitude of angular velocity      | $$\left\lvert \vec{ω}_{ball} \right\rvert = \sqrt{ω_{ball_x}^2+ω_{ball_y}^2+ω_{ball_z}^2}$$ | - |
-| Translational velocity unit vector | $$\hat{\vec{v}}_{ball} = \frac{\vec{v}_{ball}}{\left\lvert \vec{v}_{ball} \right\rvert}$$ | - |
-| Angular velocity unit vector       | $$\hat{\vec{ω}}_{ball} = \frac{\vec{ω}_{ball}}{\left\lvert \vec{ω}_{ball} \right\rvert}$$ | - |
+
+
+In case you don't know, the vectors with the absolute symbol $$\left\lvert \right\rvert$$ around them means that we need the length or the magnitude of that vector. Any vectors with the little carrot/hat symbol $$ \hat{}  $$ are unit or normalized versions of the vector.
 
 
 
@@ -168,7 +165,9 @@ To solve the differential equation in *Equation 1*, we'll use the **Euler** meth
 
 <br>
 
-$$v_{ball_0} = <70.7, 70.7, 0> [m/s] \ \ \ \ w_{ball_0} = <0, 1000, 0> [rad/s]$$
+$$v_{ball_0} = <70.7, 70.7, 0> [m/s]$$
+
+$$w_{ball_0} = <0, 1000, 0> [rad/s]$$
 
 <br>
 
@@ -266,11 +265,9 @@ const w = new THREE.Vector3(0, 0, 10);          // Constant wind velocity:      
 const dt = 0.1;                                 // Time step for solving:           [s]
 
 // Set main variables to initial values
-let vball    = new THREE.Vector3(108 * Math.cos(0.707), // Current golf ball translational velocity: [m/s]
-                                 108 * Math.sin(0.707),
-                                 0);   
-let wball    = new THREE.Vector3(100.0, 1000.0, 0.0);   // Current golf ball angular velocity:       [rad/s]
-let position = new THREE.Vector3(0, 0, 0);              // Current golf ball position:               [m]
+let vball    = new THREE.Vector3(70.7, 70.7, 0);        // Golf ball translational velocity: [m/s]   
+let wball    = new THREE.Vector3(100.0, 1000.0, 0.0);   // Golf ball angular velocity:       [rad/s]
+let position = new THREE.Vector3(0, 0, 0);              // Golf ball position:               [m]
 
 function Fgravity(){
     return g.clone().multiplyScalar(m);
@@ -280,7 +277,9 @@ function Fdrag(){
     let vballMag  = vball.length();
     let vballUnit = vball.clone().normalize();
 
-    return vballUnit.multiplyScalar((-1 / 2) * p * A * Cd * Math.pow(vballMag, 2));
+    let F = vballUnit;
+    F.multiplyScalar(-0.5 * p * A * Cd * Math.pow(vballMag, 2));
+    return F
 }
 
 function Fmagnus(){
@@ -292,7 +291,9 @@ function Fmagnus(){
 
     let CL = -0.05 + Math.sqrt(0.0025 + 0.036 * ((b * wballMag) / vballMag));
 
-    return wballUnit.cross(vballUnit).multiplyScalar((1 / 2) * p * A * CL * Math.pow(vballMag, 2));
+    let F = wballUnit.cross(vballUnit);
+    F.multiplyScalar(0.5 * p * A * CL * Math.pow(vballMag, 2));
+    return F
 }
 
 function calcDvdt(){
@@ -340,11 +341,16 @@ export default simulate;
 
 ## *Simulation*
 You can use the following controls to navigate the 3D scene:
-* Hold mouse left-click and move mouse to rotate
-* Hold mouse right-click and move mouse to pan
-* Mouse scroll-wheel to zoom in and out
 
-<br>
+#### **Desktop**
+* Hold mouse left-click and move mouse to **rotate**
+* Hold mouse right-click and move mouse to **pan**
+* Mouse scroll-wheel to **zoom**
+
+#### **Mobile**
+* One finger and drag to **rotate**
+* Two fingers and drag to **pan**
+* Two fingers and pinch to **zoom**
 
 <center>
     <div id="simulationDiv" style="width:min-content; height:min-content; position:relative">
@@ -354,6 +360,8 @@ You can use the following controls to navigate the 3D scene:
 <br>
 
 In the next articles, we'll explore what happens to the ball when it bounces off the ground and the dynamics during putting.
+
+COMING SOON
 
 
 <script type="importmap">

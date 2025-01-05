@@ -1,20 +1,18 @@
 import * as THREE from 'three';
 import { CSS2DRenderer, CSS2DObject  } from 'three/addons/renderers/CSS2DRenderer.js';
-import {VIEWPORT_WIDTH, VIEWPORT_HEIGHT, VIEWPORT_ASPECT_RATIO} from "/assets/2024-12-21-Simulating-3D-Golf-Ball-Trajectory/common.js"
+import {manageRendererSize} from "/assets/2024-12-21-Simulating-3D-Golf-Ball-Trajectory/common.js"
 
 // #1: Setup the scene/THREE.js
 const scene = new THREE.Scene();
-const camera = new THREE.PerspectiveCamera(75, VIEWPORT_ASPECT_RATIO, 0.1, 1000);
+const camera = new THREE.PerspectiveCamera(75, 1, 0.1, 1000);
 
 const renderDiv = document.getElementById("axesDiv");
 
 const renderer = new THREE.WebGLRenderer({alpha: true});
-renderer.setSize(VIEWPORT_WIDTH, VIEWPORT_HEIGHT);
 renderer.setClearColor(0x000000, 0);
 renderDiv.appendChild(renderer.domElement);
 
 const labelRenderer = new CSS2DRenderer();
-labelRenderer.setSize(VIEWPORT_WIDTH, VIEWPORT_HEIGHT);
 labelRenderer.domElement.style.position = 'absolute';
 labelRenderer.domElement.style.top = '0px';
 renderDiv.appendChild(labelRenderer.domElement);
@@ -64,7 +62,10 @@ scene.add(yAxisLabel);
 scene.add(zAxisLabel);
 
 // Run render loop
-function animate() {
+function animate(){
+    manageRendererSize(renderer,      camera, renderer.domElement, 500, 500);
+    manageRendererSize(labelRenderer, camera, renderer.domElement, 500, 500);
+
     renderer.render(scene, camera);
     labelRenderer.render(scene, camera);
 }

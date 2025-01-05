@@ -11,11 +11,9 @@ const w = new THREE.Vector3(0, 0, 10);          // Constant wind velocity:      
 const dt = 0.1;                                 // Time step for solving:           [s]
 
 // Set main variables to initial values
-let vball    = new THREE.Vector3(108 * Math.cos(0.707), // Current golf ball translational velocity: [m/s]
-                                 108 * Math.sin(0.707),
-                                 0);   
-let wball    = new THREE.Vector3(100.0, 1000.0, 0.0);   // Current golf ball angular velocity:       [rad/s]
-let position = new THREE.Vector3(0, 0, 0);              // Current golf ball position:               [m]
+let vball    = new THREE.Vector3(70.7, 70.7, 0);    // Golf ball translational velocity: [m/s]   
+let wball    = new THREE.Vector3(0, 1000.0, 0.0);   // Golf ball angular velocity:       [rad/s]
+let position = new THREE.Vector3(0, 0, 0);          // Golf ball position:               [m]
 
 function Fgravity(){
     return g.clone().multiplyScalar(m);
@@ -25,7 +23,9 @@ function Fdrag(){
     let vballMag  = vball.length();
     let vballUnit = vball.clone().normalize();
 
-    return vballUnit.multiplyScalar((-1 / 2) * p * A * Cd * Math.pow(vballMag, 2));
+    let F = vballUnit;
+    F.multiplyScalar(-0.5 * p * A * Cd * Math.pow(vballMag, 2));
+    return F
 }
 
 function Fmagnus(){
@@ -37,7 +37,9 @@ function Fmagnus(){
 
     let CL = -0.05 + Math.sqrt(0.0025 + 0.036 * ((b * wballMag) / vballMag));
 
-    return wballUnit.cross(vballUnit).multiplyScalar((1 / 2) * p * A * CL * Math.pow(vballMag, 2));
+    let F = wballUnit.cross(vballUnit);
+    F.multiplyScalar(0.5 * p * A * CL * Math.pow(vballMag, 2));
+    return F
 }
 
 function calcDvdt(){
