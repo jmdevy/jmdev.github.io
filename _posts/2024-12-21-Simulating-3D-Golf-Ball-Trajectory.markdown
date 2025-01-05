@@ -37,7 +37,7 @@ $$
 
 $$
 
-<center><i>Equation 1: How the translational velocity of a Golf ball changes over time</i></center>
+<center><i>Equation 1: How the translational velocity of a golf ball changes over time</i></center>
 <br>
 
 We can solve this in real time using numerical methods like **Euler** or **Runge-Kutta**.
