@@ -21,7 +21,7 @@ I alway refer to these design guidelines when designing parts.
 * [**Engineering Plastics Joining Techniques**](https://web.archive.org/web/20230602222325/https://techcenter.lanxess.com/scp/americas/en/docguard/Joining_Guide.pdf?docId=77016){:target="_blank"}{:rel="noopener noreferrer"}
 
 ## **Product Features**
-What are we designing? Well I, the author, wanted a simple stand that holds my Iphone on its side while charging at night. This will allow me to [**StandBy**](https://support.apple.com/guide/iphone/use-standby-iph878d77632/ios){:target="_blank"}{:rel="noopener noreferrer"} to have a bedside clock. Here's what I want:
+What are we designing? I wanted a simple stand that holds my Iphone on its side while charging at night. This will allow me to use [**StandBy**](https://support.apple.com/guide/iphone/use-standby-iph878d77632/ios){:target="_blank"}{:rel="noopener noreferrer"} to have a bedside clock. Here's what I want:
 * Simple and heavy plastic base
 * Rubber feet to reduce sliding
 * Adjustable back for adjusting phone angle

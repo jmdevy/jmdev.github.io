@@ -5,7 +5,24 @@ date:   2024-12-21 00:00:00 -0500
 categories: jekyll update
 ---
 
-## *The Equation*
+
+<style>
+    /* Axes labels */
+    .label {
+        color: #FFF;
+        font-family: sans-serif;
+        padding: 2px;
+        background: rgba( 0, 0, 0, .6 );
+    }
+
+    /* Code block background */
+    .highlighter-rouge .highlight {
+        background: black;
+    }
+</style>
+
+
+## *Introduction*
 Recently, for game mod I am developing, I researched simulating the trajectory of a golf ball in 3D. I found article ["Interactive 3D Golf Simulator"](https://www.researchgate.net/profile/Chang-Song-11/publication/267680093_Interactive_3D_Golf_Simulator/links/555c163508ae6aea0817315e/Interactive-3D-Golf-Simulator.pdf) very useful.
 
 In the article, they mention this differential equation:
@@ -33,7 +50,7 @@ We can solve this in real time using numerical methods like **Euler** or **Runge
 <br>
 
 
-## *Coordinate system*
+## *Coordinate System*
 A coordinate system should be defined so we're on the same page:
 
 <center>
@@ -124,10 +141,10 @@ In these equations, the variables are as follows:
 
 | Variable                           | Equation                                      | Units     |
 |------------------------------------|-----------------------------------------------|-----------|
-| Air density                        | $$ρ = 1.225$$                                 | $$[kg/m^3]$$ |
 | Golf ball radius                   | $$b = 0.02135$$                               | $$[m]$$   |
 | Golf ball cross-sectional area     | $$A = \pi b^2 = \pi(0.02135m)^2 = 0.00143$$   | $$[m^2]$$ |
 | Golf ball drag coefficient         | $$C_D = (0.21 + 0.25)/2 = 0.23$$              | -         |
+| Air density                        | $$ρ = 1.225$$                                 | $$[kg/m^3]$$ |
 | Translational velocity vector      | $$\vec{v}_{ball} = <v_{ball_x}, v_{ball_y}, v_{ball_z}>$$ | $$[m/s]$$ |
 | Angular velocity                   | $$\vec{ω}_{ball} = <ω_{ball_x}, ω_{ball_y}, ω_{ball_z}>$$ | $$[rad/s]$$ |
 | Magnitude of translational velocity| $$\left\lvert \vec{v}_{ball} \right\rvert = \sqrt{v_{ball_x}^2+v_{ball_y}^2+v_{ball_z}^2}$$ | - |
@@ -162,7 +179,7 @@ These initial conditions would depend on how the ball was hit, but we'll just ch
 
 <br>
 
-$$t_{n+1} - t_n = dt = 0.01 \ [s]$$
+$$t_{n+1} - t_n = dt = 0.1 \ [s]$$
 
 <center><i>Equation 7: Discrete time steps</i></center>
 <br>
@@ -176,7 +193,7 @@ Smaller time steps provide better accuracy but require more steps $$n$$ to compl
 
 $$v_{ball_{n+1}} = v_{ball_n} + {d \vec{v}_{ball} \over dt} * dt \ [m/s]$$
 
-<center><i>Equation 8: Calculate next velocity after time dt</i></center>
+<center><i>Equation 8: Next velocity after time dt</i></center>
 <br>
 
 
@@ -192,15 +209,16 @@ At the end of *pg 5.* in the article, assuming the wind is constant, it can be m
 
 <br>
 
-$$v_{ball_{n+1}} = v_{ball_n} + {d \vec{v}_{ball} \over dt} * dt - v_{wind}$$
+$$v_{ball_{n+1}} = v_{ball_n} + {d \vec{v}_{ball} \over dt} * dt + v_{wind}$$
 
-<center><i>Equation 9: Calculate next velocity after time dt while accounting for wind</i></center>
+<center><i>Equation 9: Next velocity after time dt while accounting for wind</i></center>
 <br>
 
 We'll set the wind velocity to something easy to visualize on a single axis:
 
-$$v_{wind} = <10, 0, 0> \ [m/s]$$
+$$v_{wind} = <0, 0, 10> \ [m/s]$$
 
+If the initial conditions hit the ball in the xy-plane, wind on the z-axis will constantly alter the trajectory out of the plane.
 
 <br>
 
@@ -232,37 +250,110 @@ $$
 
 
 ## *Simulation Code*
-In **JavaScript**, the entire simulation of the trajectory of the ball through calculating its position is as follows using THREE.js for some types:
+In **JavaScript**, the entire simulation of the trajectory of the ball through calculating its position is as follows using **Three.js** for some types:
 
 ```javascript
 import * as THREE from 'three';
 
-const ballMass      = 0.0459;                             // [kg]
-const gravityVector = new THREE.Vector3(0.0, -9.81, 0.0); // [m/s^2]
-const airDensity    = 1.225;                              // [kg/m^3]
-const ballRadius    = 0.02135;                            // [m]
-const ballCrossArea = Math.PI * (ballRadius)^2;           // [m^2]
-const ballDragCoef  = 0.23;
+// Constants
+const m = 0.0459;                               // Golf ball mass:                  [kg]
+const b = 0.02135;                              // Golf ball radius:                [m]
+const A = Math.PI * Math.pow(b, 2);             // Golf ball cross-sectional area:  [m^2]
+const Cd = 0.23;                                // Golf ball drag coefficient
+const g = new THREE.Vector3(0.0, -9.81, 0.0);   // Gravity acceleration vector:     [m/s^2]
+const p = 1.225;                                // Air density:                     [kg/m^3]
+const w = new THREE.Vector3(0, 0, 10);          // Constant wind velocity:          [m/s]
+const dt = 0.1;                                 // Time step for solving:           [s]
 
-// Come up with some initial values
-const balTranslationalVelocity = new THREE.Vector3(0.707, 0.707, 0.707);   // [m/s]
-const ballAngularVelocity      = new THREE.Vector3(0.0, 1.0, 0.0);         // [rad/s]
+// Set main variables to initial values
+let vball    = new THREE.Vector3(108 * Math.cos(0.707), // Current golf ball translational velocity: [m/s]
+                                 108 * Math.sin(0.707),
+                                 0);   
+let wball    = new THREE.Vector3(100.0, 1000.0, 0.0);   // Current golf ball angular velocity:       [rad/s]
+let position = new THREE.Vector3(0, 0, 0);              // Current golf ball position:               [m]
 
-function gravityForce(){
-
+function Fgravity(){
+    return g.clone().multiplyScalar(m);
 }
 
+function Fdrag(){
+    let vballMag  = vball.length();
+    let vballUnit = vball.clone().normalize();
 
-function dragForce(){
-    
+    return vballUnit.multiplyScalar((-1 / 2) * p * A * Cd * Math.pow(vballMag, 2));
 }
 
+function Fmagnus(){
+    let vballMag  = vball.length();
+    let vballUnit = vball.clone().normalize();
 
-function magnusForce(){
-    
+    let wballMag  = wball.length();
+    let wballUnit = wball.clone().normalize();
+
+    let CL = -0.05 + Math.sqrt(0.0025 + 0.036 * ((b * wballMag) / vballMag));
+
+    return wballUnit.cross(vballUnit).multiplyScalar((1 / 2) * p * A * CL * Math.pow(vballMag, 2));
 }
+
+function calcDvdt(){
+    let dvdt = Fgravity()
+    dvdt.add(Fdrag());
+    dvdt.add(Fmagnus());
+    dvdt.divideScalar(m)
+    return dvdt;
+}
+
+function simulate(){
+    // Collect positions throughout trajectory
+    const positions = [];
+    positions.push(position.clone());
+
+    // Vary velocity and position until the position
+    // goes below ground or end after an unreasonable
+    // number of cycles (hand-tweaked)
+    let i = 0;
+    while(position.y >= 0 && i < 250){
+        let dvdt = calcDvdt();
+        dvdt.multiplyScalar(dt);
+        vball.add(dvdt);
+
+        let vel = vball.clone().add(w).multiplyScalar(dt);
+        position.add(vel);
+
+        positions.push(position.clone());
+        i++;
+    }
+
+    return positions;
+}
+
+export default simulate;
 ```
 
+<br>
+
+---
+
+<br>
+
+
+
+## *Simulation*
+You can use the following controls to navigate the 3D scene:
+* Hold mouse left-click and move mouse to rotate
+* Hold mouse right-click and move mouse to pan
+* Mouse scroll-wheel to zoom in and out
+
+<br>
+
+<center>
+    <div id="simulationDiv" style="width:min-content; height:min-content; position:relative">
+    </div>
+</center>
+
+<br>
+
+In the next articles, we'll explore what happens to the ball when it bounces off the ground and the dynamics during putting.
 
 
 <script type="importmap">
@@ -275,21 +366,8 @@ function magnusForce(){
 </script>
 
 
-<style>
-    .label {
-        color: #FFF;
-        font-family: sans-serif;
-        padding: 2px;
-        background: rgba( 0, 0, 0, .6 );
-    }
-</style>
-
-
-<script src="/assets/2024-12-21-Simulating-3D-Golf-Ball-Trajectory/axes.js" type="module">
+<script src="/assets/2024-12-21-Simulating-3D-Golf-Ball-Trajectory/coordinate_system.js" type="module">
 </script>
 
-<script src="/assets/2024-12-21-Simulating-3D-Golf-Ball-Trajectory/simulation.js" type="module">
+<script src="/assets/2024-12-21-Simulating-3D-Golf-Ball-Trajectory/main_scene.js" type="module">
 </script>
-
-
-END

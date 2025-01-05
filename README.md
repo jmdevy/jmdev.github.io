@@ -4,4 +4,5 @@ Uses https://github.com/zhustec/jekyll-diagrams for block diagrams as well as ci
 
 Some posts are kept in the drafts folder as documented here https://jekyllrb.com/docs/posts/#drafts (you can run or build with draft posts enabled)
 
-`bundle exec jekyll serve --force_polling --livereload --watch --drafts -P 4000`
+To develop: `bundle exec jekyll serve --force_polling --livereload --watch --drafts -P 4000`
+To build for production: `bundle exec jekyll build`
