@@ -265,9 +265,9 @@ const w = new THREE.Vector3(0, 0, 10);          // Constant wind velocity:      
 const dt = 0.1;                                 // Time step for solving:           [s]
 
 // Set main variables to initial values
-let vball    = new THREE.Vector3(70.7, 70.7, 0);        // Golf ball translational velocity: [m/s]   
-let wball    = new THREE.Vector3(100.0, 1000.0, 0.0);   // Golf ball angular velocity:       [rad/s]
-let position = new THREE.Vector3(0, 0, 0);              // Golf ball position:               [m]
+let vball    = new THREE.Vector3(70.7, 70.7, 0);    // Golf ball translational velocity: [m/s]   
+let wball    = new THREE.Vector3(0, 1000.0, 0.0);   // Golf ball angular velocity:       [rad/s]
+let position = new THREE.Vector3(0, 0, 0);          // Golf ball position:               [m]
 
 function Fgravity(){
     return g.clone().multiplyScalar(m);
