@@ -1,3 +1,5 @@
+const MAX_LINE_POINT_COUNT = 1000;
+
 
 function manageRendererSize(renderer, camera, childDivToMonitor, maxWidth, maxHeight){
     let parentDiv = childDivToMonitor.parentElement.parentElement;
@@ -6,7 +8,8 @@ function manageRendererSize(renderer, camera, childDivToMonitor, maxWidth, maxHe
     // If a max is `undefined`, return the below
     // respective values for that dimension
     let width = parentWidth;
-    let height = window.innerHeight - 20;
+    let height = width;
+    // let height = window.innerHeight - 20;
 
     if(maxWidth != undefined && width > maxWidth){
         width = maxWidth;
@@ -16,6 +19,10 @@ function manageRendererSize(renderer, camera, childDivToMonitor, maxWidth, maxHe
         height = maxHeight;
     }
 
+    if(window.innerHeight - 20 < height){
+        height = window.innerHeight - 20;
+    }
+
     // renderer.setViewport(0, 0, width, height);
     renderer.setSize(width, height);
     camera.aspect = width / height;
@@ -23,4 +30,4 @@ function manageRendererSize(renderer, camera, childDivToMonitor, maxWidth, maxHe
 }
 
 
-export {manageRendererSize};
+export {MAX_LINE_POINT_COUNT, manageRendererSize};

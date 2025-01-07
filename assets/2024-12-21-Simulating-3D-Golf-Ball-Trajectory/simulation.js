@@ -1,3 +1,4 @@
+import {MAX_LINE_POINT_COUNT} from "/assets/2024-12-21-Simulating-3D-Golf-Ball-Trajectory/common.js"
 import * as THREE from 'three';
 
 // Constants
@@ -7,7 +8,7 @@ const A = Math.PI * Math.pow(b, 2);             // Golf ball cross-sectional are
 const Cd = 0.23;                                // Golf ball drag coefficient
 const g = new THREE.Vector3(0.0, -9.81, 0.0);   // Gravity acceleration vector:     [m/s^2]
 const p = 1.225;                                // Air density:                     [kg/m^3]
-const w = new THREE.Vector3(0, 0, 10);          // Constant wind velocity:          [m/s]
+let   w = new THREE.Vector3(0, 0, 10);          // Constant wind velocity:          [m/s]
 const dt = 0.1;                                 // Time step for solving:           [s]
 
 // Set main variables to initial values
@@ -50,7 +51,12 @@ function calcDvdt(){
     return dvdt;
 }
 
-function simulate(){
+function simulate(vball0, wball0, wind){
+    position.set(0, 0, 0);
+    vball = vball0
+    wball = wball0;
+    w = wind;
+
     // Collect positions throughout trajectory
     const positions = [];
     positions.push(position.clone());
@@ -59,7 +65,7 @@ function simulate(){
     // goes below ground or end after an unreasonable
     // number of cycles (hand-tweaked)
     let i = 0;
-    while(position.y >= 0 && i < 250){
+    while(position.y >= 0 && i < MAX_LINE_POINT_COUNT){
         let dvdt = calcDvdt();
         dvdt.multiplyScalar(dt);
         vball.add(dvdt);

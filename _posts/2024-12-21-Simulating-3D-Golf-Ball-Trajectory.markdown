@@ -21,6 +21,22 @@ categories: jekyll update
     }
 </style>
 
+<script type="importmap">
+  {
+    "imports": {
+      "three": "https://cdn.jsdelivr.net/npm/three@0.171.0/build/three.module.js",
+      "three/addons/": "https://cdn.jsdelivr.net/npm/three@0.171.0/examples/jsm/"
+    }
+  }
+</script>
+
+<script src="/assets/2024-12-21-Simulating-3D-Golf-Ball-Trajectory/coordinate_system.js" type="module">
+</script>
+
+<script src="/assets/2024-12-21-Simulating-3D-Golf-Ball-Trajectory/main_scene.js" type="module">
+</script>
+
+
 
 ## *Introduction*
 Recently, for game mod I am developing, I researched simulating the trajectory of a golf ball in 3D. I found article ["Interactive 3D Golf Simulator"](https://www.researchgate.net/profile/Chang-Song-11/publication/267680093_Interactive_3D_Golf_Simulator/links/555c163508ae6aea0817315e/Interactive-3D-Golf-Simulator.pdf) very useful.
@@ -352,30 +368,44 @@ You can use the following controls to navigate the 3D scene:
 * Two fingers and drag to **pan**
 * Two fingers and pinch to **zoom**
 
+
 <center>
     <div id="simulationDiv" style="width:min-content; height:min-content; position:relative">
     </div>
+    
+    <div style="width:100%; height:36px; display:flex; flex-direction:column; justify-content:space-evenly; align-items:center">
+
+        <div style="display:flex; height:24px; align-items:center; margin-top:10px">
+            $$v_{ball_0} \ $$
+            <input min="-10000" max="10000" value="70.7" id="vball0x" type="number" style="width:60px" oninput="window.simulationValueUpdated()"/>
+            <input min="-10000" max="10000" value="70.7" id="vball0y" type="number" style="width:60px" oninput="window.simulationValueUpdated()"/>
+            <input min="-10000" max="10000" value="0"    id="vball0z" type="number" style="width:60px" oninput="window.simulationValueUpdated()"/>
+            $$ \ [m/s]$$
+        </div>
+
+        <div style="display:flex; height:24px; align-items:center; margin-top:10px">
+            $$w_{ball_0} \ $$
+            <input min="-10000" max="10000" value="0"    step="100" id="wball0x" type="number" style="width:60px" oninput="window.simulationValueUpdated()"/>
+            <input min="-10000" max="10000" value="1000" step="100" id="wball0y" type="number" style="width:60px" oninput="window.simulationValueUpdated()"/>
+            <input min="-10000" max="10000" value="0"    step="100" id="wball0z" type="number" style="width:60px" oninput="window.simulationValueUpdated()"/>
+            $$ \ [rad/s]$$
+        </div>
+
+        <div style="display:flex; height:24px; align-items:center; margin-top:10px">
+            $$v_{wind} \ $$
+            <input min="-10000" max="10000" value="0"  id="wx" type="number" style="width:60px" oninput="window.simulationValueUpdated()"/>
+            <input min="-10000" max="10000" value="0"  id="wy" type="number" style="width:60px" oninput="window.simulationValueUpdated()"/>
+            <input min="-10000" max="10000" value="10" id="wz" type="number" style="width:60px" oninput="window.simulationValueUpdated()"/>
+            $$ \ [m/s]$$
+        </div>
+
+    </div>
 </center>
 
+<br>
+<br>
 <br>
 
 In the next articles, we'll explore what happens to the ball when it bounces off the ground and the dynamics during putting.
 
 COMING SOON
-
-
-<script type="importmap">
-  {
-    "imports": {
-      "three": "https://cdn.jsdelivr.net/npm/three@0.171.0/build/three.module.js",
-      "three/addons/": "https://cdn.jsdelivr.net/npm/three@0.171.0/examples/jsm/"
-    }
-  }
-</script>
-
-
-<script src="/assets/2024-12-21-Simulating-3D-Golf-Ball-Trajectory/coordinate_system.js" type="module">
-</script>
-
-<script src="/assets/2024-12-21-Simulating-3D-Golf-Ball-Trajectory/main_scene.js" type="module">
-</script>
