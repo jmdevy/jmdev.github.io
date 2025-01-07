@@ -59,11 +59,9 @@ $$
 We can solve this in real time using numerical methods like **Euler** or **Runge-Kutta**.
 
 
-<br>
-
----
 
 <br>
+
 
 
 ## *Coordinate System*
@@ -77,11 +75,9 @@ A coordinate system should be defined so we're on the same page:
 This is mostly important for defining the y-axis as the up/down or the axis where gravity acts.
 
 
-<br>
-
----
 
 <br>
+
 
 
 
@@ -106,11 +102,9 @@ The variables in this equation typically have the following values:
 * Gravity vector: $$\vec{g} = <0, -9.81, 0> [m/s^2]$$
 
 
-<br>
-
----
 
 <br>
+
 
 
 ## *Aerodynamic Drag and Spin Forces: $$\vec{F}_{drag}$$ & $$\vec{F}_{magnus}$$*
@@ -169,9 +163,7 @@ In case you don't know, the vectors with the absolute symbol $$\left\lvert \righ
 
 <br>
 
----
 
-<br>
 
 
 ## *Solving for Translational Velocity*
@@ -212,11 +204,9 @@ $$v_{ball_{n+1}} = v_{ball_n} + {d \vec{v}_{ball} \over dt} * dt \ [m/s]$$
 <br>
 
 
-<br>
-
----
 
 <br>
+
 
 
 ## *Accounting for Wind Velocity*
@@ -235,11 +225,10 @@ $$v_{wind} = <0, 0, 10> \ [m/s]$$
 
 If the initial conditions hit the ball in the xy-plane, wind on the z-axis will constantly alter the trajectory out of the plane.
 
-<br>
 
----
 
 <br>
+
 
 
 ## *Calculating Position for Trajectory*
@@ -256,11 +245,9 @@ $$
 <br>
 
 
-<br>
-
----
 
 <br>
+
 
 
 
@@ -347,9 +334,7 @@ function simulate(){
 export default simulate;
 ```
 
-<br>
 
----
 
 <br>
 
@@ -375,28 +360,40 @@ You can use the following controls to navigate the 3D scene:
     
     <div style="width:100%; display:flex; flex-direction:column; justify-content:space-evenly; align-items:center">
 
-        <div style="display:flex; height:24px; align-items:center; margin-top:10px">
+        <div style="display:flex; height:24px; align-items:center; margin-top:10px; color:white">
+
             $$v_{ball_0} \ $$
+
             <input min="-10000" max="10000" value="70.7" id="vball0x" type="number" style="width:60px" oninput="window.simulationValueUpdated()"/>
             <input min="-10000" max="10000" value="70.7" id="vball0y" type="number" style="width:60px" oninput="window.simulationValueUpdated()"/>
             <input min="-10000" max="10000" value="0"    id="vball0z" type="number" style="width:60px" oninput="window.simulationValueUpdated()"/>
+
             $$ \ [m/s]$$
+
         </div>
 
-        <div style="display:flex; height:24px; align-items:center; margin-top:10px">
+        <div style="display:flex; height:24px; align-items:center; margin-top:10px; color:white">
+
             $$w_{ball_0} \ $$
+
             <input min="-10000" max="10000" value="0"    id="wball0x" type="number" style="width:60px" oninput="window.simulationValueUpdated()"/>
             <input min="-10000" max="10000" value="1000" id="wball0y" type="number" style="width:60px" oninput="window.simulationValueUpdated()"/>
             <input min="-10000" max="10000" value="0"    id="wball0z" type="number" style="width:60px" oninput="window.simulationValueUpdated()"/>
+
             $$ \ [rad/s]$$
+
         </div>
 
-        <div style="display:flex; height:24px; align-items:center; margin-top:10px">
+        <div style="display:flex; height:24px; align-items:center; margin-top:10px; color:white">
+
             $$v_{wind} \ $$
+
             <input min="-10000" max="10000" value="0"  id="wx" type="number" style="width:60px" oninput="window.simulationValueUpdated()"/>
             <input min="-10000" max="10000" value="0"  id="wy" type="number" style="width:60px" oninput="window.simulationValueUpdated()"/>
             <input min="-10000" max="10000" value="10" id="wz" type="number" style="width:60px" oninput="window.simulationValueUpdated()"/>
+
             $$ \ [m/s]$$
+
         </div>
 
     </div>
