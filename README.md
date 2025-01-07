@@ -1,9 +1,8 @@
-Run server with step 5: https://jekyllrb.com/docs/
+# Hobby Project Blog
+This repository contains the contents of of personal blog. The contents consist of a bunch of markdown, HTML, css, and javascript. Posts are compiled into a static website using https://jekyllrb.com/docs/.
 
-Uses https://github.com/zhustec/jekyll-diagrams for block diagrams as well as circuitz, somehow
+# Developing
+Just run this and visit the local access point printed in the terminal: `bundle exec jekyll serve --force_polling --livereload --watch --drafts -P 4000`
 
-Some posts are kept in the drafts folder as documented here https://jekyllrb.com/docs/posts/#drafts (you can run or build with draft posts enabled)
-
-To develop: `bundle exec jekyll serve --force_polling --livereload --watch --drafts -P 4000`
-
-To build for production: `bundle exec jekyll build`
+# Building
+Github Pages

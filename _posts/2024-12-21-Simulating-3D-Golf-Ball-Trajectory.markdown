@@ -361,39 +361,27 @@ You can use the following controls to navigate the 3D scene:
     <div style="width:100%; display:flex; flex-direction:column; justify-content:space-evenly; align-items:center">
 
         <div style="display:flex; height:24px; align-items:center; margin-top:10px; color:white">
-
-            $$v_{ball_0} \ $$
-
+            <i style="margin-top:8px; margin-right:5px"><p>v<sub>ball<sub>0</sub></sub></p></i>
             <input min="-10000" max="10000" value="70.7" id="vball0x" type="number" style="width:60px" oninput="window.simulationValueUpdated()"/>
             <input min="-10000" max="10000" value="70.7" id="vball0y" type="number" style="width:60px" oninput="window.simulationValueUpdated()"/>
             <input min="-10000" max="10000" value="0"    id="vball0z" type="number" style="width:60px" oninput="window.simulationValueUpdated()"/>
-
-            $$ \ [m/s]$$
-
+            <i style="margin-top:8px; margin-left:5px"><p>[m/s]</p></i>
         </div>
 
         <div style="display:flex; height:24px; align-items:center; margin-top:10px; color:white">
-
-            $$w_{ball_0} \ $$
-
-            <input min="-10000" max="10000" value="0"    id="wball0x" type="number" style="width:60px" oninput="window.simulationValueUpdated()"/>
-            <input min="-10000" max="10000" value="1000" id="wball0y" type="number" style="width:60px" oninput="window.simulationValueUpdated()"/>
-            <input min="-10000" max="10000" value="0"    id="wball0z" type="number" style="width:60px" oninput="window.simulationValueUpdated()"/>
-
-            $$ \ [rad/s]$$
-
+            <i style="margin-top:8px; margin-right:5px"><p>w<sub>ball<sub>0</sub></sub></p></i>
+            <input min="-10000" max="10000" value="0"    step="100" id="wball0x" type="number" style="width:60px" oninput="window.simulationValueUpdated()"/>
+            <input min="-10000" max="10000" value="1000" step="100" id="wball0y" type="number" style="width:60px" oninput="window.simulationValueUpdated()"/>
+            <input min="-10000" max="10000" value="0"    step="100" id="wball0z" type="number" style="width:60px" oninput="window.simulationValueUpdated()"/>
+            <i style="margin-top:8px; margin-left:5px"><p>[rad/s]</p></i>
         </div>
 
         <div style="display:flex; height:24px; align-items:center; margin-top:10px; color:white">
-
-            $$v_{wind} \ $$
-
+            <i style="margin-top:8px; margin-right:5px"><p>w<sub>wind</sub></p></i>
             <input min="-10000" max="10000" value="0"  id="wx" type="number" style="width:60px" oninput="window.simulationValueUpdated()"/>
             <input min="-10000" max="10000" value="0"  id="wy" type="number" style="width:60px" oninput="window.simulationValueUpdated()"/>
             <input min="-10000" max="10000" value="10" id="wz" type="number" style="width:60px" oninput="window.simulationValueUpdated()"/>
-
-            $$ \ [m/s]$$
-
+            <i style="margin-top:8px; margin-left:5px"><p>[m/s]</p></i>
         </div>
 
     </div>
