@@ -373,7 +373,7 @@ You can use the following controls to navigate the 3D scene:
     <div id="simulationDiv" style="width:min-content; height:min-content; position:relative">
     </div>
     
-    <div style="width:100%; height:36px; display:flex; flex-direction:column; justify-content:space-evenly; align-items:center">
+    <div style="width:100%; display:flex; flex-direction:column; justify-content:space-evenly; align-items:center">
 
         <div style="display:flex; height:24px; align-items:center; margin-top:10px">
             $$v_{ball_0} \ $$
@@ -385,9 +385,9 @@ You can use the following controls to navigate the 3D scene:
 
         <div style="display:flex; height:24px; align-items:center; margin-top:10px">
             $$w_{ball_0} \ $$
-            <input min="-10000" max="10000" value="0"    step="100" id="wball0x" type="number" style="width:60px" oninput="window.simulationValueUpdated()"/>
-            <input min="-10000" max="10000" value="1000" step="100" id="wball0y" type="number" style="width:60px" oninput="window.simulationValueUpdated()"/>
-            <input min="-10000" max="10000" value="0"    step="100" id="wball0z" type="number" style="width:60px" oninput="window.simulationValueUpdated()"/>
+            <input min="-10000" max="10000" value="0"    id="wball0x" type="number" style="width:60px" oninput="window.simulationValueUpdated()"/>
+            <input min="-10000" max="10000" value="1000" id="wball0y" type="number" style="width:60px" oninput="window.simulationValueUpdated()"/>
+            <input min="-10000" max="10000" value="0"    id="wball0z" type="number" style="width:60px" oninput="window.simulationValueUpdated()"/>
             $$ \ [rad/s]$$
         </div>
 
