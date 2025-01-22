@@ -1,7 +1,7 @@
 ---
 layout: post
-title:  Simulating 3D Golf Ball Trajectory
-date:   2024-12-21 00:00:00 -0500
+title:  Simulating 3D Golf Ball Trajectory - The Roll
+date:   2025-1-10 09:00:00 -0500
 categories: jekyll update
 ---
 
@@ -30,10 +30,10 @@ categories: jekyll update
   }
 </script>
 
-<script src="/assets/2024-12-21-Simulating-3D-Golf-Ball-Trajectory/coordinate_system.js" type="module">
+<script src="/assets/2024-12-21-Simulating-3D-Golf-Ball-Trajectory-The-Drive/coordinate_system.js" type="module">
 </script>
 
-<script src="/assets/2024-12-21-Simulating-3D-Golf-Ball-Trajectory/main_scene.js" type="module">
+<script src="/assets/2024-12-21-Simulating-3D-Golf-Ball-Trajectory-The-Drive/main_scene.js" type="module">
 </script>
 
 

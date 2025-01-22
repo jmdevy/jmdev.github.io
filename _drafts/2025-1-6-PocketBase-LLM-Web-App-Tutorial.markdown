@@ -1,7 +1,7 @@
 ---
 layout: post
 title:  PocketBase LLM Web App Tutorial
-date:   2025-1-6 00:10:00 -0500
+date:   2025-1-11 00:10:00 -0500
 categories: jekyll update
 ---
 
@@ -17,7 +17,7 @@ categories: jekyll update
 ## *Introduction*
 If you haven't heard of [PocketBase](https://pocketbase.io/) before then I encourage you to click that link and read some of the docs. The project just had its [`v0.24.0`](https://github.com/pocketbase/pocketbase/releases) release the other day and I figured it would be a good time to write a brand-new tutorial on how to use it.
 
-
+**WARNING:** This is my first dive into this kind of system, I usually do embedded and frontend software engineering. I am not liable if you decide to use any part of my explanation or code in a production setting that causes any kind of harm to you or others.
 
 <br>
 
@@ -39,7 +39,7 @@ The beauty of the project is that it is a [single executable](https://pocketbase
 
 
 ## *What Are We Building?*
-To keep you interested, **we'll build a web app that allows users to sign-up and talk to their own LLM instance**. Sounds a little crazy right? It's not as hard as you might think.
+**We'll build a web app that allows users to sign-up and talk to their own LLM instance**. Sounds a little crazy right? It's not as hard as you might think.
 
 The LLM instances won't be very impressive since I want anyone to be able to build and run this project. This means we'll have to assume this will be running on CPU, GPU, and RAM limited devices (in running LLM terms).
 
@@ -51,10 +51,11 @@ The LLM instances won't be very impressive since I want anyone to be able to bui
 
 
 ## *What Technologies Will We Be Using?*
-Why not all of them? This is a hobby project after all, might as well get some experience. We'll use:
+We'll use:
 
 #### **Backend**
 * [PocketBase](https://pocketbase.io/) with [Golang extensions](https://pocketbase.io/docs/use-as-framework/)
+* [kubernetes](https://kubernetes.io/) (autoscaling LLM worker nodes)
 
 #### **Frontend**
 * [NextJS](https://nextjs.org/)
@@ -125,7 +126,7 @@ func main() {
 
 NOTE: You can use PocketBase as an executable that allows [extending it with Javascript](https://pocketbase.io/docs/use-as-framework/).
 
-- **7:** Install `Go` on your machine/server from [here](https://go.dev/dl/) (you may need to restart your shells/IDEs/terminals if on windows after `Go` is auto added to `PATH`).
+- **7:** Install `Go` on your machine/server from [here](https://go.dev/dl/) (you may need to restart your shells/IDEs/terminals if on Windows after `Go` is auto added to `PATH`).
 - **8:** As the above `Go` program says, let's create a `pb_public` folder: `mkdir pb_public`
 - **9:** Inside of there, let's create a basic first page `index.html` (we'll move onto React later, let's just see if anything is working yet):
 

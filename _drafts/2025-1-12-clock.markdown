@@ -1,11 +1,45 @@
 ---
 layout: post
-title:  Screen Design
-date:   2024-10-9 00:10:00 -0500
+title:  clock
+date:   2025-1-12 00:00:00 -0500
 categories: jekyll update
 ---
 
 ## **Introduction**
+**clock** is a simple bedtime or desk clock that allows the user to easily customize it. Its hardware consists of common components that are common.
+
+This isn't really for anyone else but me, but I thought it would be cool to document it anyways.
+
+
+## **clock's features:**
+* USB-C for power and data
+* Lua for **clock**'s code
+* Circle screen
+* FatFS32 for filesystem
+
+
+
+## **Screen**
+To make it unique, we'll use a single color LED matrix in a circle format. We'll use per-pixel dimming for an extra layer of depth in the display.
+
+Turns out, the [Minecraft circle generator](https://donatstudios.com/PixelCircleGenerator) is for prototyping how many LED cells we might want in the screen. Typically, small SMD LEDs are in the order of ~3.2mm in their major dimension.
+
+For the general dimensions of the screen, the dimensions of each cell in the matrix display will consist of:
+* ~3.2mm for LED
+* 0.5mm clearance on every side of LED (1mm total then)
+* 2x 0.5mm of wall thickness on each side of each cell (resulting in 1mm thick walls)
+* an extra 2mm for the outside walls
+
+If we go with a circle matrix diameter of 17 we get a full width of: (3.2 + 2*0.5 + 2*0.5) * 17 + 2 = 90.4mm = 3.55". This is kind of small, but I like it. According to the Minecraft circle calculator, this results in 225 cells or LEDs. That isn't too bad. We will have to use some LED drivers/shift registers to implement all of that.
+
+## **Enclosure**
+I always aim for my models to be injection moldable even if I am only going to 3D print them.
+
+
+## Connectivity
+I want WiFi for getting weather data. I'll also have a microphone and speaker in **clock** so that a webpage can interact with it through sound.
+
+<!-- ## **Introduction**
 
 This blog posts goes over each of my decisions during the creation of a personal Wi-Fi screen that sits on my desk. The idea is to interact with it through a camera, instead of buttons or an app.
 
@@ -399,4 +433,4 @@ The ESP32-S3 seems like a good fit since it comes with the AI extension/accelera
 This shouldn't be very complex, here's some pseudo C code I can came up with:
 
 
-That didn't give us any concrete proof of the time it will take to update the LEDs from row to row, but we'll assume it is very quick.
+That didn't give us any concrete proof of the time it will take to update the LEDs from row to row, but we'll assume it is very quick. -->
