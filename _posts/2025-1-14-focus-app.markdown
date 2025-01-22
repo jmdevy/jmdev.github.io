@@ -5,10 +5,12 @@ date:   2025-1-14 00:00:00 -0500
 categories: jekyll update
 ---
 
+NOTE: **DRAFT (1/22/2025)**
+
 ## **Introduction**
 This is a small writeup about my little [focus tracking app](https://github.com/jmdevy/focus).
 
-The app is very simple: add **tasks** that that want you to spend certain amounts of time each day focusing on. Once you choose to focus on a task, a timer counts done for the duration you chose.
+The app is very simple: add **tasks** that that want you to spend certain amounts of time each day focusing on. Once you choose to focus on a task, a timer counts down for the duration you chose.
 
 
 <br>
@@ -66,3 +68,4 @@ I used the **frame0** app for drawing out the UI/UX of the app. I only focused o
 
 
 ## **The App**
+Visit the [app](https://jmdevy.github.io/focus/) and try it out. I ended up deviating from the wireframe once I actually got into building it out. 
