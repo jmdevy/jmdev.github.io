@@ -1,6 +1,6 @@
 import * as THREE from 'three';
 import { CSS2DRenderer, CSS2DObject  } from 'three/addons/renderers/CSS2DRenderer.js';
-import {manageRendererSize} from "/assets/2024-12-21-Simulating-3D-Golf-Ball-Trajectory/common.js"
+import {manageRendererSize} from "/assets/2024-12-21-Simulating-3D-Golf-Ball-Trajectory-The-Drive/common.js"
 
 // #1: Setup the scene/THREE.js
 const scene = new THREE.Scene();

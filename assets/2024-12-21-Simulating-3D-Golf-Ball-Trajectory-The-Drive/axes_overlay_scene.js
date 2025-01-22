@@ -1,5 +1,5 @@
 import * as THREE from 'three';
-import {manageRendererSize} from "/assets/2024-12-21-Simulating-3D-Golf-Ball-Trajectory/common.js"
+import {manageRendererSize} from "/assets/2024-12-21-Simulating-3D-Golf-Ball-Trajectory-The-Drive/common.js"
 
 // Axes scene setup
 const axesScene = new THREE.Scene();

@@ -1,4 +1,4 @@
-import {MAX_LINE_POINT_COUNT} from "/assets/2024-12-21-Simulating-3D-Golf-Ball-Trajectory/common.js"
+import {MAX_LINE_POINT_COUNT} from "/assets/2024-12-21-Simulating-3D-Golf-Ball-Trajectory-The-Drive/common.js"
 import * as THREE from 'three';
 
 // Constants

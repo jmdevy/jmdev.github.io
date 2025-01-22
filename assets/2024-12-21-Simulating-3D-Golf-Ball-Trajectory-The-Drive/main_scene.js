@@ -2,7 +2,7 @@ import * as THREE from 'three';
 import { OrbitControls } from 'three/addons/controls/OrbitControls.js';
 import simulate from './simulation.js';
 import axesOverlayRender from './axes_overlay_scene.js';
-import {MAX_LINE_POINT_COUNT, manageRendererSize} from "/assets/2024-12-21-Simulating-3D-Golf-Ball-Trajectory/common.js"
+import {MAX_LINE_POINT_COUNT, manageRendererSize} from "/assets/2024-12-21-Simulating-3D-Golf-Ball-Trajectory-The-Drive/common.js"
 
 const simulationDiv = document.getElementById("simulationDiv");
 
