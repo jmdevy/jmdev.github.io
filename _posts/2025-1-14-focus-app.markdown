@@ -26,10 +26,6 @@ The app is very simple: add **tasks** that that want you to spend certain amount
 #### **Wireframe**
 * [frame0](https://frame0.app/)
 
-#### **Testing**
-* [jestjs](https://jestjs.io/)
-* [Puppeteer](https://pptr.dev/)
-
 
 <br>
 
