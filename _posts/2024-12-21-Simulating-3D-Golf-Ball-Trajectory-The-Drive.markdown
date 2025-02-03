@@ -38,7 +38,7 @@ categories: jekyll update
 
 
 
-## *Introduction*
+## **Introduction**
 Recently, for game mod I am developing, I researched simulating the trajectory of a golf ball in 3D. I found article ["Interactive 3D Golf Simulator"](https://www.researchgate.net/profile/Chang-Song-11/publication/267680093_Interactive_3D_Golf_Simulator/links/555c163508ae6aea0817315e/Interactive-3D-Golf-Simulator.pdf) very useful.
 
 In the article, they mention this ordinary differential equation:
@@ -64,7 +64,7 @@ We can solve this in real time using numerical methods like **Euler** or **Runge
 
 
 
-## *Coordinate System*
+## **Coordinate System**
 A coordinate system should be defined so we're on the same page:
 
 <center>
@@ -81,7 +81,7 @@ This is mostly important for defining the y-axis as the up/down or the axis wher
 
 
 
-## *Gravity Force: $$\vec{F}_{gravity}$$*
+## **Gravity Force: $$\vec{F}_{gravity}$$**
 Simple enough:
 
 
@@ -107,7 +107,7 @@ The variables in this equation typically have the following values:
 
 
 
-## *Aerodynamic Drag and Spin Forces: $$\vec{F}_{drag}$$ & $$\vec{F}_{magnus}$$*
+## **Aerodynamic Drag and Spin Forces: $$\vec{F}_{drag}$$ & $$\vec{F}_{magnus}$$**
 In the article, they came up with the following equations for the drag and spin forces:
 
 
@@ -166,7 +166,7 @@ In case you don't know, the vectors with the absolute symbol $$\left\lvert \righ
 
 
 
-## *Solving for Translational Velocity*
+## **Solving for Translational Velocity**
 To solve the differential equation in *Equation 1*, we'll use the **Euler** method. This is a numerical and iterative approach that will be performed in $$n$$ number of steps:
 
 **1.** Choose initial conditions for the translational and angular velocities when $$n = 0$$:
@@ -209,7 +209,7 @@ $$v_{ball_{n+1}} = v_{ball_n} + {d \vec{v}_{ball} \over dt} * dt \ [m/s]$$
 
 
 
-## *Accounting for Wind Velocity*
+## **Accounting for Wind Velocity**
 At the end of *pg 5.* in the article, assuming the wind is constant, it can be modeled as a constant velocity affecting the ball's velocity:
 
 <br>
@@ -231,8 +231,7 @@ If the initial conditions hit the ball in the xy-plane, wind on the z-axis will 
 
 
 
-## *Calculating Position for Trajectory*
-
+## **Calculating Position for Trajectory**
 Finally, for each change in translational velocity $$\vec{v}_{ball}$$ from *Equation 9*, we can calculate the newest position based on the last position and the newest approximated velocity in discrete steps:
 
 <br>
@@ -251,7 +250,7 @@ $$
 
 
 
-## *Simulation Code*
+## **Simulation Code**
 In **JavaScript**, the entire simulation of the trajectory of the ball through calculating its position is as follows using **Three.js** for some types:
 
 ```javascript
@@ -340,7 +339,7 @@ export default simulate;
 
 
 
-## *Simulation*
+## **Simulation**
 You can use the following controls to navigate the 3D scene:
 
 #### **Desktop**
