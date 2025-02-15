@@ -24,7 +24,13 @@ I will be taking the safe route and using a hand solder-able SoC that has integr
 
 <br>
 
-## **Choosing The Processor**
+## **What Exactly Are We Building?**
+We are building a relatively simple retro-esque handheld Linux device. This means we'll have some simple inputs, low resolution screen, speaker for audio, and a chargeable battery.
+
+
+<br>
+
+## **Choosing a Processor**
 Before we start anything (software, other components, KiCad library), we need a processor. Here's my justifications for most attributes you decide on when choosing a microprocessor SoC:
 
 * **Speed:** It can be slow. We aren't making a Linux tablet, I'm fine with sacrificing this for other aspects
@@ -40,6 +46,27 @@ So how do we find it? There are a couple of good blogs about this subject (and a
 * [https://hackaday.com/2018/09/17/a-1-linux-capable-hand-solderable-processor/](https://hackaday.com/2018/09/17/a-1-linux-capable-hand-solderable-processor/)
 
 In the second link above, they mention the [**Nuvoton NUC980 series**](https://www.nuvoton.com/products/microprocessors/arm9-mpus/nuc980-industrial-control-iot-series/) processors. These are perfect. TODO: why they are perfect
+
+
+<br>
+
+## **Choosing a Wi-Fi Coprocessor Module**
+First, we'll want to go with a System on a Module (SoM) instead of a System on a Chip (SoC) since using an SoC requires creating
+* External to the chip transmit and receive circuitry (TX power amp and RX filter)
+* Antenna matching circuitry
+* Shielding
+
+https://github.com/espressif/esp-hosted/blob/master/esp_hosted_ng/README.md#12-supported-esp-boards
+https://www.espressif.com/en/products/socs#:~:text=ESP32%2DP4.asc-,ESP32%2DS%20Series,-ESP32%2DS3%20Series
+
+<br>
+
+## **Choosing a Display**
+
+
+<br>
+
+## **Choosing a Battery**
 
 
 <br>
@@ -62,6 +89,7 @@ Most tutorials don't explain how they manage their part libraries. There are lot
         * [Alibaba](https://www.alibaba.com/) (electrical, mechanical, & services)
         * [Aliexpress](https://www.aliexpress.us/?gatewayAdapt=glo2usa) (electrical & mechanical)
         * [Wkooa](https://www.wkooa.com/) (screws)
+        * [BuyDisplay](https://www.buydisplay.com/) (displays)
 * Q. Where do I get PCBs made along with stencils for solder pasting?
     * A.
         * [PCBWay](https://www.pcbway.com/) (China, PCBs, stencils, & services)
