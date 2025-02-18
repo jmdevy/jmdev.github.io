@@ -1,7 +1,7 @@
 ---
 layout: post
-title:  Small Linux Computer From Scratch - lo
-date:   2025-2-6 00:10:00 -0500
+title:  Small Linux Computer From Scratch - lo - DRAFT
+date:   2025-2-18 00:10:00 -0500
 categories: jekyll update
 ---
 
