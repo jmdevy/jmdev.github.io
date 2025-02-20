@@ -2,7 +2,7 @@ import * as THREE from 'three';
 import { OrbitControls } from 'three/addons/controls/OrbitControls.js';
 import simulate from './simulation.js';
 import axesOverlayRender from './axes_overlay_scene.js';
-import {MAX_LINE_POINT_COUNT, manageRendererSize} from "/assets/2024-12-21-Simulating-3D-Golf-Ball-Trajectory-The-Drive/common.js"
+import {MAX_POINT_COUNT, manageRendererSize} from "/assets/2024-12-21-Simulating-3D-Golf-Ball-Trajectory-The-Drive/common.js"
 
 const simulationDiv = document.getElementById("simulationDiv");
 
@@ -22,7 +22,7 @@ const gridHelper = new THREE.GridHelper(600, 600);
 mainScene.add(gridHelper);
 
 const geometry = new THREE.BufferGeometry();
-const positions = new Float32Array(MAX_LINE_POINT_COUNT * 3); // 3 floats (x, y and z) per point
+const positions = new Float32Array(MAX_POINT_COUNT * 3); // 3 floats (x, y and z) per point
 geometry.setAttribute('position', new THREE.BufferAttribute( positions, 3 ));
 const material = new THREE.LineBasicMaterial( { color: 0x00ff00 } );
 const line = new THREE.Line(geometry, material);

@@ -1,4 +1,4 @@
-import {MAX_LINE_POINT_COUNT} from "/assets/2024-12-21-Simulating-3D-Golf-Ball-Trajectory-The-Drive/common.js"
+import {MAX_POINT_COUNT} from "/assets/2024-12-21-Simulating-3D-Golf-Ball-Trajectory-The-Drive/common.js"
 import * as THREE from 'three';
 
 // Constants
@@ -65,7 +65,7 @@ function simulate(vball0, wball0, wind){
     // goes below ground or end after an unreasonable
     // number of cycles (hand-tweaked)
     let i = 0;
-    while(position.y >= 0 && i < MAX_LINE_POINT_COUNT){
+    while(position.y >= 0 && i < MAX_POINT_COUNT){
         let dvdt = calcDvdt();
         dvdt.multiplyScalar(dt);
         vball.add(dvdt);

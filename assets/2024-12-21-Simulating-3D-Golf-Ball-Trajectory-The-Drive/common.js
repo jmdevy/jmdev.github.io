@@ -1,4 +1,4 @@
-const MAX_LINE_POINT_COUNT = 1000;
+const MAX_POINT_COUNT = 1000;
 
 
 function manageRendererSize(renderer, camera, childDivToMonitor, maxWidth, maxHeight){
@@ -30,4 +30,4 @@ function manageRendererSize(renderer, camera, childDivToMonitor, maxWidth, maxHe
 }
 
 
-export {MAX_LINE_POINT_COUNT, manageRendererSize};
+export {MAX_POINT_COUNT, manageRendererSize};
